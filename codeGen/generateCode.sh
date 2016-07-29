@@ -1,0 +1,4 @@
+java -classpath api-util-1.2.2-SNAPSHOT-allinone.jar net.pocrd.core.generator.ApiSdkJavaScriptGenerator url http://115.28.160.84/info.api com.fengqu.m ../language/javascript/api
+java -classpath api-util-1.2.2-SNAPSHOT-allinone.jar net.pocrd.core.generator.ApiSdkJavaGenerator url http://115.28.160.84/info.api com.fengqu.m.app.client ../language/java/apisdk/src/main/java/com/fengqu/m/app/client
+java -classpath api-util-1.2.2-SNAPSHOT-allinone.jar net.pocrd.core.generator.ApiSdkObjectiveCGenerator url http://115.28.160.84/info.api SF ../language/objective-c/sfhtapi/sfhtapi/SFAPICore
+java -classpath api-util-1.2.2-SNAPSHOT-allinone.jar net.pocrd.core.generator.HtmlApiDocGenerator url http://115.28.160.84/info.api ../language/htmldoc
