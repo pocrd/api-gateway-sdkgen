@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "35C602311C64516D007B5F10"
-               BuildableName = "libsfhtapi.a"
-               BlueprintName = "sfhtapi"
-               ReferencedContainer = "container:sfhtapi.xcodeproj">
+               BlueprintIdentifier = "3580C1481D12B4E80027180B"
+               BuildableName = "libapisdk.a"
+               BlueprintName = "apisdk"
+               ReferencedContainer = "container:apisdk.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "35C602311C64516D007B5F10"
-            BuildableName = "libsfhtapi.a"
-            BlueprintName = "sfhtapi"
-            ReferencedContainer = "container:sfhtapi.xcodeproj">
+            BlueprintIdentifier = "3580C1481D12B4E80027180B"
+            BuildableName = "libapisdk.a"
+            BlueprintName = "apisdk"
+            ReferencedContainer = "container:apisdk.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "35C602311C64516D007B5F10"
-            BuildableName = "libsfhtapi.a"
-            BlueprintName = "sfhtapi"
-            ReferencedContainer = "container:sfhtapi.xcodeproj">
+            BlueprintIdentifier = "3580C1481D12B4E80027180B"
+            BuildableName = "libapisdk.a"
+            BlueprintName = "apisdk"
+            ReferencedContainer = "container:apisdk.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

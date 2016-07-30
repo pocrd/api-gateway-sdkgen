@@ -47,7 +47,6 @@
         {
             NSString *responseString = [[NSString alloc] initWithData:respData encoding:NSUTF8StringEncoding];
             NSLog(@"params:%@ /n response:%@", params, responseString);
-#warning TODO: log result.
         }
         if (error)
         {
@@ -196,7 +195,6 @@
         {
             NSString *responseString = [[NSString alloc] initWithData:respData encoding:NSUTF8StringEncoding];
             NSLog(@"%@", responseString);
-#warning TODO: log result.
         }
         if (error)
         {

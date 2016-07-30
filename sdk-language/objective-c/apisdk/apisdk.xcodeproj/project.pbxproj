@@ -46,7 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3580C1491D12B4E80027180B /* libsfhtapi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsfhtapi.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3580C1491D12B4E80027180B /* libapisdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libapisdk.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3580CE011D12B6220027180B /* PoCApiAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApiAccessor.h; sourceTree = "<group>"; };
 		3580CE021D12B6220027180B /* PoCApiAccessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApiAccessor.m; sourceTree = "<group>"; };
 		3580CE031D12B6220027180B /* PoCApiConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApiConfig.h; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		3580CE111D12B6220027180B /* PoCServerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCServerResponse.m; sourceTree = "<group>"; };
 		3580CE121D12B6220027180B /* PoCSystemVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCSystemVersion.h; sourceTree = "<group>"; };
 		3580CE131D12B6220027180B /* PoCSystemVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCSystemVersion.m; sourceTree = "<group>"; };
-		3580CE141D12B6220027180B /* sfhtapi_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sfhtapi_Prefix.pch; sourceTree = "<group>"; };
+		3580CE141D12B6220027180B /* apisdk_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = apisdk_Prefix.pch; sourceTree = "<group>"; };
 		35E795CC1D48917000B0B60F /* PoCApiCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApiCode.h; sourceTree = "<group>"; };
 		35E795CD1D48917000B0B60F /* PoCApiCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApiCode.m; sourceTree = "<group>"; };
 		35E795CE1D48917000B0B60F /* PoCApiRequestInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApiRequestInclude.h; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 		3580C1401D12B4E80027180B = {
 			isa = PBXGroup;
 			children = (
-				3580C8FF1D12B61D0027180B /* sfhtapi */,
+				3580C8FF1D12B61D0027180B /* apisdk */,
 				3580C14A1D12B4E80027180B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -123,18 +123,18 @@
 		3580C14A1D12B4E80027180B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3580C1491D12B4E80027180B /* libsfhtapi.a */,
+				3580C1491D12B4E80027180B /* libapisdk.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3580C8FF1D12B61D0027180B /* sfhtapi */ = {
+		3580C8FF1D12B61D0027180B /* apisdk */ = {
 			isa = PBXGroup;
 			children = (
 				3580C9001D12B61D0027180B /* PoCAPICore */,
-				3580CE141D12B6220027180B /* sfhtapi_Prefix.pch */,
+				3580CE141D12B6220027180B /* apisdk_Prefix.pch */,
 			);
-			path = sfhtapi;
+			path = apisdk;
 			sourceTree = "<group>";
 		};
 		3580C9001D12B61D0027180B /* PoCAPICore */ = {
@@ -214,9 +214,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3580C1481D12B4E80027180B /* sfhtapi */ = {
+		3580C1481D12B4E80027180B /* apisdk */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3580C1521D12B4E80027180B /* Build configuration list for PBXNativeTarget "sfhtapi" */;
+			buildConfigurationList = 3580C1521D12B4E80027180B /* Build configuration list for PBXNativeTarget "apisdk" */;
 			buildPhases = (
 				3580C1451D12B4E80027180B /* Sources */,
 				3580C1461D12B4E80027180B /* Frameworks */,
@@ -226,9 +226,9 @@
 			);
 			dependencies = (
 			);
-			name = sfhtapi;
-			productName = sfhtapi;
-			productReference = 3580C1491D12B4E80027180B /* libsfhtapi.a */;
+			name = apisdk;
+			productName = apisdk;
+			productReference = 3580C1491D12B4E80027180B /* libapisdk.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -245,7 +245,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3580C1441D12B4E80027180B /* Build configuration list for PBXProject "sfhtapi" */;
+			buildConfigurationList = 3580C1441D12B4E80027180B /* Build configuration list for PBXProject "apisdk" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -257,7 +257,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3580C1481D12B4E80027180B /* sfhtapi */,
+				3580C1481D12B4E80027180B /* apisdk */,
 			);
 		};
 /* End PBXProject section */
@@ -323,7 +323,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREFIX_HEADER = sfhtapi/sfhtapi_Prefix.pch;
+				GCC_PREFIX_HEADER = apisdk/apisdk_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -365,7 +365,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = sfhtapi/sfhtapi_Prefix.pch;
+				GCC_PREFIX_HEADER = apisdk/apisdk_Prefix.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -400,7 +400,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3580C1441D12B4E80027180B /* Build configuration list for PBXProject "sfhtapi" */ = {
+		3580C1441D12B4E80027180B /* Build configuration list for PBXProject "apisdk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3580C1501D12B4E80027180B /* Debug */,
@@ -409,7 +409,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3580C1521D12B4E80027180B /* Build configuration list for PBXNativeTarget "sfhtapi" */ = {
+		3580C1521D12B4E80027180B /* Build configuration list for PBXNativeTarget "apisdk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3580C1531D12B4E80027180B /* Debug */,
