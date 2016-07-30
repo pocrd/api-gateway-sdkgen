@@ -1,13 +1,10 @@
 // Auto Generated.  DO NOT EDIT!
 package net.pocrd.m.app.client.api.resp;
-    
+
 import java.util.ArrayList;
 import java.util.List;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonParser;
+import com.google.gson.*;
 
 public class Api_StringArrayResp {
 
@@ -35,8 +32,8 @@ public class Api_StringArrayResp {
             
             /* 字符串数组返回值 */
             element = json.get("value");
-            JsonArray valueArray = element.getAsJsonArray();
             if (element != null) {
+                JsonArray valueArray = element.getAsJsonArray();
                 int len = valueArray.size();
                 result.value = new ArrayList<String>(len);
                 for (int i = 0; i < len; i++) {
@@ -63,7 +60,7 @@ public class Api_StringArrayResp {
         if (this.value != null) {
             JsonArray valueArray = new JsonArray();
             for (String value : this.value) {
-                valueArray.add(value);
+                valueArray.add(new JsonPrimitive(value));
             }
             json.add("value", valueArray);
         }

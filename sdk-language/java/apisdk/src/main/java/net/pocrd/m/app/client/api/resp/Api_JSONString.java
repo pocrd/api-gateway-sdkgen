@@ -1,9 +1,7 @@
 // Auto Generated.  DO NOT EDIT!
 package net.pocrd.m.app.client.api.resp;
-    
-import com.google.gson.JsonObject;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonParser;
+
+import com.google.gson.*;
 
 public class Api_JSONString {
 

@@ -1,13 +1,10 @@
 // Auto Generated.  DO NOT EDIT!
 package net.pocrd.m.app.client.api.resp;
-    
+
 import java.util.ArrayList;
 import java.util.List;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonParser;
+import com.google.gson.*;
 
 public class Api_Response {
 
@@ -83,8 +80,8 @@ public class Api_Response {
       
             /* API调用状态，code的信息请参考ApiCode定义文件 */
             element = json.get("stateList");
-            JsonArray stateListArray = element.getAsJsonArray();
             if (element != null) {
+                JsonArray stateListArray = element.getAsJsonArray();
                 int len = stateListArray.size();
                 result.stateList = new ArrayList<Api_CallState>(len);
                 for (int i = 0; i < len; i++) {
@@ -97,8 +94,8 @@ public class Api_Response {
       
             /* 服务端返回的通知事件集合 */
             element = json.get("notificationList");
-            JsonArray notificationListArray = element.getAsJsonArray();
             if (element != null) {
+                JsonArray notificationListArray = element.getAsJsonArray();
                 int len = notificationListArray.size();
                 result.notificationList = new ArrayList<Api_KeyValuePair>(len);
                 for (int i = 0; i < len; i++) {
