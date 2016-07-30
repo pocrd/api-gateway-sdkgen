@@ -406,7 +406,7 @@
                       return @"未找到对应的diamond配置";
               
         }
-        case PoCApiCode_LOGISTICS_JAXB_TRANPoCER_ERR_2000003: {
+        case PoCApiCode_LOGISTICS_JAXB_TRANSFER_ERR_2000003: {
                       return @"JAXB转换XML为对象时发生异常";
               
         }
@@ -1342,71 +1342,71 @@
                       return @"损溢单参数不合法";
               
         }
-        case PoCApiCode_TRANPoCER_ORDER_INNER_EXCEPTION_2250000: {
+        case PoCApiCode_TRANSFER_ORDER_INNER_EXCEPTION_2250000: {
                       return @"调拨单系统内部异常";
               
         }
-        case PoCApiCode_TRANPoCER_ORDER_SKU_FREEZE_FAILURE_ERROR_2250001: {
+        case PoCApiCode_TRANSFER_ORDER_SKU_FREEZE_FAILURE_ERROR_2250001: {
                       return @"调拨明细冻结失败";
               
         }
-        case PoCApiCode_TRANPoCER_ORDER_NOT_FOUND_ERROR_2250002: {
+        case PoCApiCode_TRANSFER_ORDER_NOT_FOUND_ERROR_2250002: {
                       return @"未找到调拨单记录";
               
         }
-        case PoCApiCode_TRANPoCER_ORDER_SKU_NOT_FOUND_ERROR_2250003: {
+        case PoCApiCode_TRANSFER_ORDER_SKU_NOT_FOUND_ERROR_2250003: {
                       return @"未找到调拨单明细记录";
               
         }
-        case PoCApiCode_TRANPoCER_ORDER_CONFIRM_FAIL_CODE_ERROR_2250004: {
+        case PoCApiCode_TRANSFER_ORDER_CONFIRM_FAIL_CODE_ERROR_2250004: {
                       return @"下发调拨单确认命令失败";
               
         }
-        case PoCApiCode_TRANPoCER_ORDER_CANCEL_FAIL_CODE_ERROR_2250005: {
+        case PoCApiCode_TRANSFER_ORDER_CANCEL_FAIL_CODE_ERROR_2250005: {
                       return @"调拨单取消失败";
               
         }
-        case PoCApiCode_TRANPoCER_ORDER_BATCH_STOCK_NOT_ENOUGH_CODE_ERROR_2250006: {
+        case PoCApiCode_TRANSFER_ORDER_BATCH_STOCK_NOT_ENOUGH_CODE_ERROR_2250006: {
                       return @"批次实物库存小于申请调拨数量";
               
         }
-        case PoCApiCode_TRANPoCER_ORDER_SALE_STOCK_NOT_ENOUGH_CODE_ERROR_2250007: {
+        case PoCApiCode_TRANSFER_ORDER_SALE_STOCK_NOT_ENOUGH_CODE_ERROR_2250007: {
                       return @"可售库存小于申请调拨数量";
               
         }
-        case PoCApiCode_TRANPoCER_ORDER_PARAMS_ILLEGAL_2250008: {
+        case PoCApiCode_TRANSFER_ORDER_PARAMS_ILLEGAL_2250008: {
                       return @"调拨单参数不合法";
               
         }
-        case PoCApiCode_TRANPoCER_ORDER_NOT_EXIST_2250009: {
+        case PoCApiCode_TRANSFER_ORDER_NOT_EXIST_2250009: {
                       return @"调拨单不存在";
               
         }
-        case PoCApiCode_TRANPoCER_ORDER_STATE_NOT_WAIT_AUDIT_2250010: {
+        case PoCApiCode_TRANSFER_ORDER_STATE_NOT_WAIT_AUDIT_2250010: {
                       return @"只有待审批状态的调拨单才能审批";
               
         }
-        case PoCApiCode_TRANPoCER_ORDER_STATE_NOT_INIT_2250011: {
+        case PoCApiCode_TRANSFER_ORDER_STATE_NOT_INIT_2250011: {
                       return @"只有初始化状态的调拨单才能提交审批";
               
         }
-        case PoCApiCode_TRANPoCER_WAREHOUSE_NOT_EXIST_2250012: {
+        case PoCApiCode_TRANSFER_WAREHOUSE_NOT_EXIST_2250012: {
                       return @"调拨单的调出仓库不存在";
               
         }
-        case PoCApiCode_TRANPoCER_ORDER_STOCKOUT_ORDER_SYN_ERROR_2250013: {
+        case PoCApiCode_TRANSFER_ORDER_STOCKOUT_ORDER_SYN_ERROR_2250013: {
                       return @"同步出库单给仓库异常";
               
         }
-        case PoCApiCode_TRANPoCER_OUT_ORDER_EXIST_2250014: {
+        case PoCApiCode_TRANSFER_OUT_ORDER_EXIST_2250014: {
                       return @"调拨出库单已存在";
               
         }
-        case PoCApiCode_TRANPoCER_IN_ORDER_EXIST_2250015: {
+        case PoCApiCode_TRANSFER_IN_ORDER_EXIST_2250015: {
                       return @"调拨入库单已存在";
               
         }
-        case PoCApiCode_TRANPoCER_ORDER_CALL_GOODS_SYSTEM_REDUCE_CHANNEL_COUNT_ERROR_2250016: {
+        case PoCApiCode_TRANSFER_ORDER_CALL_GOODS_SYSTEM_REDUCE_CHANNEL_COUNT_ERROR_2250016: {
                       return @"调拨单调用商品系统接口扣减渠道库存失败";
               
         }
@@ -2410,7 +2410,7 @@
                       return @"退款用户和订单用户不匹配";
               
         }
-        case PoCApiCode_GET_PoCHT_USER_ERROR_4001901: {
+        case PoCApiCode_GET_SFHT_USER_ERROR_4001901: {
                       return @"开放平台获取用户号失败";
               
         }
@@ -3722,7 +3722,7 @@
                       return @"获取评论状态失败";
               
         }
-        case PoCApiCode_PUSH_SATIPoC_ERROR_14027000: {
+        case PoCApiCode_PUSH_SATISF_ERROR_14027000: {
                       return @"发表订单满意度失败";
               
         }

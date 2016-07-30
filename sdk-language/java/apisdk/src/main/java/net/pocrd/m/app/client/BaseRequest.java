@@ -93,8 +93,7 @@ public abstract class BaseRequest<T> {
     }
 
     protected void fillResponse(String rawString) {
-        // do noting
-        // the request which return a raw string will overwrite this method
+        // 只有返回RawString的子类才会给出如下实现,否则子类实现中也应什么都不做
         //        response.code = 0;
         //        response.length = rawString.length();
         //        response.message = "Success";
