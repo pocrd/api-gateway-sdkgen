@@ -7,30 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3580D0931D12B6220027180B /* SFApiAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3580CE021D12B6220027180B /* SFApiAccessor.m */; };
-		3580D0941D12B6220027180B /* SFApiContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 3580CE051D12B6220027180B /* SFApiContext.m */; };
-		3580D0951D12B6220027180B /* SFBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3580CE071D12B6220027180B /* SFBaseRequest.m */; };
-		3580D0961D12B6220027180B /* SFFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3580CE091D12B6220027180B /* SFFileRequest.m */; };
-		3580D0971D12B6220027180B /* SFFileResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3580CE0B1D12B6220027180B /* SFFileResp.m */; };
-		3580D0981D12B6220027180B /* SFLocalException.m in Sources */ = {isa = PBXBuildFile; fileRef = 3580CE0D1D12B6220027180B /* SFLocalException.m */; };
-		3580D0991D12B6220027180B /* SFResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3580CE0F1D12B6220027180B /* SFResponse.m */; };
-		3580D09A1D12B6220027180B /* SFServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3580CE111D12B6220027180B /* SFServerResponse.m */; };
-		3580D09B1D12B6220027180B /* SFSystemVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3580CE131D12B6220027180B /* SFSystemVersion.m */; };
-		35E79B031D48917600B0B60F /* SFApiCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E795CD1D48917000B0B60F /* SFApiCode.m */; };
-		35E79C741D48917600B0B60F /* SFApi_BoolArrayResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E798B11D48917300B0B60F /* SFApi_BoolArrayResp.m */; };
-		35E79C751D48917600B0B60F /* SFApi_BoolResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E798B31D48917300B0B60F /* SFApi_BoolResp.m */; };
-		35E79C7F1D48917600B0B60F /* SFApi_CallState.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E798C71D48917300B0B60F /* SFApi_CallState.m */; };
-		35E79CA81D48917600B0B60F /* SFApi_CreditNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E799191D48917300B0B60F /* SFApi_CreditNotification.m */; };
-		35E79CD51D48917600B0B60F /* SFApi_JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E799731D48917400B0B60F /* SFApi_JSONString.m */; };
-		35E79CD61D48917600B0B60F /* SFApi_KeyValueList.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E799751D48917400B0B60F /* SFApi_KeyValueList.m */; };
-		35E79CD71D48917600B0B60F /* SFApi_KeyValuePair.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E799771D48917400B0B60F /* SFApi_KeyValuePair.m */; };
-		35E79CD81D48917600B0B60F /* SFApi_KeyValuePair_ArrayResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E799791D48917400B0B60F /* SFApi_KeyValuePair_ArrayResp.m */; };
-		35E79CD91D48917600B0B60F /* SFApi_LongResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E7997B1D48917400B0B60F /* SFApi_LongResp.m */; };
-		35E79CE21D48917600B0B60F /* SFApi_NumberResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E7998D1D48917400B0B60F /* SFApi_NumberResp.m */; };
-		35E79D451D48917600B0B60F /* SFApi_Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E79A531D48917500B0B60F /* SFApi_Response.m */; };
-		35E79D711D48917600B0B60F /* SFApi_StringArrayResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E79AAB1D48917500B0B60F /* SFApi_StringArrayResp.m */; };
-		35E79D721D48917600B0B60F /* SFApi_StringResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E79AAD1D48917500B0B60F /* SFApi_StringResp.m */; };
-		5FCF565A1D4A56D200EFE8E1 /* SFApi_MessageNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCF56421D4A56D200EFE8E1 /* SFApi_MessageNotification.m */; };
+		3580D0931D12B6220027180B /* PoCApiAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3580CE021D12B6220027180B /* PoCApiAccessor.m */; };
+		3580D0941D12B6220027180B /* PoCApiContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 3580CE051D12B6220027180B /* PoCApiContext.m */; };
+		3580D0951D12B6220027180B /* PoCBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3580CE071D12B6220027180B /* PoCBaseRequest.m */; };
+		3580D0961D12B6220027180B /* PoCFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3580CE091D12B6220027180B /* PoCFileRequest.m */; };
+		3580D0971D12B6220027180B /* PoCFileResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3580CE0B1D12B6220027180B /* PoCFileResp.m */; };
+		3580D0981D12B6220027180B /* PoCLocalException.m in Sources */ = {isa = PBXBuildFile; fileRef = 3580CE0D1D12B6220027180B /* PoCLocalException.m */; };
+		3580D0991D12B6220027180B /* PoCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3580CE0F1D12B6220027180B /* PoCResponse.m */; };
+		3580D09A1D12B6220027180B /* PoCServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3580CE111D12B6220027180B /* PoCServerResponse.m */; };
+		3580D09B1D12B6220027180B /* PoCSystemVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3580CE131D12B6220027180B /* PoCSystemVersion.m */; };
+		35E79B031D48917600B0B60F /* PoCApiCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E795CD1D48917000B0B60F /* PoCApiCode.m */; };
+		35E79C741D48917600B0B60F /* PoCApi_BoolArrayResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E798B11D48917300B0B60F /* PoCApi_BoolArrayResp.m */; };
+		35E79C751D48917600B0B60F /* PoCApi_BoolResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E798B31D48917300B0B60F /* PoCApi_BoolResp.m */; };
+		35E79C7F1D48917600B0B60F /* PoCApi_CallState.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E798C71D48917300B0B60F /* PoCApi_CallState.m */; };
+		35E79CA81D48917600B0B60F /* PoCApi_CreditNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E799191D48917300B0B60F /* PoCApi_CreditNotification.m */; };
+		35E79CD51D48917600B0B60F /* PoCApi_JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E799731D48917400B0B60F /* PoCApi_JSONString.m */; };
+		35E79CD61D48917600B0B60F /* PoCApi_KeyValueList.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E799751D48917400B0B60F /* PoCApi_KeyValueList.m */; };
+		35E79CD71D48917600B0B60F /* PoCApi_KeyValuePair.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E799771D48917400B0B60F /* PoCApi_KeyValuePair.m */; };
+		35E79CD81D48917600B0B60F /* PoCApi_KeyValuePair_ArrayResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E799791D48917400B0B60F /* PoCApi_KeyValuePair_ArrayResp.m */; };
+		35E79CD91D48917600B0B60F /* PoCApi_LongResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E7997B1D48917400B0B60F /* PoCApi_LongResp.m */; };
+		35E79CE21D48917600B0B60F /* PoCApi_NumberResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E7998D1D48917400B0B60F /* PoCApi_NumberResp.m */; };
+		35E79D451D48917600B0B60F /* PoCApi_Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E79A531D48917500B0B60F /* PoCApi_Response.m */; };
+		35E79D711D48917600B0B60F /* PoCApi_StringArrayResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E79AAB1D48917500B0B60F /* PoCApi_StringArrayResp.m */; };
+		35E79D721D48917600B0B60F /* PoCApi_StringResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E79AAD1D48917500B0B60F /* PoCApi_StringResp.m */; };
+		5FCF565A1D4A56D200EFE8E1 /* PoCApi_MessageNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCF56421D4A56D200EFE8E1 /* PoCApi_MessageNotification.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,58 +47,58 @@
 
 /* Begin PBXFileReference section */
 		3580C1491D12B4E80027180B /* libsfhtapi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsfhtapi.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3580CE011D12B6220027180B /* SFApiAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFApiAccessor.h; sourceTree = "<group>"; };
-		3580CE021D12B6220027180B /* SFApiAccessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFApiAccessor.m; sourceTree = "<group>"; };
-		3580CE031D12B6220027180B /* SFApiConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFApiConfig.h; sourceTree = "<group>"; };
-		3580CE041D12B6220027180B /* SFApiContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFApiContext.h; sourceTree = "<group>"; };
-		3580CE051D12B6220027180B /* SFApiContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFApiContext.m; sourceTree = "<group>"; };
-		3580CE061D12B6220027180B /* SFBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBaseRequest.h; sourceTree = "<group>"; };
-		3580CE071D12B6220027180B /* SFBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBaseRequest.m; sourceTree = "<group>"; };
-		3580CE081D12B6220027180B /* SFFileRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFFileRequest.h; sourceTree = "<group>"; };
-		3580CE091D12B6220027180B /* SFFileRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFileRequest.m; sourceTree = "<group>"; };
-		3580CE0A1D12B6220027180B /* SFFileResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFFileResp.h; sourceTree = "<group>"; };
-		3580CE0B1D12B6220027180B /* SFFileResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFileResp.m; sourceTree = "<group>"; };
-		3580CE0C1D12B6220027180B /* SFLocalException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLocalException.h; sourceTree = "<group>"; };
-		3580CE0D1D12B6220027180B /* SFLocalException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLocalException.m; sourceTree = "<group>"; };
-		3580CE0E1D12B6220027180B /* SFResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFResponse.h; sourceTree = "<group>"; };
-		3580CE0F1D12B6220027180B /* SFResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFResponse.m; sourceTree = "<group>"; };
-		3580CE101D12B6220027180B /* SFServerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFServerResponse.h; sourceTree = "<group>"; };
-		3580CE111D12B6220027180B /* SFServerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFServerResponse.m; sourceTree = "<group>"; };
-		3580CE121D12B6220027180B /* SFSystemVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSystemVersion.h; sourceTree = "<group>"; };
-		3580CE131D12B6220027180B /* SFSystemVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSystemVersion.m; sourceTree = "<group>"; };
+		3580CE011D12B6220027180B /* PoCApiAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApiAccessor.h; sourceTree = "<group>"; };
+		3580CE021D12B6220027180B /* PoCApiAccessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApiAccessor.m; sourceTree = "<group>"; };
+		3580CE031D12B6220027180B /* PoCApiConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApiConfig.h; sourceTree = "<group>"; };
+		3580CE041D12B6220027180B /* PoCApiContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApiContext.h; sourceTree = "<group>"; };
+		3580CE051D12B6220027180B /* PoCApiContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApiContext.m; sourceTree = "<group>"; };
+		3580CE061D12B6220027180B /* PoCBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCBaseRequest.h; sourceTree = "<group>"; };
+		3580CE071D12B6220027180B /* PoCBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCBaseRequest.m; sourceTree = "<group>"; };
+		3580CE081D12B6220027180B /* PoCFileRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCFileRequest.h; sourceTree = "<group>"; };
+		3580CE091D12B6220027180B /* PoCFileRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCFileRequest.m; sourceTree = "<group>"; };
+		3580CE0A1D12B6220027180B /* PoCFileResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCFileResp.h; sourceTree = "<group>"; };
+		3580CE0B1D12B6220027180B /* PoCFileResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCFileResp.m; sourceTree = "<group>"; };
+		3580CE0C1D12B6220027180B /* PoCLocalException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCLocalException.h; sourceTree = "<group>"; };
+		3580CE0D1D12B6220027180B /* PoCLocalException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCLocalException.m; sourceTree = "<group>"; };
+		3580CE0E1D12B6220027180B /* PoCResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCResponse.h; sourceTree = "<group>"; };
+		3580CE0F1D12B6220027180B /* PoCResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCResponse.m; sourceTree = "<group>"; };
+		3580CE101D12B6220027180B /* PoCServerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCServerResponse.h; sourceTree = "<group>"; };
+		3580CE111D12B6220027180B /* PoCServerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCServerResponse.m; sourceTree = "<group>"; };
+		3580CE121D12B6220027180B /* PoCSystemVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCSystemVersion.h; sourceTree = "<group>"; };
+		3580CE131D12B6220027180B /* PoCSystemVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCSystemVersion.m; sourceTree = "<group>"; };
 		3580CE141D12B6220027180B /* sfhtapi_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sfhtapi_Prefix.pch; sourceTree = "<group>"; };
-		35E795CC1D48917000B0B60F /* SFApiCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFApiCode.h; sourceTree = "<group>"; };
-		35E795CD1D48917000B0B60F /* SFApiCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFApiCode.m; sourceTree = "<group>"; };
-		35E795CE1D48917000B0B60F /* SFApiRequestInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFApiRequestInclude.h; sourceTree = "<group>"; };
-		35E798B01D48917300B0B60F /* SFApi_BoolArrayResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFApi_BoolArrayResp.h; sourceTree = "<group>"; };
-		35E798B11D48917300B0B60F /* SFApi_BoolArrayResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFApi_BoolArrayResp.m; sourceTree = "<group>"; };
-		35E798B21D48917300B0B60F /* SFApi_BoolResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFApi_BoolResp.h; sourceTree = "<group>"; };
-		35E798B31D48917300B0B60F /* SFApi_BoolResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFApi_BoolResp.m; sourceTree = "<group>"; };
-		35E798C61D48917300B0B60F /* SFApi_CallState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFApi_CallState.h; sourceTree = "<group>"; };
-		35E798C71D48917300B0B60F /* SFApi_CallState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFApi_CallState.m; sourceTree = "<group>"; };
-		35E799181D48917300B0B60F /* SFApi_CreditNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFApi_CreditNotification.h; sourceTree = "<group>"; };
-		35E799191D48917300B0B60F /* SFApi_CreditNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFApi_CreditNotification.m; sourceTree = "<group>"; };
-		35E799721D48917400B0B60F /* SFApi_JSONString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFApi_JSONString.h; sourceTree = "<group>"; };
-		35E799731D48917400B0B60F /* SFApi_JSONString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFApi_JSONString.m; sourceTree = "<group>"; };
-		35E799741D48917400B0B60F /* SFApi_KeyValueList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFApi_KeyValueList.h; sourceTree = "<group>"; };
-		35E799751D48917400B0B60F /* SFApi_KeyValueList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFApi_KeyValueList.m; sourceTree = "<group>"; };
-		35E799761D48917400B0B60F /* SFApi_KeyValuePair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFApi_KeyValuePair.h; sourceTree = "<group>"; };
-		35E799771D48917400B0B60F /* SFApi_KeyValuePair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFApi_KeyValuePair.m; sourceTree = "<group>"; };
-		35E799781D48917400B0B60F /* SFApi_KeyValuePair_ArrayResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFApi_KeyValuePair_ArrayResp.h; sourceTree = "<group>"; };
-		35E799791D48917400B0B60F /* SFApi_KeyValuePair_ArrayResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFApi_KeyValuePair_ArrayResp.m; sourceTree = "<group>"; };
-		35E7997A1D48917400B0B60F /* SFApi_LongResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFApi_LongResp.h; sourceTree = "<group>"; };
-		35E7997B1D48917400B0B60F /* SFApi_LongResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFApi_LongResp.m; sourceTree = "<group>"; };
-		35E7998C1D48917400B0B60F /* SFApi_NumberResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFApi_NumberResp.h; sourceTree = "<group>"; };
-		35E7998D1D48917400B0B60F /* SFApi_NumberResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFApi_NumberResp.m; sourceTree = "<group>"; };
-		35E79A521D48917500B0B60F /* SFApi_Response.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFApi_Response.h; sourceTree = "<group>"; };
-		35E79A531D48917500B0B60F /* SFApi_Response.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFApi_Response.m; sourceTree = "<group>"; };
-		35E79AAA1D48917500B0B60F /* SFApi_StringArrayResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFApi_StringArrayResp.h; sourceTree = "<group>"; };
-		35E79AAB1D48917500B0B60F /* SFApi_StringArrayResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFApi_StringArrayResp.m; sourceTree = "<group>"; };
-		35E79AAC1D48917500B0B60F /* SFApi_StringResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFApi_StringResp.h; sourceTree = "<group>"; };
-		35E79AAD1D48917500B0B60F /* SFApi_StringResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFApi_StringResp.m; sourceTree = "<group>"; };
-		35E79B021D48917600B0B60F /* SFApiResponseInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFApiResponseInclude.h; sourceTree = "<group>"; };
-		5FCF56411D4A56D200EFE8E1 /* SFApi_MessageNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFApi_MessageNotification.h; sourceTree = "<group>"; };
-		5FCF56421D4A56D200EFE8E1 /* SFApi_MessageNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFApi_MessageNotification.m; sourceTree = "<group>"; };
+		35E795CC1D48917000B0B60F /* PoCApiCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApiCode.h; sourceTree = "<group>"; };
+		35E795CD1D48917000B0B60F /* PoCApiCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApiCode.m; sourceTree = "<group>"; };
+		35E795CE1D48917000B0B60F /* PoCApiRequestInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApiRequestInclude.h; sourceTree = "<group>"; };
+		35E798B01D48917300B0B60F /* PoCApi_BoolArrayResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApi_BoolArrayResp.h; sourceTree = "<group>"; };
+		35E798B11D48917300B0B60F /* PoCApi_BoolArrayResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApi_BoolArrayResp.m; sourceTree = "<group>"; };
+		35E798B21D48917300B0B60F /* PoCApi_BoolResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApi_BoolResp.h; sourceTree = "<group>"; };
+		35E798B31D48917300B0B60F /* PoCApi_BoolResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApi_BoolResp.m; sourceTree = "<group>"; };
+		35E798C61D48917300B0B60F /* PoCApi_CallState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApi_CallState.h; sourceTree = "<group>"; };
+		35E798C71D48917300B0B60F /* PoCApi_CallState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApi_CallState.m; sourceTree = "<group>"; };
+		35E799181D48917300B0B60F /* PoCApi_CreditNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApi_CreditNotification.h; sourceTree = "<group>"; };
+		35E799191D48917300B0B60F /* PoCApi_CreditNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApi_CreditNotification.m; sourceTree = "<group>"; };
+		35E799721D48917400B0B60F /* PoCApi_JSONString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApi_JSONString.h; sourceTree = "<group>"; };
+		35E799731D48917400B0B60F /* PoCApi_JSONString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApi_JSONString.m; sourceTree = "<group>"; };
+		35E799741D48917400B0B60F /* PoCApi_KeyValueList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApi_KeyValueList.h; sourceTree = "<group>"; };
+		35E799751D48917400B0B60F /* PoCApi_KeyValueList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApi_KeyValueList.m; sourceTree = "<group>"; };
+		35E799761D48917400B0B60F /* PoCApi_KeyValuePair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApi_KeyValuePair.h; sourceTree = "<group>"; };
+		35E799771D48917400B0B60F /* PoCApi_KeyValuePair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApi_KeyValuePair.m; sourceTree = "<group>"; };
+		35E799781D48917400B0B60F /* PoCApi_KeyValuePair_ArrayResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApi_KeyValuePair_ArrayResp.h; sourceTree = "<group>"; };
+		35E799791D48917400B0B60F /* PoCApi_KeyValuePair_ArrayResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApi_KeyValuePair_ArrayResp.m; sourceTree = "<group>"; };
+		35E7997A1D48917400B0B60F /* PoCApi_LongResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApi_LongResp.h; sourceTree = "<group>"; };
+		35E7997B1D48917400B0B60F /* PoCApi_LongResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApi_LongResp.m; sourceTree = "<group>"; };
+		35E7998C1D48917400B0B60F /* PoCApi_NumberResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApi_NumberResp.h; sourceTree = "<group>"; };
+		35E7998D1D48917400B0B60F /* PoCApi_NumberResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApi_NumberResp.m; sourceTree = "<group>"; };
+		35E79A521D48917500B0B60F /* PoCApi_Response.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApi_Response.h; sourceTree = "<group>"; };
+		35E79A531D48917500B0B60F /* PoCApi_Response.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApi_Response.m; sourceTree = "<group>"; };
+		35E79AAA1D48917500B0B60F /* PoCApi_StringArrayResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApi_StringArrayResp.h; sourceTree = "<group>"; };
+		35E79AAB1D48917500B0B60F /* PoCApi_StringArrayResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApi_StringArrayResp.m; sourceTree = "<group>"; };
+		35E79AAC1D48917500B0B60F /* PoCApi_StringResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApi_StringResp.h; sourceTree = "<group>"; };
+		35E79AAD1D48917500B0B60F /* PoCApi_StringResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApi_StringResp.m; sourceTree = "<group>"; };
+		35E79B021D48917600B0B60F /* PoCApiResponseInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApiResponseInclude.h; sourceTree = "<group>"; };
+		5FCF56411D4A56D200EFE8E1 /* PoCApi_MessageNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApi_MessageNotification.h; sourceTree = "<group>"; };
+		5FCF56421D4A56D200EFE8E1 /* PoCApi_MessageNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApi_MessageNotification.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,46 +131,46 @@
 		3580C8FF1D12B61D0027180B /* sfhtapi */ = {
 			isa = PBXGroup;
 			children = (
-				3580C9001D12B61D0027180B /* SFAPICore */,
+				3580C9001D12B61D0027180B /* PoCAPICore */,
 				3580CE141D12B6220027180B /* sfhtapi_Prefix.pch */,
 			);
 			path = sfhtapi;
 			sourceTree = "<group>";
 		};
-		3580C9001D12B61D0027180B /* SFAPICore */ = {
+		3580C9001D12B61D0027180B /* PoCAPICore */ = {
 			isa = PBXGroup;
 			children = (
 				35E795CB1D48917000B0B60F /* Request */,
 				35E798811D48917300B0B60F /* Response */,
-				3580CE011D12B6220027180B /* SFApiAccessor.h */,
-				3580CE021D12B6220027180B /* SFApiAccessor.m */,
-				3580CE031D12B6220027180B /* SFApiConfig.h */,
-				3580CE041D12B6220027180B /* SFApiContext.h */,
-				3580CE051D12B6220027180B /* SFApiContext.m */,
-				3580CE061D12B6220027180B /* SFBaseRequest.h */,
-				3580CE071D12B6220027180B /* SFBaseRequest.m */,
-				3580CE081D12B6220027180B /* SFFileRequest.h */,
-				3580CE091D12B6220027180B /* SFFileRequest.m */,
-				3580CE0A1D12B6220027180B /* SFFileResp.h */,
-				3580CE0B1D12B6220027180B /* SFFileResp.m */,
-				3580CE0C1D12B6220027180B /* SFLocalException.h */,
-				3580CE0D1D12B6220027180B /* SFLocalException.m */,
-				3580CE0E1D12B6220027180B /* SFResponse.h */,
-				3580CE0F1D12B6220027180B /* SFResponse.m */,
-				3580CE101D12B6220027180B /* SFServerResponse.h */,
-				3580CE111D12B6220027180B /* SFServerResponse.m */,
-				3580CE121D12B6220027180B /* SFSystemVersion.h */,
-				3580CE131D12B6220027180B /* SFSystemVersion.m */,
+				3580CE011D12B6220027180B /* PoCApiAccessor.h */,
+				3580CE021D12B6220027180B /* PoCApiAccessor.m */,
+				3580CE031D12B6220027180B /* PoCApiConfig.h */,
+				3580CE041D12B6220027180B /* PoCApiContext.h */,
+				3580CE051D12B6220027180B /* PoCApiContext.m */,
+				3580CE061D12B6220027180B /* PoCBaseRequest.h */,
+				3580CE071D12B6220027180B /* PoCBaseRequest.m */,
+				3580CE081D12B6220027180B /* PoCFileRequest.h */,
+				3580CE091D12B6220027180B /* PoCFileRequest.m */,
+				3580CE0A1D12B6220027180B /* PoCFileResp.h */,
+				3580CE0B1D12B6220027180B /* PoCFileResp.m */,
+				3580CE0C1D12B6220027180B /* PoCLocalException.h */,
+				3580CE0D1D12B6220027180B /* PoCLocalException.m */,
+				3580CE0E1D12B6220027180B /* PoCResponse.h */,
+				3580CE0F1D12B6220027180B /* PoCResponse.m */,
+				3580CE101D12B6220027180B /* PoCServerResponse.h */,
+				3580CE111D12B6220027180B /* PoCServerResponse.m */,
+				3580CE121D12B6220027180B /* PoCSystemVersion.h */,
+				3580CE131D12B6220027180B /* PoCSystemVersion.m */,
 			);
-			path = SFAPICore;
+			path = PoCAPICore;
 			sourceTree = "<group>";
 		};
 		35E795CB1D48917000B0B60F /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				35E795CC1D48917000B0B60F /* SFApiCode.h */,
-				35E795CD1D48917000B0B60F /* SFApiCode.m */,
-				35E795CE1D48917000B0B60F /* SFApiRequestInclude.h */,
+				35E795CC1D48917000B0B60F /* PoCApiCode.h */,
+				35E795CD1D48917000B0B60F /* PoCApiCode.m */,
+				35E795CE1D48917000B0B60F /* PoCApiRequestInclude.h */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -178,35 +178,35 @@
 		35E798811D48917300B0B60F /* Response */ = {
 			isa = PBXGroup;
 			children = (
-				5FCF56411D4A56D200EFE8E1 /* SFApi_MessageNotification.h */,
-				5FCF56421D4A56D200EFE8E1 /* SFApi_MessageNotification.m */,
-				35E798B01D48917300B0B60F /* SFApi_BoolArrayResp.h */,
-				35E798B11D48917300B0B60F /* SFApi_BoolArrayResp.m */,
-				35E798B21D48917300B0B60F /* SFApi_BoolResp.h */,
-				35E798B31D48917300B0B60F /* SFApi_BoolResp.m */,
-				35E798C61D48917300B0B60F /* SFApi_CallState.h */,
-				35E798C71D48917300B0B60F /* SFApi_CallState.m */,
-				35E799181D48917300B0B60F /* SFApi_CreditNotification.h */,
-				35E799191D48917300B0B60F /* SFApi_CreditNotification.m */,
-				35E799721D48917400B0B60F /* SFApi_JSONString.h */,
-				35E799731D48917400B0B60F /* SFApi_JSONString.m */,
-				35E799741D48917400B0B60F /* SFApi_KeyValueList.h */,
-				35E799751D48917400B0B60F /* SFApi_KeyValueList.m */,
-				35E799761D48917400B0B60F /* SFApi_KeyValuePair.h */,
-				35E799771D48917400B0B60F /* SFApi_KeyValuePair.m */,
-				35E799781D48917400B0B60F /* SFApi_KeyValuePair_ArrayResp.h */,
-				35E799791D48917400B0B60F /* SFApi_KeyValuePair_ArrayResp.m */,
-				35E7997A1D48917400B0B60F /* SFApi_LongResp.h */,
-				35E7997B1D48917400B0B60F /* SFApi_LongResp.m */,
-				35E7998C1D48917400B0B60F /* SFApi_NumberResp.h */,
-				35E7998D1D48917400B0B60F /* SFApi_NumberResp.m */,
-				35E79A521D48917500B0B60F /* SFApi_Response.h */,
-				35E79A531D48917500B0B60F /* SFApi_Response.m */,
-				35E79AAA1D48917500B0B60F /* SFApi_StringArrayResp.h */,
-				35E79AAB1D48917500B0B60F /* SFApi_StringArrayResp.m */,
-				35E79AAC1D48917500B0B60F /* SFApi_StringResp.h */,
-				35E79AAD1D48917500B0B60F /* SFApi_StringResp.m */,
-				35E79B021D48917600B0B60F /* SFApiResponseInclude.h */,
+				5FCF56411D4A56D200EFE8E1 /* PoCApi_MessageNotification.h */,
+				5FCF56421D4A56D200EFE8E1 /* PoCApi_MessageNotification.m */,
+				35E798B01D48917300B0B60F /* PoCApi_BoolArrayResp.h */,
+				35E798B11D48917300B0B60F /* PoCApi_BoolArrayResp.m */,
+				35E798B21D48917300B0B60F /* PoCApi_BoolResp.h */,
+				35E798B31D48917300B0B60F /* PoCApi_BoolResp.m */,
+				35E798C61D48917300B0B60F /* PoCApi_CallState.h */,
+				35E798C71D48917300B0B60F /* PoCApi_CallState.m */,
+				35E799181D48917300B0B60F /* PoCApi_CreditNotification.h */,
+				35E799191D48917300B0B60F /* PoCApi_CreditNotification.m */,
+				35E799721D48917400B0B60F /* PoCApi_JSONString.h */,
+				35E799731D48917400B0B60F /* PoCApi_JSONString.m */,
+				35E799741D48917400B0B60F /* PoCApi_KeyValueList.h */,
+				35E799751D48917400B0B60F /* PoCApi_KeyValueList.m */,
+				35E799761D48917400B0B60F /* PoCApi_KeyValuePair.h */,
+				35E799771D48917400B0B60F /* PoCApi_KeyValuePair.m */,
+				35E799781D48917400B0B60F /* PoCApi_KeyValuePair_ArrayResp.h */,
+				35E799791D48917400B0B60F /* PoCApi_KeyValuePair_ArrayResp.m */,
+				35E7997A1D48917400B0B60F /* PoCApi_LongResp.h */,
+				35E7997B1D48917400B0B60F /* PoCApi_LongResp.m */,
+				35E7998C1D48917400B0B60F /* PoCApi_NumberResp.h */,
+				35E7998D1D48917400B0B60F /* PoCApi_NumberResp.m */,
+				35E79A521D48917500B0B60F /* PoCApi_Response.h */,
+				35E79A531D48917500B0B60F /* PoCApi_Response.m */,
+				35E79AAA1D48917500B0B60F /* PoCApi_StringArrayResp.h */,
+				35E79AAB1D48917500B0B60F /* PoCApi_StringArrayResp.m */,
+				35E79AAC1D48917500B0B60F /* PoCApi_StringResp.h */,
+				35E79AAD1D48917500B0B60F /* PoCApi_StringResp.m */,
+				35E79B021D48917600B0B60F /* PoCApiResponseInclude.h */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -267,30 +267,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35E79C7F1D48917600B0B60F /* SFApi_CallState.m in Sources */,
-				3580D09A1D12B6220027180B /* SFServerResponse.m in Sources */,
-				5FCF565A1D4A56D200EFE8E1 /* SFApi_MessageNotification.m in Sources */,
-				35E79CD81D48917600B0B60F /* SFApi_KeyValuePair_ArrayResp.m in Sources */,
-				35E79CD91D48917600B0B60F /* SFApi_LongResp.m in Sources */,
-				3580D0931D12B6220027180B /* SFApiAccessor.m in Sources */,
-				35E79D451D48917600B0B60F /* SFApi_Response.m in Sources */,
-				35E79CD71D48917600B0B60F /* SFApi_KeyValuePair.m in Sources */,
-				3580D0991D12B6220027180B /* SFResponse.m in Sources */,
-				3580D0981D12B6220027180B /* SFLocalException.m in Sources */,
-				35E79D711D48917600B0B60F /* SFApi_StringArrayResp.m in Sources */,
-				35E79CD51D48917600B0B60F /* SFApi_JSONString.m in Sources */,
-				35E79C741D48917600B0B60F /* SFApi_BoolArrayResp.m in Sources */,
-				3580D0941D12B6220027180B /* SFApiContext.m in Sources */,
-				3580D0951D12B6220027180B /* SFBaseRequest.m in Sources */,
-				3580D09B1D12B6220027180B /* SFSystemVersion.m in Sources */,
-				35E79CD61D48917600B0B60F /* SFApi_KeyValueList.m in Sources */,
-				35E79C751D48917600B0B60F /* SFApi_BoolResp.m in Sources */,
-				35E79CA81D48917600B0B60F /* SFApi_CreditNotification.m in Sources */,
-				35E79CE21D48917600B0B60F /* SFApi_NumberResp.m in Sources */,
-				3580D0961D12B6220027180B /* SFFileRequest.m in Sources */,
-				35E79D721D48917600B0B60F /* SFApi_StringResp.m in Sources */,
-				35E79B031D48917600B0B60F /* SFApiCode.m in Sources */,
-				3580D0971D12B6220027180B /* SFFileResp.m in Sources */,
+				35E79C7F1D48917600B0B60F /* PoCApi_CallState.m in Sources */,
+				3580D09A1D12B6220027180B /* PoCServerResponse.m in Sources */,
+				5FCF565A1D4A56D200EFE8E1 /* PoCApi_MessageNotification.m in Sources */,
+				35E79CD81D48917600B0B60F /* PoCApi_KeyValuePair_ArrayResp.m in Sources */,
+				35E79CD91D48917600B0B60F /* PoCApi_LongResp.m in Sources */,
+				3580D0931D12B6220027180B /* PoCApiAccessor.m in Sources */,
+				35E79D451D48917600B0B60F /* PoCApi_Response.m in Sources */,
+				35E79CD71D48917600B0B60F /* PoCApi_KeyValuePair.m in Sources */,
+				3580D0991D12B6220027180B /* PoCResponse.m in Sources */,
+				3580D0981D12B6220027180B /* PoCLocalException.m in Sources */,
+				35E79D711D48917600B0B60F /* PoCApi_StringArrayResp.m in Sources */,
+				35E79CD51D48917600B0B60F /* PoCApi_JSONString.m in Sources */,
+				35E79C741D48917600B0B60F /* PoCApi_BoolArrayResp.m in Sources */,
+				3580D0941D12B6220027180B /* PoCApiContext.m in Sources */,
+				3580D0951D12B6220027180B /* PoCBaseRequest.m in Sources */,
+				3580D09B1D12B6220027180B /* PoCSystemVersion.m in Sources */,
+				35E79CD61D48917600B0B60F /* PoCApi_KeyValueList.m in Sources */,
+				35E79C751D48917600B0B60F /* PoCApi_BoolResp.m in Sources */,
+				35E79CA81D48917600B0B60F /* PoCApi_CreditNotification.m in Sources */,
+				35E79CE21D48917600B0B60F /* PoCApi_NumberResp.m in Sources */,
+				3580D0961D12B6220027180B /* PoCFileRequest.m in Sources */,
+				35E79D721D48917600B0B60F /* PoCApi_StringResp.m in Sources */,
+				35E79B031D48917600B0B60F /* PoCApiCode.m in Sources */,
+				3580D0971D12B6220027180B /* PoCFileResp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
