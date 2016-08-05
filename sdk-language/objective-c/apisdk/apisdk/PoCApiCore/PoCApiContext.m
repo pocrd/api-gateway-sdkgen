@@ -339,7 +339,7 @@ static NSString *rsaPublicKey;
         
         if (securityType == 0)
         {
-            [str appendString:@"sfhaitao.xyz!"];
+            [str appendString:@"net.pocrd"];
             NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
             data = [self sha1Digest:data];
             NSString *base64Str = [data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];

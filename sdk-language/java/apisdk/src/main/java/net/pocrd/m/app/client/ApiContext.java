@@ -296,7 +296,7 @@ public class ApiContext {
             }
 
             if (securityType == 0) {
-                sb.append("sfhaitao.xyz!");
+                sb.append("net.pocrd");
                 if (SDKConfig.isDebug) {
                     logger.info("before sig:" + sb.toString());
                 }
