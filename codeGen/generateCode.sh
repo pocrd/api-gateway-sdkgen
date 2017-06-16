@@ -12,8 +12,7 @@ mkdir ../sdk-language/objective-c/apisdk/apisdk/PoCAPICore/Request
 mkdir ../sdk-language/objective-c/apisdk/apisdk/PoCAPICore/Response
 
 
-java -classpath api-util-1.2.2-SNAPSHOT-allinone.jar net.pocrd.core.generator.ApiSdkJavaScriptGenerator url http://115.28.160.84/info.api net.pocrd.m ../sdk-language/javascript/api -s None,OAuthVerified,RegisteredDevice,User,UserTrustedDevice,MobileOwner,MobileOwnerTrustedDevice,UserLogin,UserLoginAndMobileOwner
-java -classpath api-util-1.2.2-SNAPSHOT-allinone.jar net.pocrd.core.generator.ApiSdkJavaGenerator url http://115.28.160.84/info.api net.pocrd.m.app.client ../sdk-language/java/apisdk/src/main/java/net/pocrd/m/app/client -s None,OAuthVerified,RegisteredDevice,User,UserTrustedDevice,MobileOwner,MobileOwnerTrustedDevice,UserLogin,UserLoginAndMobileOwner
-java -classpath api-util-1.2.2-SNAPSHOT-allinone.jar net.pocrd.core.generator.ApiSdkObjectiveCGenerator url http://115.28.160.84/info.api PoC ../sdk-language/objective-c/apisdk/apisdk/PoCAPICore -s None,OAuthVerified,RegisteredDevice,User,UserTrustedDevice,MobileOwner,MobileOwnerTrustedDevice,UserLogin,UserLoginAndMobileOwner
-java -classpath api-util-1.2.2-SNAPSHOT-allinone.jar net.pocrd.core.generator.HtmlApiDocGenerator url http://115.28.160.84/info.api ../sdk-language/htmldoc
-
+java -jar apigen.jar api-jssdk-gen -url http://api-stage.yit.com/apigw/info.api?raw -o ../sdk-language/javascript/api net.pocrd.m
+java -jar apigen.jar api-javasdk-gen -url http://api-stage.yit.com/apigw/info.api?raw -o ../sdk-language/java/apisdk/src/main/java/net/pocrd/m/app/client net.pocrd.m.app.client
+java -jar apigen.jar api-oc-gen -url http://api-stage.yit.com/apigw/info.api?raw -o ../sdk-language/objective-c/apisdk/apisdk/PoCAPICore PoC
+java -jar apigen.jar api-doc-gen -url http://api-stage.yit.com/apigw/info.api?raw -o ../sdk-language/htmldoc
