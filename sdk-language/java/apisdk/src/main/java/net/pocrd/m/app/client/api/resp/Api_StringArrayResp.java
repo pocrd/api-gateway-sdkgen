@@ -1,17 +1,19 @@
 // Auto Generated.  DO NOT EDIT!
 package net.pocrd.m.app.client.api.resp;
 
+import com.google.gson.*;
+import net.pocrd.m.app.client.util.JsonSerializable;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import com.google.gson.*;
-
-public class Api_StringArrayResp {
+public class Api_StringArrayResp implements JsonSerializable {
 
     /**
      * 字符串数组返回值
      */
     public List<String> value;
+
     /**
      * 反序列化函数，用于从json字符串反序列化本类型实例
      */
@@ -21,7 +23,7 @@ public class Api_StringArrayResp {
         }
         return null;
     }
-    
+
     /**
      * 反序列化函数，用于从json节点对象反序列化本类型实例
      */
@@ -44,12 +46,12 @@ public class Api_StringArrayResp {
                     }
                 }
             }
-      
+
             return result;
         }
         return null;
     }
-    
+
     /**
      * 序列化函数，用于从对象生成数据字典
      */
@@ -64,7 +66,7 @@ public class Api_StringArrayResp {
             }
             json.add("value", valueArray);
         }
-      
+
         return json;
     }
 }

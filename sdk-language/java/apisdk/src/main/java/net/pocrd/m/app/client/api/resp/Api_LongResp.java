@@ -1,15 +1,18 @@
 // Auto Generated.  DO NOT EDIT!
 package net.pocrd.m.app.client.api.resp;
 
-import com.google.gson.*;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import net.pocrd.m.app.client.util.JsonSerializable;
 
-public class Api_LongResp {
+public class Api_LongResp implements JsonSerializable {
 
     /**
      * 长整形返回值
      */
     public long value;
-      
+
     /**
      * 反序列化函数，用于从json字符串反序列化本类型实例
      */
@@ -19,7 +22,7 @@ public class Api_LongResp {
         }
         return null;
     }
-    
+
     /**
      * 反序列化函数，用于从json节点对象反序列化本类型实例
      */
@@ -33,12 +36,12 @@ public class Api_LongResp {
             if (element != null && !element.isJsonNull()) {
                 result.value = element.getAsLong();
             }
-      
+
             return result;
         }
         return null;
     }
-    
+
     /**
      * 序列化函数，用于从对象生成数据字典
      */
@@ -47,7 +50,7 @@ public class Api_LongResp {
         
         /* 长整形返回值 */
         json.addProperty("value", this.value);
-          
+
         return json;
     }
 }

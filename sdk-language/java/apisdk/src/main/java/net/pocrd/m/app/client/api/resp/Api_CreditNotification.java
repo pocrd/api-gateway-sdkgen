@@ -1,25 +1,28 @@
 // Auto Generated.  DO NOT EDIT!
 package net.pocrd.m.app.client.api.resp;
 
-import com.google.gson.*;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import net.pocrd.m.app.client.util.JsonSerializable;
 
-public class Api_CreditNotification {
+public class Api_CreditNotification implements JsonSerializable {
 
     /**
      * 描述,为何送积分
      */
     public String description;
-      
+
     /**
      * 积分值
      */
     public long credit;
-      
+
     /**
      * 提示,送了多少积分
      */
     public String notification;
-      
+
     /**
      * 反序列化函数，用于从json字符串反序列化本类型实例
      */
@@ -29,7 +32,7 @@ public class Api_CreditNotification {
         }
         return null;
     }
-    
+
     /**
      * 反序列化函数，用于从json节点对象反序列化本类型实例
      */
@@ -55,12 +58,12 @@ public class Api_CreditNotification {
             if (element != null && !element.isJsonNull()) {
                 result.notification = element.getAsString();
             }
-      
+
             return result;
         }
         return null;
     }
-    
+
     /**
      * 序列化函数，用于从对象生成数据字典
      */
@@ -68,14 +71,14 @@ public class Api_CreditNotification {
         JsonObject json = new JsonObject();
         
         /* 描述,为何送积分 */
-        if(this.description != null) { json.addProperty("description", this.description); }
+        if (this.description != null) { json.addProperty("description", this.description); }
           
         /* 积分值 */
         json.addProperty("credit", this.credit);
           
         /* 提示,送了多少积分 */
-        if(this.notification != null) { json.addProperty("notification", this.notification); }
-          
+        if (this.notification != null) { json.addProperty("notification", this.notification); }
+
         return json;
     }
 }

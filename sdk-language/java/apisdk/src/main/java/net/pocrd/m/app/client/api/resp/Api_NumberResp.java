@@ -1,15 +1,18 @@
 // Auto Generated.  DO NOT EDIT!
 package net.pocrd.m.app.client.api.resp;
 
-import com.google.gson.*;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import net.pocrd.m.app.client.util.JsonSerializable;
 
-public class Api_NumberResp {
+public class Api_NumberResp implements JsonSerializable {
 
     /**
      * 数值型返回值，包含byte, char, short, int
      */
     public int value;
-      
+
     /**
      * 反序列化函数，用于从json字符串反序列化本类型实例
      */
@@ -19,7 +22,7 @@ public class Api_NumberResp {
         }
         return null;
     }
-    
+
     /**
      * 反序列化函数，用于从json节点对象反序列化本类型实例
      */
@@ -33,12 +36,12 @@ public class Api_NumberResp {
             if (element != null && !element.isJsonNull()) {
                 result.value = element.getAsInt();
             }
-      
+
             return result;
         }
         return null;
     }
-    
+
     /**
      * 序列化函数，用于从对象生成数据字典
      */
@@ -47,7 +50,7 @@ public class Api_NumberResp {
         
         /* 数值型返回值，包含byte, char, short, int */
         json.addProperty("value", this.value);
-          
+
         return json;
     }
 }

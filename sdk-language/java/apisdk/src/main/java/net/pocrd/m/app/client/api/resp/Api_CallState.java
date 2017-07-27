@@ -1,25 +1,28 @@
 // Auto Generated.  DO NOT EDIT!
 package net.pocrd.m.app.client.api.resp;
 
-import com.google.gson.*;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import net.pocrd.m.app.client.util.JsonSerializable;
 
-public class Api_CallState {
+public class Api_CallState implements JsonSerializable {
 
     /**
      * 返回值
      */
     public int code;
-      
+
     /**
      * 数据长度
      */
     public int length;
-      
+
     /**
      * 返回信息
      */
     public String msg;
-      
+
     /**
      * 反序列化函数，用于从json字符串反序列化本类型实例
      */
@@ -29,7 +32,7 @@ public class Api_CallState {
         }
         return null;
     }
-    
+
     /**
      * 反序列化函数，用于从json节点对象反序列化本类型实例
      */
@@ -55,12 +58,12 @@ public class Api_CallState {
             if (element != null && !element.isJsonNull()) {
                 result.msg = element.getAsString();
             }
-      
+
             return result;
         }
         return null;
     }
-    
+
     /**
      * 序列化函数，用于从对象生成数据字典
      */
@@ -74,8 +77,8 @@ public class Api_CallState {
         json.addProperty("length", this.length);
           
         /* 返回信息 */
-        if(this.msg != null) { json.addProperty("msg", this.msg); }
-          
+        if (this.msg != null) { json.addProperty("msg", this.msg); }
+
         return json;
     }
 }

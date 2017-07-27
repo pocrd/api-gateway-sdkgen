@@ -1,20 +1,23 @@
 // Auto Generated.  DO NOT EDIT!
 package net.pocrd.m.app.client.api.resp;
 
-import com.google.gson.*;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import net.pocrd.m.app.client.util.JsonSerializable;
 
-public class Api_KeyValuePair {
+public class Api_KeyValuePair implements JsonSerializable {
 
     /**
      * 键
      */
     public String key;
-      
+
     /**
      * 值
      */
     public String value;
-      
+
     /**
      * 反序列化函数，用于从json字符串反序列化本类型实例
      */
@@ -24,7 +27,7 @@ public class Api_KeyValuePair {
         }
         return null;
     }
-    
+
     /**
      * 反序列化函数，用于从json节点对象反序列化本类型实例
      */
@@ -44,12 +47,12 @@ public class Api_KeyValuePair {
             if (element != null && !element.isJsonNull()) {
                 result.value = element.getAsString();
             }
-      
+
             return result;
         }
         return null;
     }
-    
+
     /**
      * 序列化函数，用于从对象生成数据字典
      */
@@ -57,11 +60,11 @@ public class Api_KeyValuePair {
         JsonObject json = new JsonObject();
         
         /* 键 */
-        if(this.key != null) { json.addProperty("key", this.key); }
+        if (this.key != null) { json.addProperty("key", this.key); }
           
         /* 值 */
-        if(this.value != null) { json.addProperty("value", this.value); }
-          
+        if (this.value != null) { json.addProperty("value", this.value); }
+
         return json;
     }
 }

@@ -1,41 +1,46 @@
 // Auto Generated.  DO NOT EDIT!
 package net.pocrd.m.app.client.api.resp;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import net.pocrd.m.app.client.util.JsonSerializable;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import com.google.gson.*;
-
-public class Api_Response {
+public class Api_Response implements JsonSerializable {
 
     /**
      * 当前服务端时间
      */
     public long systime;
-      
+
     /**
      * 调用返回值
      */
     public int code;
-      
+
     /**
      * 调用标识符
      */
     public String cid;
-      
+
     /**
      * 用作特定场景使用
      */
     public String data;
-      
+
     /**
      * API调用状态，code的信息请参考ApiCode定义文件
      */
-    public List<Api_CallState> stateList;
+    public List<Api_CallState>    stateList;
     /**
      * 服务端返回的通知事件集合
      */
     public List<Api_KeyValuePair> notificationList;
+
     /**
      * 反序列化函数，用于从json字符串反序列化本类型实例
      */
@@ -45,7 +50,7 @@ public class Api_Response {
         }
         return null;
     }
-    
+
     /**
      * 反序列化函数，用于从json节点对象反序列化本类型实例
      */
@@ -105,12 +110,12 @@ public class Api_Response {
                     }
                 }
             }
-      
+
             return result;
         }
         return null;
     }
-    
+
     /**
      * 序列化函数，用于从对象生成数据字典
      */
@@ -124,10 +129,10 @@ public class Api_Response {
         json.addProperty("code", this.code);
           
         /* 调用标识符 */
-        if(this.cid != null) { json.addProperty("cid", this.cid); }
+        if (this.cid != null) { json.addProperty("cid", this.cid); }
           
         /* 用作特定场景使用 */
-        if(this.data != null) { json.addProperty("data", this.data); }
+        if (this.data != null) { json.addProperty("data", this.data); }
           
         /* API调用状态，code的信息请参考ApiCode定义文件 */
         if (this.stateList != null) {
@@ -150,7 +155,7 @@ public class Api_Response {
             }
             json.add("notificationList", notificationListArray);
         }
-      
+
         return json;
     }
 }
