@@ -218,6 +218,7 @@ public class ApiContext {
                         commonResponse.setCid(resp.cid);
                         commonResponse.setNotifications(resp.notificationList);
                         commonResponse.setReturnCode(resp.code);
+                        commonResponse.setData(data);
                         if (resp.code == 0) {
                             if (resp.stateList != null && requests.length == resp.stateList.size()) {
                                 List<Api_CallState> statList = resp.stateList;

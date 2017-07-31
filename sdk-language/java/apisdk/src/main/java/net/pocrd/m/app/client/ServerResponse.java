@@ -20,9 +20,9 @@ public class ServerResponse {
     private static final Logger logger = LoggerFactory.getLogger(ServerResponse.class);
 
     //通知中的积分关键字,与api-util.ConstField保持一致
-    private static final String CREDIT_KEY = "CREDIT";
+    private static final String CREDIT_KEY = "net.pocrd.CREDIT";
     //通知中的消息关键字,与api-util.ConstField保持一致
-    private static final String MSG_KEY    = "MSG";
+    private static final String MSG_KEY    = "net.pocrd.MSG";
 
     //消息下发通知
     private List<Api_MessageNotification> messageNotifications;
@@ -34,45 +34,39 @@ public class ServerResponse {
     private String cid        = "";
     //返回结果编码
     private int    returnCode = 0;
-    //特定场景使用
+    //http返回的raw data
     private String data;
 
     public static boolean isNullOrEmpty(String value) {
         return value != null & !value.isEmpty();
     }
 
-    private boolean isCreditNotification(Api_KeyValuePair pair) {
-        return isNullOrEmpty(pair.key) && isNullOrEmpty(pair.value) && pair.key.equalsIgnoreCase(CREDIT_KEY);
-    }
-
-    private boolean isMsgNotification(Api_KeyValuePair pair) {
-        return isNullOrEmpty(pair.key) && isNullOrEmpty(pair.value) && pair.key.equalsIgnoreCase(MSG_KEY);
-    }
-
     protected void setNotifications(List<Api_KeyValuePair> notifications) {
         if (notifications != null && notifications.size() > 0) {
             for (Api_KeyValuePair pair : notifications) {
-                if (isCreditNotification(pair)) {
-                    JsonArray creditNotificationListArray = new JsonParser().parse(pair.value).getAsJsonArray();
-                    if (creditNotificationListArray != null && creditNotificationListArray.size() > 0) {
-                        int len = creditNotificationListArray.size();
-                        creditNotifications = new ArrayList<Api_CreditNotification>(len);
-                        for (int i = 0; i < len; i++) {
-                            JsonObject jo = creditNotificationListArray.get(i).getAsJsonObject();
-                            if (jo != null && !jo.isJsonNull()) {
-                                creditNotifications.add(Api_CreditNotification.deserialize(jo));
+                if (pair != null) {
+                    if (CREDIT_KEY.equals(pair.key)) {
+                        JsonArray creditNotificationListArray = new JsonParser().parse(pair.value).getAsJsonArray();
+                        if (creditNotificationListArray != null && creditNotificationListArray.size() > 0) {
+                            int len = creditNotificationListArray.size();
+                            creditNotifications = new ArrayList<Api_CreditNotification>(len);
+                            for (int i = 0; i < len; i++) {
+                                JsonObject jo = creditNotificationListArray.get(i).getAsJsonObject();
+                                if (jo != null && !jo.isJsonNull()) {
+                                    creditNotifications.add(Api_CreditNotification.deserialize(jo));
+                                }
                             }
                         }
-                    }
-                } else if (isMsgNotification(pair)) {
-                    JsonArray messageNotificationListArray = new JsonParser().parse(pair.value).getAsJsonArray();
-                    if (messageNotificationListArray != null && messageNotificationListArray.size() > 0) {
-                        int len = messageNotificationListArray.size();
-                        messageNotifications = new ArrayList<Api_MessageNotification>(len);
-                        for (int i = 0; i < len; i++) {
-                            JsonObject jo = messageNotificationListArray.get(i).getAsJsonObject();
-                            if (jo != null && !jo.isJsonNull()) {
-                                messageNotifications.add(Api_MessageNotification.deserialize(jo));
+                    } else if (MSG_KEY.equals(pair.key)) {
+                        JsonArray messageNotificationListArray = new JsonParser().parse(pair.value).getAsJsonArray();
+                        if (messageNotificationListArray != null && messageNotificationListArray.size() > 0) {
+                            int len = messageNotificationListArray.size();
+                            messageNotifications = new ArrayList<Api_MessageNotification>(len);
+                            for (int i = 0; i < len; i++) {
+                                JsonObject jo = messageNotificationListArray.get(i).getAsJsonObject();
+                                if (jo != null && !jo.isJsonNull()) {
+                                    messageNotifications.add(Api_MessageNotification.deserialize(jo));
+                                }
                             }
                         }
                     }
@@ -128,8 +122,6 @@ public class ServerResponse {
 
     /**
      * 获取错误码
-     *
-     * @return
      */
     public int getReturnCode() {
         return returnCode;
@@ -141,8 +133,6 @@ public class ServerResponse {
 
     /**
      * 获取错误数据
-     *
-     * @return
      */
     public String getData() {
         return data;
