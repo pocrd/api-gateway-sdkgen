@@ -28,11 +28,6 @@ public class Api_Response implements JsonSerializable {
     public String cid;
 
     /**
-     * 用作特定场景使用
-     */
-    public String data;
-
-    /**
      * API调用状态，code的信息请参考ApiCode定义文件
      */
     public List<Api_CallState>    stateList;
@@ -75,12 +70,6 @@ public class Api_Response implements JsonSerializable {
             element = json.get("cid");
             if (element != null && !element.isJsonNull()) {
                 result.cid = element.getAsString();
-            }
-      
-            /* 用作特定场景使用 */
-            element = json.get("data");
-            if (element != null && !element.isJsonNull()) {
-                result.data = element.getAsString();
             }
       
             /* API调用状态，code的信息请参考ApiCode定义文件 */
@@ -130,9 +119,6 @@ public class Api_Response implements JsonSerializable {
           
         /* 调用标识符 */
         if (this.cid != null) { json.addProperty("cid", this.cid); }
-          
-        /* 用作特定场景使用 */
-        if (this.data != null) { json.addProperty("data", this.data); }
           
         /* API调用状态，code的信息请参考ApiCode定义文件 */
         if (this.stateList != null) {

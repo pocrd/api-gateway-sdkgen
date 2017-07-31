@@ -1,13 +1,13 @@
 package net.pocrd.m.app.client;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import net.pocrd.m.app.client.api.request.ApiCode;
 import net.pocrd.m.app.client.api.resp.Api_CallState;
 import net.pocrd.m.app.client.api.resp.Api_Response;
 import net.pocrd.m.app.client.util.Base64Util;
 import net.pocrd.m.app.client.util.RsaHelper;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -218,7 +218,6 @@ public class ApiContext {
                         commonResponse.setCid(resp.cid);
                         commonResponse.setNotifications(resp.notificationList);
                         commonResponse.setReturnCode(resp.code);
-                        commonResponse.setData(resp.data);
                         if (resp.code == 0) {
                             if (resp.stateList != null && requests.length == resp.stateList.size()) {
                                 List<Api_CallState> statList = resp.stateList;
