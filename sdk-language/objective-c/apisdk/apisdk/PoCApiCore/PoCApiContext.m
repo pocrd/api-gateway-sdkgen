@@ -5,7 +5,6 @@
 #import "PoCApi_CallState.h"
 #import <CommonCrypto/CommonHMAC.h>
 #import <Security/Security.h>
-//#import "PoCAppChannelManager.h"
 
 #define kAccessGroup @""
 

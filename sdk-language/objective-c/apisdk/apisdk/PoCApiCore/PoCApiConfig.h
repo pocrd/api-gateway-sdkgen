@@ -7,6 +7,6 @@
 #define kRequestTimeout 30000
 #define kKeepaliveTime 65000
 
-#define kWebAgent @"PoCHT IOS APP PoCHT"
+#define kWebAgent @"PoC IOS APP"
 
 #endif

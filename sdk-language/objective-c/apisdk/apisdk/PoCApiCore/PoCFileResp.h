@@ -1,11 +1,3 @@
-//
-//  PoCFileResp.h
-//  LiuLian
-//
-//  Created by 肖信波 on 14-11-15.
-//  Copyright (c) 2014年 MacBook Air. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 
 @interface PoCFileResp : NSObject

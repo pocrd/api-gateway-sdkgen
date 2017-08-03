@@ -15,7 +15,6 @@
         _systime = response.systime;
         _code = response.code;
         _cid = response.cid;
-        _data = response.data;
         
         [response.notificationList enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
             

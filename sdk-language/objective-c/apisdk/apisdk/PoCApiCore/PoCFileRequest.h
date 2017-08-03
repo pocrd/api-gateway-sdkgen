@@ -1,11 +1,3 @@
-//
-//  PoCFileRequest.h
-//  LiuLian
-//
-//  Created by 肖信波 on 14-11-14.
-//  Copyright (c) 2014年 MacBook Air. All rights reserved.
-//
-
 #import "PoCBaseRequest.h"
 #import "PoCFileResp.h"
 
