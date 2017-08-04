@@ -15,6 +15,7 @@
 **/bin/
 **/debug/
 **/target/
+**/xcuserdata/
 # Numerous always-ignore extensions
 *.diff
 *.err
@@ -59,4 +60,4 @@ node_modules
 hs_err_pid*
 /target
 *.xcworkspace
-*.xcodeproj
+
