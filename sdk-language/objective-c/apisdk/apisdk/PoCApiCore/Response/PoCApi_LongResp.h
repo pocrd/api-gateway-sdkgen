@@ -5,7 +5,7 @@
 @interface PoCApi_LongResp : NSObject
 
 /* 长整形返回值 */
-@property (nonatomic, assign) long long value;
+@property(nonatomic, assign) long long value;
 
 
 // 反序列化函数，用于从json字符串反序列化本类型实例

@@ -5,10 +5,10 @@
 @interface PoCApi_KeyValuePair : NSObject
 
 /* 键 */
-@property (nonatomic, strong) NSString *key;
+@property(nonatomic, strong) NSString *key;
 
 /* 值 */
-@property (nonatomic, strong) NSString *value;
+@property(nonatomic, strong) NSString *value;
 
 
 // 反序列化函数，用于从json字符串反序列化本类型实例

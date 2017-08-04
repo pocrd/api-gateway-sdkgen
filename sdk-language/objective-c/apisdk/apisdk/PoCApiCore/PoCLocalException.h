@@ -15,8 +15,8 @@ typedef enum
     NSObject *_data;
 }
 
-@property(nonatomic,assign,readonly)NSInteger code;
-@property(nonatomic,strong)NSObject *data;
+@property(nonatomic,assign,readonly) NSInteger code;
+@property(nonatomic,strong) NSObject *data;
 
 - (id) initWithCode:(NSInteger)code;
 - (id) initWithCode:(NSInteger)code message:(NSString *)msg;

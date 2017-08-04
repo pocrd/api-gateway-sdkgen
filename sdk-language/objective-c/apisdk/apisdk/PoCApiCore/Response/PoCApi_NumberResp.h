@@ -5,7 +5,7 @@
 @interface PoCApi_NumberResp : NSObject
 
 /* 数值型返回值，包含byte, char, short, int */
-@property (nonatomic, assign) NSInteger value;
+@property(nonatomic, assign) NSInteger value;
 
 
 // 反序列化函数，用于从json字符串反序列化本类型实例

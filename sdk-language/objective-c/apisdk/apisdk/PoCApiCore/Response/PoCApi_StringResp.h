@@ -5,7 +5,7 @@
 @interface PoCApi_StringResp : NSObject
 
 /* 字符串返回值 */
-@property (nonatomic, strong) NSString *value;
+@property(nonatomic, strong) NSString *value;
 
 
 // 反序列化函数，用于从json字符串反序列化本类型实例

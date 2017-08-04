@@ -57,13 +57,13 @@
     NSString *_dynamic;
 }
 
-@property (nonatomic, strong)NSString *appid;
-@property (nonatomic, strong)NSString *location;
-@property (nonatomic, assign)long long deviceId;
-@property (nonatomic, assign)long long userId;
-@property (nonatomic, strong)NSString *userToken;
-@property (nonatomic, assign)long long userTokenExpire;
-@property (nonatomic, strong) NSString *channelId;
+@property(nonatomic, strong) NSString *appid;
+@property(nonatomic, strong) NSString *location;
+@property(nonatomic, assign) long long deviceId;
+@property(nonatomic, assign) long long userId;
+@property(nonatomic, strong) NSString *userToken;
+@property(nonatomic, assign) long long userTokenExpire;
+@property(nonatomic, strong) NSString *channelId;
 
 + (NSString *) rsaPublicKey;
 + (void) setRsaPublicKey:(NSString *)rsaPublic;

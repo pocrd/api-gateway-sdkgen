@@ -3,9 +3,9 @@
 @interface PoCFileResp : NSObject
 
 // 字符串型返回值
-@property (nonatomic, strong) NSString *value;
+@property(nonatomic, strong) NSString *value;
 // 字符串型Key
-@property (nonatomic, strong) NSString *key;
+@property(nonatomic, strong) NSString *key;
 
 // 反序列化函数，用于从json字符串反序列化本类型实例
 + (PoCFileResp *) deserializeWithJsonData:(NSData *) jsonData;

@@ -5,7 +5,7 @@
 @interface PoCApi_StringArrayResp : NSObject
 
 /* 字符串数组返回值 */
-@property (nonatomic, strong) NSMutableArray *value;
+@property(nonatomic, strong) NSMutableArray *value;
     
 
 // 反序列化函数，用于从json字符串反序列化本类型实例

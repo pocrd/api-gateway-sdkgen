@@ -124,7 +124,7 @@ NSString *const kAPIErrorDomain = @"API";
     _error = error;
 }
 
-- (NSError *)error
+- (NSError *) error
 {
     if (_error) {
         return _error;
@@ -142,7 +142,7 @@ NSString *const kAPIErrorDomain = @"API";
     }
 }
 
--(void)fillResponse:(NSInteger) code length:(NSInteger) length message:(NSString *)msg input:(NSDictionary *) json
+- (void) fillResponse:(NSInteger) code length:(NSInteger) length message:(NSString *)msg input:(NSDictionary *) json
 {
     _response = [[PoCResponse alloc] init];
     _response.code = code;
@@ -162,7 +162,7 @@ NSString *const kAPIErrorDomain = @"API";
     return nil;
 }
 
-- (NSString *)cacheKey {
+- (NSString *) cacheKey {
     if (_cacheKey == nil) {
         NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
         NSArray *keyArr = @[kFormat, kLocation, kToken, kSignature, kApplicationId, kCallId, kDeviceId, kUserId, kVersionCode, kVersionName, kSignatureMethod, kPhoneNumber, kDynamic, kDeviceToken, kChannelId];
@@ -191,7 +191,7 @@ NSString *const kAPIErrorDomain = @"API";
     return _cacheKey;
 }
 
--(long long)cacheVersion {
+- (long long) cacheVersion {
     NSString *version = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
     if (version.length > 0) {
         return [version longLongValue];

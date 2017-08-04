@@ -6,7 +6,7 @@
 @interface PoCApi_KeyValuePair_ArrayResp : NSObject
 
 /* 键值对 */
-@property (nonatomic, strong) NSMutableArray *value;
+@property(nonatomic, strong) NSMutableArray *value;
     
 
 // 反序列化函数，用于从json字符串反序列化本类型实例

@@ -33,22 +33,22 @@ typedef enum
     PoCResponse *_response;
 }
 
-@property (nonatomic, strong) NSMutableDictionary *params;
-@property (nonatomic, assign) long long systime;
-@property (nonatomic, strong) NSDictionary *userInfo;           //上层可以设置识别PABaseRequest,特别是Mutable请求的时候
+@property(nonatomic, strong) NSMutableDictionary *params;
+@property(nonatomic, assign) long long systime;
+@property(nonatomic, strong) NSDictionary *userInfo;           //上层可以设置识别PABaseRequest,特别是Mutable请求的时候
 
-@property (nonatomic, strong) NSError *error;
-@property (nonatomic, strong) NSDictionary *resultDict;
+@property(nonatomic, strong) NSError *error;
+@property(nonatomic, strong) NSDictionary *resultDict;
 
-@property (nonatomic, strong) NSString *tag;
+@property(nonatomic, strong) NSString *tag;
 
 // add for web cache
-@property (nonatomic, assign) BOOL needCache;                       // 是否需要使用缓存策略
-@property (nonatomic, assign) BOOL isLoadFromCache;                 // 是否从缓存加载
-@property (nonatomic, assign) BOOL forceUpdate;                     // 强制刷新缓存，即使缓存没有过期也要更新
-@property (nonatomic, assign) NSInteger expiredTime;                // 缓存过期时间
-@property (nonatomic, copy, readonly) NSString *cacheKey;           // 缓存key
-@property (nonatomic, assign, readonly) long long cacheVersion;     // 缓存版本号，以当前软件版本号为标识
+@property(nonatomic, assign) BOOL needCache;                       // 是否需要使用缓存策略
+@property(nonatomic, assign) BOOL isLoadFromCache;                 // 是否从缓存加载
+@property(nonatomic, assign) BOOL forceUpdate;                     // 强制刷新缓存，即使缓存没有过期也要更新
+@property(nonatomic, assign) NSInteger expiredTime;                // 缓存过期时间
+@property(nonatomic, copy, readonly) NSString *cacheKey;           // 缓存key
+@property(nonatomic, assign, readonly) long long cacheVersion;     // 缓存版本号，以当前软件版本号为标识
 
 
 - (id) initWithMethodName:(NSString *)methodName securityType:(SecurityType)type;

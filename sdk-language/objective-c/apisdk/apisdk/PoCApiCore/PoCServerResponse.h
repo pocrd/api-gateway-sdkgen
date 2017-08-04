@@ -15,12 +15,12 @@
     
 }
 
-@property (nonatomic, assign, readonly) long long systime;
-@property (nonatomic, assign, readonly) NSInteger code;
-@property (nonatomic, strong, readonly) NSString *cid;
-@property (nonatomic, strong, readonly) NSString *data;
-@property (nonatomic, strong, readonly) NSMutableArray *messageNotifications;
-@property (nonatomic, strong, readonly) NSMutableArray *creditNotifications;
+@property(nonatomic, assign, readonly) long long systime;
+@property(nonatomic, assign, readonly) NSInteger code;
+@property(nonatomic, strong, readonly) NSString *cid;
+@property(nonatomic, strong, readonly) NSString *data;
+@property(nonatomic, strong, readonly) NSMutableArray *messageNotifications;
+@property(nonatomic, strong, readonly) NSMutableArray *creditNotifications;
 
 - (id) initWithResponse:(PoCApi_Response *) response;
 @end

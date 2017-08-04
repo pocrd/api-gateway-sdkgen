@@ -22,10 +22,10 @@ typedef NS_ENUM(NSInteger, PoCFileRequestContentType) {
  */
 - (id)initWithfileName:(NSString *)fileName contentType:(PoCFileRequestContentType)contentType;
 
-@property (nonatomic, retain) NSData *data;
-@property (nonatomic, retain) NSString *fileName;
-@property (nonatomic, assign) PoCFileRequestContentType contentType;
-@property (nonatomic, readonly) NSString *contentTypeText;
+@property(nonatomic, retain) NSData *data;
+@property(nonatomic, retain) NSString *fileName;
+@property(nonatomic, assign) PoCFileRequestContentType contentType;
+@property(nonatomic, readonly) NSString *contentTypeText;
 
 /*
  * 当前请求有可能的异常返回值

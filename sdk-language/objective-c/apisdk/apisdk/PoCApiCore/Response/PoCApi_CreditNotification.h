@@ -5,13 +5,13 @@
 @interface PoCApi_CreditNotification : NSObject
 
 /* 描述,为何送积分 */
-@property (nonatomic, strong) NSString *description;
+@property(nonatomic, strong) NSString *description;
 
 /* 积分值 */
-@property (nonatomic, assign) long long credit;
+@property(nonatomic, assign) long long credit;
 
 /* 提示,送了多少积分 */
-@property (nonatomic, strong) NSString *notification;
+@property(nonatomic, strong) NSString *notification;
 
 
 // 反序列化函数，用于从json字符串反序列化本类型实例

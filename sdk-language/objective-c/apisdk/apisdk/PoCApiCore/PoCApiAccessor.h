@@ -14,10 +14,10 @@
     NSString     *_apiUrl;
 }
 
-@property (atomic, copy) NSString *src;
-@property (atomic, copy) NSNumber *src_t;
-@property (atomic, copy) NSString *referer;
-@property (atomic, copy) NSString *spms;
+@property(atomic, copy) NSString *src;
+@property(atomic, copy) NSNumber *src_t;
+@property(atomic, copy) NSString *referer;
+@property(atomic, copy) NSString *spms;
 
 - (id) initWithApiContext:(PoCApiContext *) context
               connTimeout:(NSInteger) connTimeout
@@ -29,10 +29,10 @@
 - (PoCServerResponse *) fillApiWithResponse:(PoCBaseRequest *) request;
 - (PoCServerResponse *) fillApiWithResponses:(NSArray *) requests;
 
-- (void)fillFileApiWithResponse:(PoCFileRequest *)request;
-- (NSURL *)downUrlWithResponse:(PoCFileRequest *)request;
+- (void) fillFileApiWithResponse:(PoCFileRequest *)request;
+- (NSURL *) downUrlWithResponse:(PoCFileRequest *)request;
 
-- (NSData *)requestWithUrl:(NSString *)url params:(NSString *)params error:(NSError **)error;
-- (NSData *)requestWithUrl:(NSString *)url params:(NSString *)params method:(NSString *)method error:(NSError **)error;
+- (NSData *) requestWithUrl:(NSString *)url params:(NSString *)params error:(NSError **)error;
+- (NSData *) requestWithUrl:(NSString *)url params:(NSString *)params method:(NSString *)method error:(NSError **)error;
 
 @end

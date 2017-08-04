@@ -12,7 +12,7 @@
 
 @interface PoCApiContext ()
 
-@property (nonatomic, strong) NSString *deviceToken;
+@property(nonatomic, strong) NSString *deviceToken;
 @end
 
 
@@ -372,7 +372,7 @@ static NSString *rsaPublicKey;
     _dynamic = dynamic;
 }
 
-- (NSString*)encodeURL:(NSString *)string
+- (NSString*) encodeURL:(NSString *)string
 {
     NSString *newString = (__bridge_transfer NSString *)CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (__bridge CFStringRef)string, NULL, CFSTR(":/?#[]@!$ &'()*+,;=\"<>%{}|\\^~`"), CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding));
     
