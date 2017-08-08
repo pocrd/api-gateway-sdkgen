@@ -25,10 +25,12 @@ class apiTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
         var context = PoCApiContext(appid: "1", vercode: 1, vername: "1.0");
-        var accessor = PoCApiAccessor(apiContext: context, connTimeout: 3000, soTimeout: 1000, agent: "swift test", keepalive: 61000, apiUrl: "http://www.pocrd.net/m.api");
+        var accessor = PoCApiAccessor(apiContext: context, connTimeout: 3000, soTimeout: 1000, agent: "swift test", keepalive: 61000, apiUrl: "http://www.pocrd.net");
         accessor!.referer = "123";
+        var hello = PoCApitest_TestDemoSayHello(name: "你好");
+        accessor?.fillApi(withResponse: hello);
         
-        print("hello world." + accessor!.referer);
+        print("hello world." + accessor!.referer + hello!.result().dynamicEntity.typeName);
     }
     
     func testPerformanceExample() {
