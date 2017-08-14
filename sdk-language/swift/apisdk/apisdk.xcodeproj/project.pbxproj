@@ -10,6 +10,9 @@
 		5F10A3861F41417400FD46D0 /* apisdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F10A37C1F41417400FD46D0 /* apisdk.framework */; };
 		5F10A38B1F41417400FD46D0 /* apisdkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10A38A1F41417400FD46D0 /* apisdkTests.swift */; };
 		5F10A38D1F41417400FD46D0 /* apisdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F10A37F1F41417400FD46D0 /* apisdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F10A39C1F414A6A00FD46D0 /* PoCApiAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10A39B1F414A6A00FD46D0 /* PoCApiAccessor.swift */; };
+		5F10A39E1F414C2F00FD46D0 /* PoCApiCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10A39D1F414C2F00FD46D0 /* PoCApiCode.swift */; };
+		5F10A3A01F414C8200FD46D0 /* PoCApi_Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10A39F1F414C8200FD46D0 /* PoCApi_Response.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		5F10A3851F41417400FD46D0 /* apisdkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = apisdkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F10A38A1F41417400FD46D0 /* apisdkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apisdkTests.swift; sourceTree = "<group>"; };
 		5F10A38C1F41417400FD46D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F10A39B1F414A6A00FD46D0 /* PoCApiAccessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoCApiAccessor.swift; sourceTree = "<group>"; };
+		5F10A39D1F414C2F00FD46D0 /* PoCApiCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoCApiCode.swift; sourceTree = "<group>"; };
+		5F10A39F1F414C8200FD46D0 /* PoCApi_Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoCApi_Response.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 		5F10A37E1F41417400FD46D0 /* apisdk */ = {
 			isa = PBXGroup;
 			children = (
+				5F10A3961F4143D600FD46D0 /* PoCAPICore */,
 				5F10A37F1F41417400FD46D0 /* apisdk.h */,
 				5F10A3801F41417400FD46D0 /* Info.plist */,
 			);
@@ -84,6 +91,32 @@
 				5F10A38C1F41417400FD46D0 /* Info.plist */,
 			);
 			path = apisdkTests;
+			sourceTree = "<group>";
+		};
+		5F10A3961F4143D600FD46D0 /* PoCAPICore */ = {
+			isa = PBXGroup;
+			children = (
+				5F10A3991F4146C000FD46D0 /* Request */,
+				5F10A39A1F4146C800FD46D0 /* Response */,
+				5F10A39B1F414A6A00FD46D0 /* PoCApiAccessor.swift */,
+			);
+			name = PoCAPICore;
+			sourceTree = "<group>";
+		};
+		5F10A3991F4146C000FD46D0 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				5F10A39D1F414C2F00FD46D0 /* PoCApiCode.swift */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		5F10A39A1F4146C800FD46D0 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				5F10A39F1F414C8200FD46D0 /* PoCApi_Response.swift */,
+			);
+			name = Response;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +182,7 @@
 					5F10A37B1F41417400FD46D0 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = M598BAF9U6;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					5F10A3841F41417400FD46D0 = {
@@ -198,6 +232,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F10A39E1F414C2F00FD46D0 /* PoCApiCode.swift in Sources */,
+				5F10A3A01F414C8200FD46D0 /* PoCApi_Response.swift in Sources */,
+				5F10A39C1F414A6A00FD46D0 /* PoCApiAccessor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +361,7 @@
 		5F10A3911F41417400FD46D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = M598BAF9U6;
@@ -336,6 +374,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.pocrd.apisdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -343,6 +382,7 @@
 		5F10A3921F41417400FD46D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = M598BAF9U6;
@@ -362,6 +402,7 @@
 		5F10A3941F41417400FD46D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = M598BAF9U6;
 				INFOPLIST_FILE = apisdkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +415,7 @@
 		5F10A3951F41417400FD46D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = M598BAF9U6;
 				INFOPLIST_FILE = apisdkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

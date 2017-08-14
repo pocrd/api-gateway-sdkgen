@@ -22,8 +22,18 @@ class apisdkTests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        if let greeting = try?hello("boy"){
+            print("hello   " + greeting);
+        }
+        
+        do{
+            let g = try hello2("xxx");
+            defer {
+                print(g);
+            }
+        } catch {
+            print(error);
+        }
     }
     
     func testPerformanceExample() {
@@ -31,6 +41,26 @@ class apisdkTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    enum NameError: Error{
+        case nobody
+        case miao(String)
+        case others
+    }
+    
+    func hello2(_ name:String) throws -> String {
+        return try hello(name);
+    }
+    
+    func hello(_ name:String) throws -> String {
+        if("nbd" == name){
+            throw NameError.nobody;
+        }
+        if(name.hasPrefix("xxx")){
+            throw NameError.miao(name);
+        }
+        return "hi " + name;
     }
     
 }
