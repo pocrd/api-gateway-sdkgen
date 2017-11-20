@@ -10,7 +10,6 @@
  */
 + (PoCApi_KeyValuePair *) deserializeWithJsonData:(NSData *) jsonData
 {
-
     NSError *error = nil;
     NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:jsonData
                                                              options:NSJSONReadingMutableLeaves
@@ -27,8 +26,8 @@
  */
 + (PoCApi_KeyValuePair *) deserialize:(NSDictionary *)json
 {
-      if (!([json isKindOfClass:[NSNull class]] || json == nil)) {
-          PoCApi_KeyValuePair *result = [[PoCApi_KeyValuePair alloc] init];
+    if (!([json isKindOfClass:[NSNull class]] || json == nil)) {
+        PoCApi_KeyValuePair *result = [[PoCApi_KeyValuePair alloc] init];
       
         /* 键 */
         result.key = [json objectForKey:@"key"];
@@ -58,4 +57,6 @@
           
     return dict;
 }
+
 @end
+  

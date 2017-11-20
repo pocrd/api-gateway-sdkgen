@@ -10,7 +10,6 @@
  */
 + (PoCApi_BoolResp *) deserializeWithJsonData:(NSData *) jsonData
 {
-
     NSError *error = nil;
     NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:jsonData
                                                              options:NSJSONReadingMutableLeaves
@@ -27,8 +26,8 @@
  */
 + (PoCApi_BoolResp *) deserialize:(NSDictionary *)json
 {
-      if (!([json isKindOfClass:[NSNull class]] || json == nil)) {
-          PoCApi_BoolResp *result = [[PoCApi_BoolResp alloc] init];
+    if (!([json isKindOfClass:[NSNull class]] || json == nil)) {
+        PoCApi_BoolResp *result = [[PoCApi_BoolResp alloc] init];
       
         /* 布尔类型返回值 */
         result.value = [[json objectForKey:@"value"] boolValue];
@@ -50,4 +49,6 @@
           
     return dict;
 }
+
 @end
+  

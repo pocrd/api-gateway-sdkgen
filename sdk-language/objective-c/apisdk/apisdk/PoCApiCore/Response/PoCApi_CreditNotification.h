@@ -2,8 +2,9 @@
 
 
 
-@interface PoCApi_CreditNotification : NSObject
+#import "PoCBaseEntity.h"
 
+@interface PoCApi_CreditNotification : PoCBaseEntity
 /* 描述,为何送积分 */
 @property(nonatomic, strong) NSString *description;
 

@@ -10,6 +10,10 @@
                       return @"未分配返回值";
               
         }
+        case PoCApiCode_ROLE_DENIED: {
+                      return @"当前用户权限不足";
+              
+        }
         case PoCApiCode_UPLOAD_FILE_NAME_ERROR: {
                       return @"上传文件名错误";
               
@@ -76,6 +80,10 @@
         }
         case PoCApiCode_SIGNATURE_ERROR: {
                       return @"签名错误";
+              
+        }
+        case PoCApiCode_SECURITY_LEVEL_MISSMATCH: {
+                      return @"SECURITY_LEVEL_MISSMATCH";
               
         }
         case PoCApiCode_RISK_MANAGER_DENIED: {
@@ -152,6 +160,30 @@
         }
         case PoCApiCode_SUCCESS: {
                       return @"成功";
+              
+        }
+        case PoCApiCode_TEST_UNKNOW_ERROR_1: {
+                      return @"测试类未知错误";
+              
+        }
+        case PoCApiCode_TEST_FOR_TEST123_123: {
+                      return @"for测试";
+              
+        }
+        case PoCApiCode_TEST_FOR_TEST456_456: {
+                      return @"for测试";
+              
+        }
+        case PoCApiCode_TEST_FOR_TEST789_789: {
+                      return @"for测试";
+              
+        }
+        case PoCApiCode_DEMO_USER_NOT_FOUND_1000001: {
+                      return @"用户找不到. ";
+              
+        }
+        case PoCApiCode_DEMO_SOMETHING_WRONG_1000100: {
+                      return @"有哪里不对. ";
               
         }
     }

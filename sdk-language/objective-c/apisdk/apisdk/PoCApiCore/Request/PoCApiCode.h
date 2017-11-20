@@ -8,6 +8,9 @@ typedef enum {
     /* 未分配返回值 */
     PoCApiCode_NO_ASSIGN = -2147483648,
     
+    /* 当前用户权限不足 */
+    PoCApiCode_ROLE_DENIED = -400,
+    
     /* 上传文件名错误 */
     PoCApiCode_UPLOAD_FILE_NAME_ERROR = -390,
     
@@ -58,6 +61,9 @@ typedef enum {
     
     /* 签名错误 */
     PoCApiCode_SIGNATURE_ERROR = -180,
+    
+    /* SECURITY_LEVEL_MISSMATCH */
+    PoCApiCode_SECURITY_LEVEL_MISSMATCH = -167,
     
     /* RISK_MANAGER_DENIED */
     PoCApiCode_RISK_MANAGER_DENIED = -166,
@@ -115,6 +121,28 @@ typedef enum {
     
     /* 成功 */
     PoCApiCode_SUCCESS = 0,
+    
+    /* 测试类未知错误 */
+    PoCApiCode_TEST_UNKNOW_ERROR_1 = 1,
+    
+    /* for测试 */
+    PoCApiCode_TEST_FOR_TEST123_123 = 123,
+    
+    /* for测试 */
+    PoCApiCode_TEST_FOR_TEST456_456 = 456,
+    
+    /* for测试 */
+    PoCApiCode_TEST_FOR_TEST789_789 = 789,
+    
+    /* 用户找不到. 
+ en-us:multi-language test 
+ja-jp:多言語テスト */
+    PoCApiCode_DEMO_USER_NOT_FOUND_1000001 = 1000001,
+    
+    /* 有哪里不对. 
+ en-us:multi-language test 
+ja-jp:多言語テスト */
+    PoCApiCode_DEMO_SOMETHING_WRONG_1000100 = 1000100,
     
 }PoCApiCode;
 

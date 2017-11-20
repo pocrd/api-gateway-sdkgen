@@ -23,7 +23,6 @@
  */
 + (PoCApi_Response *) deserializeWithJsonData:(NSData *) jsonData
 {
-
     NSError *error = nil;
     NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:jsonData
                                                              options:NSJSONReadingMutableLeaves
@@ -40,8 +39,8 @@
  */
 + (PoCApi_Response *) deserialize:(NSDictionary *)json
 {
-      if (!([json isKindOfClass:[NSNull class]] || json == nil)) {
-          PoCApi_Response *result = [[PoCApi_Response alloc] init];
+    if (!([json isKindOfClass:[NSNull class]] || json == nil)) {
+        PoCApi_Response *result = [[PoCApi_Response alloc] init];
       
         /* 当前服务端时间 */
         result.systime = [[json objectForKey:@"systime"] longLongValue];
@@ -53,29 +52,25 @@
         result.cid = [json objectForKey:@"cid"];
         if ([result.cid isKindOfClass:[NSNull class]]) { result.cid = nil; }
               
-        /* 用作特定场景使用 */
-        result.data = [json objectForKey:@"data"];
-        if ([result.data isKindOfClass:[NSNull class]]) { result.data = nil; }
-              
         /* API调用状态，code的信息请参考ApiCode定义文件 */
         NSArray *stateListArray = [json objectForKey:@"stateList"];
         if (stateListArray && ![stateListArray isKindOfClass:[NSNull class]]) {
-            for (NSInteger i =0; i < [stateListArray count]; i++){
-            NSDictionary *dict = [stateListArray objectAtIndex:i];
-               if (dict && ![dict isKindOfClass:[NSNull class]]) {
-                   [result.stateList addObject:[PoCApi_CallState deserialize:dict]];
-               }
+            for (NSInteger i = 0; i < [stateListArray count]; i++){
+                NSDictionary *dict = [stateListArray objectAtIndex:i];
+                if (dict && ![dict isKindOfClass:[NSNull class]]) {
+                    [result.stateList addObject:[PoCApi_CallState deserialize:dict]];
+                }
             }
         }
       
         /* 服务端返回的通知事件集合 */
         NSArray *notificationListArray = [json objectForKey:@"notificationList"];
         if (notificationListArray && ![notificationListArray isKindOfClass:[NSNull class]]) {
-            for (NSInteger i =0; i < [notificationListArray count]; i++){
-            NSDictionary *dict = [notificationListArray objectAtIndex:i];
-               if (dict && ![dict isKindOfClass:[NSNull class]]) {
-                   [result.notificationList addObject:[PoCApi_KeyValuePair deserialize:dict]];
-               }
+            for (NSInteger i = 0; i < [notificationListArray count]; i++){
+                NSDictionary *dict = [notificationListArray objectAtIndex:i];
+                if (dict && ![dict isKindOfClass:[NSNull class]]) {
+                    [result.notificationList addObject:[PoCApi_KeyValuePair deserialize:dict]];
+                }
             }
         }
       
@@ -99,9 +94,6 @@
           
     /* 调用标识符 */
     if (self.cid != nil) [dict setObject:self.cid forKey:@"cid"];
-          
-    /* 用作特定场景使用 */
-    if (self.data != nil) [dict setObject:self.data forKey:@"data"];
           
     /* API调用状态，code的信息请参考ApiCode定义文件 */
     if (self.stateList && ![self.stateList isKindOfClass:[NSNull class]]) {
@@ -133,4 +125,6 @@
       
     return dict;
 }
+
 @end
+  

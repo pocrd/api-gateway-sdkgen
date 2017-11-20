@@ -2,8 +2,9 @@
 
 
 
-@interface PoCApi_StringResp : NSObject
+#import "PoCBaseEntity.h"
 
+@interface PoCApi_StringResp : PoCBaseEntity
 /* 字符串返回值 */
 @property(nonatomic, strong) NSString *value;
 

@@ -2,8 +2,9 @@
 
 
 
-@interface PoCApi_JSONString : NSObject
+#import "PoCBaseEntity.h"
 
+@interface PoCApi_JSONString : PoCBaseEntity
 /* json string */
 @property(nonatomic, strong) NSString *value;
 

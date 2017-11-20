@@ -2,8 +2,9 @@
 
 
 
-@interface PoCApi_CallState : NSObject
+#import "PoCBaseEntity.h"
 
+@interface PoCApi_CallState : PoCBaseEntity
 /* 返回值 */
 @property(nonatomic, assign) NSInteger code;
 

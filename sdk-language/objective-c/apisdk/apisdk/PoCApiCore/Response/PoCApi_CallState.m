@@ -10,7 +10,6 @@
  */
 + (PoCApi_CallState *) deserializeWithJsonData:(NSData *) jsonData
 {
-
     NSError *error = nil;
     NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:jsonData
                                                              options:NSJSONReadingMutableLeaves
@@ -27,8 +26,8 @@
  */
 + (PoCApi_CallState *) deserialize:(NSDictionary *)json
 {
-      if (!([json isKindOfClass:[NSNull class]] || json == nil)) {
-          PoCApi_CallState *result = [[PoCApi_CallState alloc] init];
+    if (!([json isKindOfClass:[NSNull class]] || json == nil)) {
+        PoCApi_CallState *result = [[PoCApi_CallState alloc] init];
       
         /* 返回值 */
         result.code = [[json objectForKey:@"code"] integerValue];
@@ -63,4 +62,6 @@
           
     return dict;
 }
+
 @end
+  

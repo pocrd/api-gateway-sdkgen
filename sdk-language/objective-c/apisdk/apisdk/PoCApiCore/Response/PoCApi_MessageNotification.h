@@ -2,8 +2,9 @@
 
 
 
-@interface PoCApi_MessageNotification : NSObject
+#import "PoCBaseEntity.h"
 
+@interface PoCApi_MessageNotification : PoCBaseEntity
 /* 消息内容 */
 @property(nonatomic, strong) NSString *content;
 

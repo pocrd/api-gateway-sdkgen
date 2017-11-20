@@ -11,7 +11,6 @@
  */
 + (PoCApi_CreditNotification *) deserializeWithJsonData:(NSData *) jsonData
 {
-
     NSError *error = nil;
     NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:jsonData
                                                              options:NSJSONReadingMutableLeaves
@@ -28,8 +27,8 @@
  */
 + (PoCApi_CreditNotification *) deserialize:(NSDictionary *)json
 {
-      if (!([json isKindOfClass:[NSNull class]] || json == nil)) {
-          PoCApi_CreditNotification *result = [[PoCApi_CreditNotification alloc] init];
+    if (!([json isKindOfClass:[NSNull class]] || json == nil)) {
+        PoCApi_CreditNotification *result = [[PoCApi_CreditNotification alloc] init];
       
         /* 描述,为何送积分 */
         result.description = [json objectForKey:@"description"];
@@ -65,4 +64,6 @@
           
     return dict;
 }
+
 @end
+  

@@ -2,8 +2,9 @@
 
 
 
-@interface PoCApi_KeyValuePair : NSObject
+#import "PoCBaseEntity.h"
 
+@interface PoCApi_KeyValuePair : PoCBaseEntity
 /* 键 */
 @property(nonatomic, strong) NSString *key;
 

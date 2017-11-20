@@ -21,7 +21,6 @@
  */
 + (PoCApi_KeyValueList *) deserializeWithJsonData:(NSData *) jsonData
 {
-
     NSError *error = nil;
     NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:jsonData
                                                              options:NSJSONReadingMutableLeaves
@@ -38,17 +37,17 @@
  */
 + (PoCApi_KeyValueList *) deserialize:(NSDictionary *)json
 {
-      if (!([json isKindOfClass:[NSNull class]] || json == nil)) {
-          PoCApi_KeyValueList *result = [[PoCApi_KeyValueList alloc] init];
+    if (!([json isKindOfClass:[NSNull class]] || json == nil)) {
+        PoCApi_KeyValueList *result = [[PoCApi_KeyValueList alloc] init];
       
         /* 键值对列表 */
         NSArray *keyValueArray = [json objectForKey:@"keyValue"];
         if (keyValueArray && ![keyValueArray isKindOfClass:[NSNull class]]) {
-            for (NSInteger i =0; i < [keyValueArray count]; i++){
-            NSDictionary *dict = [keyValueArray objectAtIndex:i];
-               if (dict && ![dict isKindOfClass:[NSNull class]]) {
-                   [result.keyValue addObject:[PoCApi_KeyValuePair deserialize:dict]];
-               }
+            for (NSInteger i = 0; i < [keyValueArray count]; i++){
+                NSDictionary *dict = [keyValueArray objectAtIndex:i];
+                if (dict && ![dict isKindOfClass:[NSNull class]]) {
+                    [result.keyValue addObject:[PoCApi_KeyValuePair deserialize:dict]];
+                }
             }
         }
       
@@ -80,4 +79,6 @@
       
     return dict;
 }
+
 @end
+  

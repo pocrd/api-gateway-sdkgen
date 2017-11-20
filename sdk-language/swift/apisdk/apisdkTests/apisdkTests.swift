@@ -25,7 +25,7 @@ class apisdkTests: XCTestCase {
         if let greeting = try?hello("boy"){
             print("hello   " + greeting);
         }
-        
+        var e : Entity? = nil;
         do{
             let g = try hello2("xxx");
             defer {
@@ -60,7 +60,19 @@ class apisdkTests: XCTestCase {
         if(name.hasPrefix("xxx")){
             throw NameError.miao(name);
         }
+        var ss = Set<String>();
+        ss.insert("good");
+        ss.remove("good");
+        let m = Mirror(reflecting:ss);
+        
         return "hi " + name;
+    }
+    
+    class Entity : Equatable {
+        var name : String = "";
+        static func ==(l:Entity, r:Entity)->Bool{
+            return l.name == r.name;
+        }
     }
     
 }

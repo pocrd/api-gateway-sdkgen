@@ -10,7 +10,6 @@
  */
 + (PoCApi_MessageNotification *) deserializeWithJsonData:(NSData *) jsonData
 {
-
     NSError *error = nil;
     NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:jsonData
                                                              options:NSJSONReadingMutableLeaves
@@ -27,8 +26,8 @@
  */
 + (PoCApi_MessageNotification *) deserialize:(NSDictionary *)json
 {
-      if (!([json isKindOfClass:[NSNull class]] || json == nil)) {
-          PoCApi_MessageNotification *result = [[PoCApi_MessageNotification alloc] init];
+    if (!([json isKindOfClass:[NSNull class]] || json == nil)) {
+        PoCApi_MessageNotification *result = [[PoCApi_MessageNotification alloc] init];
       
         /* 消息内容 */
         result.content = [json objectForKey:@"content"];
@@ -82,4 +81,6 @@
           
     return dict;
 }
+
 @end
+  

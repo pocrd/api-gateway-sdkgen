@@ -2,8 +2,9 @@
 
 
 
-@interface PoCApi_NumberResp : NSObject
+#import "PoCBaseEntity.h"
 
+@interface PoCApi_NumberResp : PoCBaseEntity
 /* 数值型返回值，包含byte, char, short, int */
 @property(nonatomic, assign) NSInteger value;
 

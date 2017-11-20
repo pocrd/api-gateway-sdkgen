@@ -2,8 +2,9 @@
 
 
 
-@interface PoCApi_BoolResp : NSObject
+#import "PoCBaseEntity.h"
 
+@interface PoCApi_BoolResp : PoCBaseEntity
 /* 布尔类型返回值 */
 @property(nonatomic, assign) BOOL value;
 

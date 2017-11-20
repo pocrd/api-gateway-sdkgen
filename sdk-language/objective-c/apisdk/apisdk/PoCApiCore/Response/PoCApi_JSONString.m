@@ -10,7 +10,6 @@
  */
 + (PoCApi_JSONString *) deserializeWithJsonData:(NSData *) jsonData
 {
-
     NSError *error = nil;
     NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:jsonData
                                                              options:NSJSONReadingMutableLeaves
@@ -27,10 +26,10 @@
  */
 + (PoCApi_JSONString *) deserialize:(NSDictionary *)json
 {
-      if (!([json isKindOfClass:[NSNull class]] || json == nil)) {
-          PoCApi_JSONString *result = [[PoCApi_JSONString alloc] init];
-          NSData *jsonData = [NSJSONSerialization dataWithJSONObject:json options:kNilOptions error:NULL];
-              result.value = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    if (!([json isKindOfClass:[NSNull class]] || json == nil)) {
+        PoCApi_JSONString *result = [[PoCApi_JSONString alloc] init];
+              NSData *jsonData = [NSJSONSerialization dataWithJSONObject:json options:kNilOptions error:NULL];
+        result.value = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
           
         return result;
     }
@@ -49,4 +48,6 @@
           
     return dict;
 }
+
 @end
+  

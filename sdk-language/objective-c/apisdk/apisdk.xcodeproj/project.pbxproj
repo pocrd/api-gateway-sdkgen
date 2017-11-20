@@ -17,19 +17,54 @@
 		3580D09A1D12B6220027180B /* PoCServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3580CE111D12B6220027180B /* PoCServerResponse.m */; };
 		3580D09B1D12B6220027180B /* PoCSystemVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3580CE131D12B6220027180B /* PoCSystemVersion.m */; };
 		35E79B031D48917600B0B60F /* PoCApiCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E795CD1D48917000B0B60F /* PoCApiCode.m */; };
-		35E79C741D48917600B0B60F /* PoCApi_BoolArrayResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E798B11D48917300B0B60F /* PoCApi_BoolArrayResp.m */; };
 		35E79C751D48917600B0B60F /* PoCApi_BoolResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E798B31D48917300B0B60F /* PoCApi_BoolResp.m */; };
 		35E79C7F1D48917600B0B60F /* PoCApi_CallState.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E798C71D48917300B0B60F /* PoCApi_CallState.m */; };
 		35E79CA81D48917600B0B60F /* PoCApi_CreditNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E799191D48917300B0B60F /* PoCApi_CreditNotification.m */; };
 		35E79CD51D48917600B0B60F /* PoCApi_JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E799731D48917400B0B60F /* PoCApi_JSONString.m */; };
 		35E79CD61D48917600B0B60F /* PoCApi_KeyValueList.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E799751D48917400B0B60F /* PoCApi_KeyValueList.m */; };
 		35E79CD71D48917600B0B60F /* PoCApi_KeyValuePair.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E799771D48917400B0B60F /* PoCApi_KeyValuePair.m */; };
-		35E79CD81D48917600B0B60F /* PoCApi_KeyValuePair_ArrayResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E799791D48917400B0B60F /* PoCApi_KeyValuePair_ArrayResp.m */; };
-		35E79CD91D48917600B0B60F /* PoCApi_LongResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E7997B1D48917400B0B60F /* PoCApi_LongResp.m */; };
 		35E79CE21D48917600B0B60F /* PoCApi_NumberResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E7998D1D48917400B0B60F /* PoCApi_NumberResp.m */; };
 		35E79D451D48917600B0B60F /* PoCApi_Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E79A531D48917500B0B60F /* PoCApi_Response.m */; };
-		35E79D711D48917600B0B60F /* PoCApi_StringArrayResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E79AAB1D48917500B0B60F /* PoCApi_StringArrayResp.m */; };
 		35E79D721D48917600B0B60F /* PoCApi_StringResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E79AAD1D48917500B0B60F /* PoCApi_StringResp.m */; };
+		5FCD18B51FBECDF7005ABEA8 /* PoCBaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18B41FBECDF7005ABEA8 /* PoCBaseEntity.m */; };
+		5FCD18F91FC27CED005ABEA8 /* PoCApitest_TestPostbody.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18B71FC27CE6005ABEA8 /* PoCApitest_TestPostbody.m */; };
+		5FCD18FA1FC27CED005ABEA8 /* PoCApitest_TestAutowiredClientIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18B81FC27CE6005ABEA8 /* PoCApitest_TestAutowiredClientIP.m */; };
+		5FCD18FB1FC27CED005ABEA8 /* PoCApitest_TestRegisteredDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18B91FC27CE6005ABEA8 /* PoCApitest_TestRegisteredDevice.m */; };
+		5FCD18FC1FC27CED005ABEA8 /* PoCDemo_GetResByThirdPartyId.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18BB1FC27CE6005ABEA8 /* PoCDemo_GetResByThirdPartyId.m */; };
+		5FCD18FD1FC27CED005ABEA8 /* PoCApitest_TestRsaEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18BD1FC27CE6005ABEA8 /* PoCApitest_TestRsaEncrypt.m */; };
+		5FCD18FE1FC27CED005ABEA8 /* PoCApitest_TestDesignedErrorCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18C01FC27CE6005ABEA8 /* PoCApitest_TestDesignedErrorCode.m */; };
+		5FCD18FF1FC27CED005ABEA8 /* PoCApitest_TestApiParameterRsaEncrypted.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18C21FC27CE6005ABEA8 /* PoCApitest_TestApiParameterRsaEncrypted.m */; };
+		5FCD19001FC27CED005ABEA8 /* PoCApitest_TestThrowServiceException.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18C31FC27CE7005ABEA8 /* PoCApitest_TestThrowServiceException.m */; };
+		5FCD19011FC27CED005ABEA8 /* PoCDemo_TestMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18C51FC27CE7005ABEA8 /* PoCDemo_TestMock.m */; };
+		5FCD19021FC27CED005ABEA8 /* PoCDemo_SayHello.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18C61FC27CE7005ABEA8 /* PoCDemo_SayHello.m */; };
+		5FCD19031FC27CED005ABEA8 /* PoCApitest_TestJSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18C71FC27CE7005ABEA8 /* PoCApitest_TestJSONString.m */; };
+		5FCD19041FC27CED005ABEA8 /* PoCDemo_TestMockService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18C81FC27CE7005ABEA8 /* PoCDemo_TestMockService.m */; };
+		5FCD19051FC27CED005ABEA8 /* PoCApitest_TestComplexTestEntityListReturn.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18C91FC27CE8005ABEA8 /* PoCApitest_TestComplexTestEntityListReturn.m */; };
+		5FCD19061FC27CED005ABEA8 /* PoCApitest_TestAppendServiceLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18CA1FC27CE8005ABEA8 /* PoCApitest_TestAppendServiceLog.m */; };
+		5FCD19071FC27CED005ABEA8 /* PoCApitest_TestDemoSayHello.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18CD1FC27CE8005ABEA8 /* PoCApitest_TestDemoSayHello.m */; };
+		5FCD19081FC27CED005ABEA8 /* PoCApitest_TestMsg.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18CE1FC27CE8005ABEA8 /* PoCApitest_TestMsg.m */; };
+		5FCD19091FC27CED005ABEA8 /* PoCDemo_TestRedirect.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18D11FC27CE8005ABEA8 /* PoCDemo_TestRedirect.m */; };
+		5FCD190A1FC27CED005ABEA8 /* PoCApitest_TestCredits.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18D41FC27CE9005ABEA8 /* PoCApitest_TestCredits.m */; };
+		5FCD190B1FC27CED005ABEA8 /* PoCDemo_TestUserLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18D61FC27CE9005ABEA8 /* PoCDemo_TestUserLogin.m */; };
+		5FCD190C1FC27CED005ABEA8 /* PoCDemo_TryError.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18DE1FC27CEA005ABEA8 /* PoCDemo_TryError.m */; };
+		5FCD190D1FC27CED005ABEA8 /* PoCApitest_TestErrorCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18E01FC27CEA005ABEA8 /* PoCApitest_TestErrorCode.m */; };
+		5FCD190E1FC27CED005ABEA8 /* PoCApitest_TestNone.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18E11FC27CEA005ABEA8 /* PoCApitest_TestNone.m */; };
+		5FCD190F1FC27CED005ABEA8 /* PoCApitest_TestWeiXin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18E21FC27CEA005ABEA8 /* PoCApitest_TestWeiXin.m */; };
+		5FCD19101FC27CED005ABEA8 /* PoCApitest_TestUserLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18E51FC27CEB005ABEA8 /* PoCApitest_TestUserLogin.m */; };
+		5FCD19111FC27CED005ABEA8 /* PoCApitest_TestSimpleTestEntityReturn.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18E71FC27CEB005ABEA8 /* PoCApitest_TestSimpleTestEntityReturn.m */; };
+		5FCD19121FC27CED005ABEA8 /* PoCDemo_TestShortCircuit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18E81FC27CEB005ABEA8 /* PoCDemo_TestShortCircuit.m */; };
+		5FCD19131FC27CED005ABEA8 /* PoCApitest_TestErrorCodeFromThirdParty.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18EB1FC27CEC005ABEA8 /* PoCApitest_TestErrorCodeFromThirdParty.m */; };
+		5FCD19141FC27CED005ABEA8 /* PoCDemo_TestRegistedDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18EF1FC27CEC005ABEA8 /* PoCDemo_TestRegistedDevice.m */; };
+		5FCD19151FC27CED005ABEA8 /* PoCDemo_TestIgnoreParameterForSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18F01FC27CEC005ABEA8 /* PoCDemo_TestIgnoreParameterForSecurity.m */; };
+		5FCD19161FC27CED005ABEA8 /* PoCApitest_TestBadResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18F41FC27CED005ABEA8 /* PoCApitest_TestBadResponse.m */; };
+		5FCD19171FC27CED005ABEA8 /* PoCApitest_TestStructInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18F51FC27CED005ABEA8 /* PoCApitest_TestStructInput.m */; };
+		5FCD19181FC27CED005ABEA8 /* PoCApitest_TestRawString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD18F71FC27CED005ABEA8 /* PoCApitest_TestRawString.m */; };
+		5FCD19251FC27CFD005ABEA8 /* PoCApi_DynamicEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD19191FC27CFC005ABEA8 /* PoCApi_DynamicEntity.m */; };
+		5FCD19261FC27CFD005ABEA8 /* PoCApi_APITEST_ComplexTestEntity_ArrayResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD191B1FC27CFC005ABEA8 /* PoCApi_APITEST_ComplexTestEntity_ArrayResp.m */; };
+		5FCD19271FC27CFD005ABEA8 /* PoCApi_APITEST_ComplexTestEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD191C1FC27CFC005ABEA8 /* PoCApi_APITEST_ComplexTestEntity.m */; };
+		5FCD19281FC27CFD005ABEA8 /* PoCApi_APITEST_BadResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD191D1FC27CFC005ABEA8 /* PoCApi_APITEST_BadResponse.m */; };
+		5FCD19291FC27CFD005ABEA8 /* PoCApi_APITEST_SimpleTestEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD19201FC27CFC005ABEA8 /* PoCApi_APITEST_SimpleTestEntity.m */; };
+		5FCD192A1FC27CFD005ABEA8 /* PoCApi_DEMO_DemoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD19221FC27CFD005ABEA8 /* PoCApi_DEMO_DemoEntity.m */; };
 		5FCF565A1D4A56D200EFE8E1 /* PoCApi_MessageNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCF56421D4A56D200EFE8E1 /* PoCApi_MessageNotification.m */; };
 		5FE392CB1F346D5B00437592 /* apiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE392CA1F346D5B00437592 /* apiTests.swift */; };
 		5FE392CD1F346D5B00437592 /* libapisdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3580C1491D12B4E80027180B /* libapisdk.a */; };
@@ -82,8 +117,6 @@
 		35E795CC1D48917000B0B60F /* PoCApiCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApiCode.h; sourceTree = "<group>"; };
 		35E795CD1D48917000B0B60F /* PoCApiCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApiCode.m; sourceTree = "<group>"; };
 		35E795CE1D48917000B0B60F /* PoCApiRequestInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApiRequestInclude.h; sourceTree = "<group>"; };
-		35E798B01D48917300B0B60F /* PoCApi_BoolArrayResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApi_BoolArrayResp.h; sourceTree = "<group>"; };
-		35E798B11D48917300B0B60F /* PoCApi_BoolArrayResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApi_BoolArrayResp.m; sourceTree = "<group>"; };
 		35E798B21D48917300B0B60F /* PoCApi_BoolResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApi_BoolResp.h; sourceTree = "<group>"; };
 		35E798B31D48917300B0B60F /* PoCApi_BoolResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApi_BoolResp.m; sourceTree = "<group>"; };
 		35E798C61D48917300B0B60F /* PoCApi_CallState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApi_CallState.h; sourceTree = "<group>"; };
@@ -96,19 +129,91 @@
 		35E799751D48917400B0B60F /* PoCApi_KeyValueList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApi_KeyValueList.m; sourceTree = "<group>"; };
 		35E799761D48917400B0B60F /* PoCApi_KeyValuePair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApi_KeyValuePair.h; sourceTree = "<group>"; };
 		35E799771D48917400B0B60F /* PoCApi_KeyValuePair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApi_KeyValuePair.m; sourceTree = "<group>"; };
-		35E799781D48917400B0B60F /* PoCApi_KeyValuePair_ArrayResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApi_KeyValuePair_ArrayResp.h; sourceTree = "<group>"; };
-		35E799791D48917400B0B60F /* PoCApi_KeyValuePair_ArrayResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApi_KeyValuePair_ArrayResp.m; sourceTree = "<group>"; };
-		35E7997A1D48917400B0B60F /* PoCApi_LongResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApi_LongResp.h; sourceTree = "<group>"; };
-		35E7997B1D48917400B0B60F /* PoCApi_LongResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApi_LongResp.m; sourceTree = "<group>"; };
 		35E7998C1D48917400B0B60F /* PoCApi_NumberResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApi_NumberResp.h; sourceTree = "<group>"; };
 		35E7998D1D48917400B0B60F /* PoCApi_NumberResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApi_NumberResp.m; sourceTree = "<group>"; };
 		35E79A521D48917500B0B60F /* PoCApi_Response.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApi_Response.h; sourceTree = "<group>"; };
 		35E79A531D48917500B0B60F /* PoCApi_Response.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApi_Response.m; sourceTree = "<group>"; };
-		35E79AAA1D48917500B0B60F /* PoCApi_StringArrayResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApi_StringArrayResp.h; sourceTree = "<group>"; };
-		35E79AAB1D48917500B0B60F /* PoCApi_StringArrayResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApi_StringArrayResp.m; sourceTree = "<group>"; };
 		35E79AAC1D48917500B0B60F /* PoCApi_StringResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApi_StringResp.h; sourceTree = "<group>"; };
 		35E79AAD1D48917500B0B60F /* PoCApi_StringResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApi_StringResp.m; sourceTree = "<group>"; };
 		35E79B021D48917600B0B60F /* PoCApiResponseInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApiResponseInclude.h; sourceTree = "<group>"; };
+		5FCD18B01FBECDC1005ABEA8 /* PoCBaseEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PoCBaseEntity.h; path = apisdk/PoCApiCore/PoCBaseEntity.h; sourceTree = SOURCE_ROOT; };
+		5FCD18B41FBECDF7005ABEA8 /* PoCBaseEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoCBaseEntity.m; sourceTree = "<group>"; };
+		5FCD18B71FC27CE6005ABEA8 /* PoCApitest_TestPostbody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApitest_TestPostbody.m; path = apisdk/PoCApiCore/Request/PoCApitest_TestPostbody.m; sourceTree = SOURCE_ROOT; };
+		5FCD18B81FC27CE6005ABEA8 /* PoCApitest_TestAutowiredClientIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApitest_TestAutowiredClientIP.m; path = apisdk/PoCApiCore/Request/PoCApitest_TestAutowiredClientIP.m; sourceTree = SOURCE_ROOT; };
+		5FCD18B91FC27CE6005ABEA8 /* PoCApitest_TestRegisteredDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApitest_TestRegisteredDevice.m; path = apisdk/PoCApiCore/Request/PoCApitest_TestRegisteredDevice.m; sourceTree = SOURCE_ROOT; };
+		5FCD18BA1FC27CE6005ABEA8 /* PoCDemo_GetResByThirdPartyId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCDemo_GetResByThirdPartyId.h; path = apisdk/PoCApiCore/Request/PoCDemo_GetResByThirdPartyId.h; sourceTree = SOURCE_ROOT; };
+		5FCD18BB1FC27CE6005ABEA8 /* PoCDemo_GetResByThirdPartyId.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCDemo_GetResByThirdPartyId.m; path = apisdk/PoCApiCore/Request/PoCDemo_GetResByThirdPartyId.m; sourceTree = SOURCE_ROOT; };
+		5FCD18BC1FC27CE6005ABEA8 /* PoCApitest_TestThrowServiceException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApitest_TestThrowServiceException.h; path = apisdk/PoCApiCore/Request/PoCApitest_TestThrowServiceException.h; sourceTree = SOURCE_ROOT; };
+		5FCD18BD1FC27CE6005ABEA8 /* PoCApitest_TestRsaEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApitest_TestRsaEncrypt.m; path = apisdk/PoCApiCore/Request/PoCApitest_TestRsaEncrypt.m; sourceTree = SOURCE_ROOT; };
+		5FCD18BF1FC27CE6005ABEA8 /* PoCDemo_SayHello.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCDemo_SayHello.h; path = apisdk/PoCApiCore/Request/PoCDemo_SayHello.h; sourceTree = SOURCE_ROOT; };
+		5FCD18C01FC27CE6005ABEA8 /* PoCApitest_TestDesignedErrorCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApitest_TestDesignedErrorCode.m; path = apisdk/PoCApiCore/Request/PoCApitest_TestDesignedErrorCode.m; sourceTree = SOURCE_ROOT; };
+		5FCD18C11FC27CE6005ABEA8 /* PoCApitest_TestCredits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApitest_TestCredits.h; path = apisdk/PoCApiCore/Request/PoCApitest_TestCredits.h; sourceTree = SOURCE_ROOT; };
+		5FCD18C21FC27CE6005ABEA8 /* PoCApitest_TestApiParameterRsaEncrypted.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApitest_TestApiParameterRsaEncrypted.m; path = apisdk/PoCApiCore/Request/PoCApitest_TestApiParameterRsaEncrypted.m; sourceTree = SOURCE_ROOT; };
+		5FCD18C31FC27CE7005ABEA8 /* PoCApitest_TestThrowServiceException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApitest_TestThrowServiceException.m; path = apisdk/PoCApiCore/Request/PoCApitest_TestThrowServiceException.m; sourceTree = SOURCE_ROOT; };
+		5FCD18C41FC27CE7005ABEA8 /* PoCDemo_TestMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCDemo_TestMock.h; path = apisdk/PoCApiCore/Request/PoCDemo_TestMock.h; sourceTree = SOURCE_ROOT; };
+		5FCD18C51FC27CE7005ABEA8 /* PoCDemo_TestMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCDemo_TestMock.m; path = apisdk/PoCApiCore/Request/PoCDemo_TestMock.m; sourceTree = SOURCE_ROOT; };
+		5FCD18C61FC27CE7005ABEA8 /* PoCDemo_SayHello.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCDemo_SayHello.m; path = apisdk/PoCApiCore/Request/PoCDemo_SayHello.m; sourceTree = SOURCE_ROOT; };
+		5FCD18C71FC27CE7005ABEA8 /* PoCApitest_TestJSONString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApitest_TestJSONString.m; path = apisdk/PoCApiCore/Request/PoCApitest_TestJSONString.m; sourceTree = SOURCE_ROOT; };
+		5FCD18C81FC27CE7005ABEA8 /* PoCDemo_TestMockService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCDemo_TestMockService.m; path = apisdk/PoCApiCore/Request/PoCDemo_TestMockService.m; sourceTree = SOURCE_ROOT; };
+		5FCD18C91FC27CE8005ABEA8 /* PoCApitest_TestComplexTestEntityListReturn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApitest_TestComplexTestEntityListReturn.m; path = apisdk/PoCApiCore/Request/PoCApitest_TestComplexTestEntityListReturn.m; sourceTree = SOURCE_ROOT; };
+		5FCD18CA1FC27CE8005ABEA8 /* PoCApitest_TestAppendServiceLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApitest_TestAppendServiceLog.m; path = apisdk/PoCApiCore/Request/PoCApitest_TestAppendServiceLog.m; sourceTree = SOURCE_ROOT; };
+		5FCD18CB1FC27CE8005ABEA8 /* PoCDemo_TryError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCDemo_TryError.h; path = apisdk/PoCApiCore/Request/PoCDemo_TryError.h; sourceTree = SOURCE_ROOT; };
+		5FCD18CC1FC27CE8005ABEA8 /* PoCApitest_TestDesignedErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApitest_TestDesignedErrorCode.h; path = apisdk/PoCApiCore/Request/PoCApitest_TestDesignedErrorCode.h; sourceTree = SOURCE_ROOT; };
+		5FCD18CD1FC27CE8005ABEA8 /* PoCApitest_TestDemoSayHello.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApitest_TestDemoSayHello.m; path = apisdk/PoCApiCore/Request/PoCApitest_TestDemoSayHello.m; sourceTree = SOURCE_ROOT; };
+		5FCD18CE1FC27CE8005ABEA8 /* PoCApitest_TestMsg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApitest_TestMsg.m; path = apisdk/PoCApiCore/Request/PoCApitest_TestMsg.m; sourceTree = SOURCE_ROOT; };
+		5FCD18CF1FC27CE8005ABEA8 /* PoCApitest_TestAppendServiceLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApitest_TestAppendServiceLog.h; path = apisdk/PoCApiCore/Request/PoCApitest_TestAppendServiceLog.h; sourceTree = SOURCE_ROOT; };
+		5FCD18D01FC27CE8005ABEA8 /* PoCApitest_TestSimpleTestEntityReturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApitest_TestSimpleTestEntityReturn.h; path = apisdk/PoCApiCore/Request/PoCApitest_TestSimpleTestEntityReturn.h; sourceTree = SOURCE_ROOT; };
+		5FCD18D11FC27CE8005ABEA8 /* PoCDemo_TestRedirect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCDemo_TestRedirect.m; path = apisdk/PoCApiCore/Request/PoCDemo_TestRedirect.m; sourceTree = SOURCE_ROOT; };
+		5FCD18D21FC27CE8005ABEA8 /* PoCApitest_TestWeiXin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApitest_TestWeiXin.h; path = apisdk/PoCApiCore/Request/PoCApitest_TestWeiXin.h; sourceTree = SOURCE_ROOT; };
+		5FCD18D31FC27CE9005ABEA8 /* PoCDemo_TestRegistedDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCDemo_TestRegistedDevice.h; path = apisdk/PoCApiCore/Request/PoCDemo_TestRegistedDevice.h; sourceTree = SOURCE_ROOT; };
+		5FCD18D41FC27CE9005ABEA8 /* PoCApitest_TestCredits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApitest_TestCredits.m; path = apisdk/PoCApiCore/Request/PoCApitest_TestCredits.m; sourceTree = SOURCE_ROOT; };
+		5FCD18D51FC27CE9005ABEA8 /* PoCApitest_TestMsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApitest_TestMsg.h; path = apisdk/PoCApiCore/Request/PoCApitest_TestMsg.h; sourceTree = SOURCE_ROOT; };
+		5FCD18D61FC27CE9005ABEA8 /* PoCDemo_TestUserLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCDemo_TestUserLogin.m; path = apisdk/PoCApiCore/Request/PoCDemo_TestUserLogin.m; sourceTree = SOURCE_ROOT; };
+		5FCD18D71FC27CE9005ABEA8 /* PoCDemo_TestMockService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCDemo_TestMockService.h; path = apisdk/PoCApiCore/Request/PoCDemo_TestMockService.h; sourceTree = SOURCE_ROOT; };
+		5FCD18D81FC27CE9005ABEA8 /* PoCApitest_TestJSONString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApitest_TestJSONString.h; path = apisdk/PoCApiCore/Request/PoCApitest_TestJSONString.h; sourceTree = SOURCE_ROOT; };
+		5FCD18D91FC27CE9005ABEA8 /* PoCApitest_TestComplexTestEntityListReturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApitest_TestComplexTestEntityListReturn.h; path = apisdk/PoCApiCore/Request/PoCApitest_TestComplexTestEntityListReturn.h; sourceTree = SOURCE_ROOT; };
+		5FCD18DA1FC27CE9005ABEA8 /* PoCApitest_TestErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApitest_TestErrorCode.h; path = apisdk/PoCApiCore/Request/PoCApitest_TestErrorCode.h; sourceTree = SOURCE_ROOT; };
+		5FCD18DB1FC27CE9005ABEA8 /* PoCApitest_TestErrorCodeFromThirdParty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApitest_TestErrorCodeFromThirdParty.h; path = apisdk/PoCApiCore/Request/PoCApitest_TestErrorCodeFromThirdParty.h; sourceTree = SOURCE_ROOT; };
+		5FCD18DC1FC27CEA005ABEA8 /* PoCApitest_TestBadResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApitest_TestBadResponse.h; path = apisdk/PoCApiCore/Request/PoCApitest_TestBadResponse.h; sourceTree = SOURCE_ROOT; };
+		5FCD18DD1FC27CEA005ABEA8 /* PoCDemo_TestIgnoreParameterForSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCDemo_TestIgnoreParameterForSecurity.h; path = apisdk/PoCApiCore/Request/PoCDemo_TestIgnoreParameterForSecurity.h; sourceTree = SOURCE_ROOT; };
+		5FCD18DE1FC27CEA005ABEA8 /* PoCDemo_TryError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCDemo_TryError.m; path = apisdk/PoCApiCore/Request/PoCDemo_TryError.m; sourceTree = SOURCE_ROOT; };
+		5FCD18DF1FC27CEA005ABEA8 /* PoCApitest_TestRawString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApitest_TestRawString.h; path = apisdk/PoCApiCore/Request/PoCApitest_TestRawString.h; sourceTree = SOURCE_ROOT; };
+		5FCD18E01FC27CEA005ABEA8 /* PoCApitest_TestErrorCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApitest_TestErrorCode.m; path = apisdk/PoCApiCore/Request/PoCApitest_TestErrorCode.m; sourceTree = SOURCE_ROOT; };
+		5FCD18E11FC27CEA005ABEA8 /* PoCApitest_TestNone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApitest_TestNone.m; path = apisdk/PoCApiCore/Request/PoCApitest_TestNone.m; sourceTree = SOURCE_ROOT; };
+		5FCD18E21FC27CEA005ABEA8 /* PoCApitest_TestWeiXin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApitest_TestWeiXin.m; path = apisdk/PoCApiCore/Request/PoCApitest_TestWeiXin.m; sourceTree = SOURCE_ROOT; };
+		5FCD18E31FC27CEB005ABEA8 /* PoCApitest_TestStructInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApitest_TestStructInput.h; path = apisdk/PoCApiCore/Request/PoCApitest_TestStructInput.h; sourceTree = SOURCE_ROOT; };
+		5FCD18E41FC27CEB005ABEA8 /* PoCDemo_TestRedirect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCDemo_TestRedirect.h; path = apisdk/PoCApiCore/Request/PoCDemo_TestRedirect.h; sourceTree = SOURCE_ROOT; };
+		5FCD18E51FC27CEB005ABEA8 /* PoCApitest_TestUserLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApitest_TestUserLogin.m; path = apisdk/PoCApiCore/Request/PoCApitest_TestUserLogin.m; sourceTree = SOURCE_ROOT; };
+		5FCD18E61FC27CEB005ABEA8 /* PoCApitest_TestPostbody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApitest_TestPostbody.h; path = apisdk/PoCApiCore/Request/PoCApitest_TestPostbody.h; sourceTree = SOURCE_ROOT; };
+		5FCD18E71FC27CEB005ABEA8 /* PoCApitest_TestSimpleTestEntityReturn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApitest_TestSimpleTestEntityReturn.m; path = apisdk/PoCApiCore/Request/PoCApitest_TestSimpleTestEntityReturn.m; sourceTree = SOURCE_ROOT; };
+		5FCD18E81FC27CEB005ABEA8 /* PoCDemo_TestShortCircuit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCDemo_TestShortCircuit.m; path = apisdk/PoCApiCore/Request/PoCDemo_TestShortCircuit.m; sourceTree = SOURCE_ROOT; };
+		5FCD18E91FC27CEB005ABEA8 /* PoCApitest_TestRsaEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApitest_TestRsaEncrypt.h; path = apisdk/PoCApiCore/Request/PoCApitest_TestRsaEncrypt.h; sourceTree = SOURCE_ROOT; };
+		5FCD18EA1FC27CEC005ABEA8 /* PoCDemo_TestUserLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCDemo_TestUserLogin.h; path = apisdk/PoCApiCore/Request/PoCDemo_TestUserLogin.h; sourceTree = SOURCE_ROOT; };
+		5FCD18EB1FC27CEC005ABEA8 /* PoCApitest_TestErrorCodeFromThirdParty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApitest_TestErrorCodeFromThirdParty.m; path = apisdk/PoCApiCore/Request/PoCApitest_TestErrorCodeFromThirdParty.m; sourceTree = SOURCE_ROOT; };
+		5FCD18EC1FC27CEC005ABEA8 /* PoCApitest_TestAutowiredClientIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApitest_TestAutowiredClientIP.h; path = apisdk/PoCApiCore/Request/PoCApitest_TestAutowiredClientIP.h; sourceTree = SOURCE_ROOT; };
+		5FCD18ED1FC27CEC005ABEA8 /* PoCApitest_TestDemoSayHello.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApitest_TestDemoSayHello.h; path = apisdk/PoCApiCore/Request/PoCApitest_TestDemoSayHello.h; sourceTree = SOURCE_ROOT; };
+		5FCD18EE1FC27CEC005ABEA8 /* PoCApitest_TestApiParameterRsaEncrypted.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApitest_TestApiParameterRsaEncrypted.h; path = apisdk/PoCApiCore/Request/PoCApitest_TestApiParameterRsaEncrypted.h; sourceTree = SOURCE_ROOT; };
+		5FCD18EF1FC27CEC005ABEA8 /* PoCDemo_TestRegistedDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCDemo_TestRegistedDevice.m; path = apisdk/PoCApiCore/Request/PoCDemo_TestRegistedDevice.m; sourceTree = SOURCE_ROOT; };
+		5FCD18F01FC27CEC005ABEA8 /* PoCDemo_TestIgnoreParameterForSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCDemo_TestIgnoreParameterForSecurity.m; path = apisdk/PoCApiCore/Request/PoCDemo_TestIgnoreParameterForSecurity.m; sourceTree = SOURCE_ROOT; };
+		5FCD18F11FC27CEC005ABEA8 /* PoCApitest_TestRegisteredDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApitest_TestRegisteredDevice.h; path = apisdk/PoCApiCore/Request/PoCApitest_TestRegisteredDevice.h; sourceTree = SOURCE_ROOT; };
+		5FCD18F21FC27CEC005ABEA8 /* PoCDemo_TestShortCircuit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCDemo_TestShortCircuit.h; path = apisdk/PoCApiCore/Request/PoCDemo_TestShortCircuit.h; sourceTree = SOURCE_ROOT; };
+		5FCD18F31FC27CED005ABEA8 /* PoCApitest_TestNone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApitest_TestNone.h; path = apisdk/PoCApiCore/Request/PoCApitest_TestNone.h; sourceTree = SOURCE_ROOT; };
+		5FCD18F41FC27CED005ABEA8 /* PoCApitest_TestBadResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApitest_TestBadResponse.m; path = apisdk/PoCApiCore/Request/PoCApitest_TestBadResponse.m; sourceTree = SOURCE_ROOT; };
+		5FCD18F51FC27CED005ABEA8 /* PoCApitest_TestStructInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApitest_TestStructInput.m; path = apisdk/PoCApiCore/Request/PoCApitest_TestStructInput.m; sourceTree = SOURCE_ROOT; };
+		5FCD18F61FC27CED005ABEA8 /* PoCApitest_TestUserLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApitest_TestUserLogin.h; path = apisdk/PoCApiCore/Request/PoCApitest_TestUserLogin.h; sourceTree = SOURCE_ROOT; };
+		5FCD18F71FC27CED005ABEA8 /* PoCApitest_TestRawString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApitest_TestRawString.m; path = apisdk/PoCApiCore/Request/PoCApitest_TestRawString.m; sourceTree = SOURCE_ROOT; };
+		5FCD19191FC27CFC005ABEA8 /* PoCApi_DynamicEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApi_DynamicEntity.m; path = apisdk/PoCApiCore/Response/PoCApi_DynamicEntity.m; sourceTree = SOURCE_ROOT; };
+		5FCD191A1FC27CFC005ABEA8 /* PoCApi_APITEST_BadResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApi_APITEST_BadResponse.h; path = apisdk/PoCApiCore/Response/PoCApi_APITEST_BadResponse.h; sourceTree = SOURCE_ROOT; };
+		5FCD191B1FC27CFC005ABEA8 /* PoCApi_APITEST_ComplexTestEntity_ArrayResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApi_APITEST_ComplexTestEntity_ArrayResp.m; path = apisdk/PoCApiCore/Response/PoCApi_APITEST_ComplexTestEntity_ArrayResp.m; sourceTree = SOURCE_ROOT; };
+		5FCD191C1FC27CFC005ABEA8 /* PoCApi_APITEST_ComplexTestEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApi_APITEST_ComplexTestEntity.m; path = apisdk/PoCApiCore/Response/PoCApi_APITEST_ComplexTestEntity.m; sourceTree = SOURCE_ROOT; };
+		5FCD191D1FC27CFC005ABEA8 /* PoCApi_APITEST_BadResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApi_APITEST_BadResponse.m; path = apisdk/PoCApiCore/Response/PoCApi_APITEST_BadResponse.m; sourceTree = SOURCE_ROOT; };
+		5FCD191E1FC27CFC005ABEA8 /* PoCApi_APITEST_SimpleTestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApi_APITEST_SimpleTestEntity.h; path = apisdk/PoCApiCore/Response/PoCApi_APITEST_SimpleTestEntity.h; sourceTree = SOURCE_ROOT; };
+		5FCD191F1FC27CFC005ABEA8 /* PoCApi_DEMO_DemoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApi_DEMO_DemoEntity.h; path = apisdk/PoCApiCore/Response/PoCApi_DEMO_DemoEntity.h; sourceTree = SOURCE_ROOT; };
+		5FCD19201FC27CFC005ABEA8 /* PoCApi_APITEST_SimpleTestEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApi_APITEST_SimpleTestEntity.m; path = apisdk/PoCApiCore/Response/PoCApi_APITEST_SimpleTestEntity.m; sourceTree = SOURCE_ROOT; };
+		5FCD19211FC27CFC005ABEA8 /* PoCApi_APITEST_ComplexTestEntity_ArrayResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApi_APITEST_ComplexTestEntity_ArrayResp.h; path = apisdk/PoCApiCore/Response/PoCApi_APITEST_ComplexTestEntity_ArrayResp.h; sourceTree = SOURCE_ROOT; };
+		5FCD19221FC27CFD005ABEA8 /* PoCApi_DEMO_DemoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoCApi_DEMO_DemoEntity.m; path = apisdk/PoCApiCore/Response/PoCApi_DEMO_DemoEntity.m; sourceTree = SOURCE_ROOT; };
+		5FCD19231FC27CFD005ABEA8 /* PoCApi_APITEST_ComplexTestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApi_APITEST_ComplexTestEntity.h; path = apisdk/PoCApiCore/Response/PoCApi_APITEST_ComplexTestEntity.h; sourceTree = SOURCE_ROOT; };
+		5FCD19241FC27CFD005ABEA8 /* PoCApi_DynamicEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoCApi_DynamicEntity.h; path = apisdk/PoCApiCore/Response/PoCApi_DynamicEntity.h; sourceTree = SOURCE_ROOT; };
 		5FCF56411D4A56D200EFE8E1 /* PoCApi_MessageNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoCApi_MessageNotification.h; sourceTree = "<group>"; };
 		5FCF56421D4A56D200EFE8E1 /* PoCApi_MessageNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoCApi_MessageNotification.m; sourceTree = "<group>"; };
 		5FE392C31F346D0600437592 /* apisdk-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "apisdk-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -188,6 +293,8 @@
 				3580CE111D12B6220027180B /* PoCServerResponse.m */,
 				3580CE121D12B6220027180B /* PoCSystemVersion.h */,
 				3580CE131D12B6220027180B /* PoCSystemVersion.m */,
+				5FCD18B01FBECDC1005ABEA8 /* PoCBaseEntity.h */,
+				5FCD18B41FBECDF7005ABEA8 /* PoCBaseEntity.m */,
 			);
 			path = PoCAPICore;
 			sourceTree = "<group>";
@@ -195,6 +302,70 @@
 		35E795CB1D48917000B0B60F /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				5FCD18EE1FC27CEC005ABEA8 /* PoCApitest_TestApiParameterRsaEncrypted.h */,
+				5FCD18C21FC27CE6005ABEA8 /* PoCApitest_TestApiParameterRsaEncrypted.m */,
+				5FCD18CF1FC27CE8005ABEA8 /* PoCApitest_TestAppendServiceLog.h */,
+				5FCD18CA1FC27CE8005ABEA8 /* PoCApitest_TestAppendServiceLog.m */,
+				5FCD18EC1FC27CEC005ABEA8 /* PoCApitest_TestAutowiredClientIP.h */,
+				5FCD18B81FC27CE6005ABEA8 /* PoCApitest_TestAutowiredClientIP.m */,
+				5FCD18DC1FC27CEA005ABEA8 /* PoCApitest_TestBadResponse.h */,
+				5FCD18F41FC27CED005ABEA8 /* PoCApitest_TestBadResponse.m */,
+				5FCD18D91FC27CE9005ABEA8 /* PoCApitest_TestComplexTestEntityListReturn.h */,
+				5FCD18C91FC27CE8005ABEA8 /* PoCApitest_TestComplexTestEntityListReturn.m */,
+				5FCD18C11FC27CE6005ABEA8 /* PoCApitest_TestCredits.h */,
+				5FCD18D41FC27CE9005ABEA8 /* PoCApitest_TestCredits.m */,
+				5FCD18ED1FC27CEC005ABEA8 /* PoCApitest_TestDemoSayHello.h */,
+				5FCD18CD1FC27CE8005ABEA8 /* PoCApitest_TestDemoSayHello.m */,
+				5FCD18CC1FC27CE8005ABEA8 /* PoCApitest_TestDesignedErrorCode.h */,
+				5FCD18C01FC27CE6005ABEA8 /* PoCApitest_TestDesignedErrorCode.m */,
+				5FCD18DA1FC27CE9005ABEA8 /* PoCApitest_TestErrorCode.h */,
+				5FCD18E01FC27CEA005ABEA8 /* PoCApitest_TestErrorCode.m */,
+				5FCD18DB1FC27CE9005ABEA8 /* PoCApitest_TestErrorCodeFromThirdParty.h */,
+				5FCD18EB1FC27CEC005ABEA8 /* PoCApitest_TestErrorCodeFromThirdParty.m */,
+				5FCD18D81FC27CE9005ABEA8 /* PoCApitest_TestJSONString.h */,
+				5FCD18C71FC27CE7005ABEA8 /* PoCApitest_TestJSONString.m */,
+				5FCD18D51FC27CE9005ABEA8 /* PoCApitest_TestMsg.h */,
+				5FCD18CE1FC27CE8005ABEA8 /* PoCApitest_TestMsg.m */,
+				5FCD18F31FC27CED005ABEA8 /* PoCApitest_TestNone.h */,
+				5FCD18E11FC27CEA005ABEA8 /* PoCApitest_TestNone.m */,
+				5FCD18E61FC27CEB005ABEA8 /* PoCApitest_TestPostbody.h */,
+				5FCD18B71FC27CE6005ABEA8 /* PoCApitest_TestPostbody.m */,
+				5FCD18DF1FC27CEA005ABEA8 /* PoCApitest_TestRawString.h */,
+				5FCD18F71FC27CED005ABEA8 /* PoCApitest_TestRawString.m */,
+				5FCD18F11FC27CEC005ABEA8 /* PoCApitest_TestRegisteredDevice.h */,
+				5FCD18B91FC27CE6005ABEA8 /* PoCApitest_TestRegisteredDevice.m */,
+				5FCD18E91FC27CEB005ABEA8 /* PoCApitest_TestRsaEncrypt.h */,
+				5FCD18BD1FC27CE6005ABEA8 /* PoCApitest_TestRsaEncrypt.m */,
+				5FCD18D01FC27CE8005ABEA8 /* PoCApitest_TestSimpleTestEntityReturn.h */,
+				5FCD18E71FC27CEB005ABEA8 /* PoCApitest_TestSimpleTestEntityReturn.m */,
+				5FCD18E31FC27CEB005ABEA8 /* PoCApitest_TestStructInput.h */,
+				5FCD18F51FC27CED005ABEA8 /* PoCApitest_TestStructInput.m */,
+				5FCD18BC1FC27CE6005ABEA8 /* PoCApitest_TestThrowServiceException.h */,
+				5FCD18C31FC27CE7005ABEA8 /* PoCApitest_TestThrowServiceException.m */,
+				5FCD18F61FC27CED005ABEA8 /* PoCApitest_TestUserLogin.h */,
+				5FCD18E51FC27CEB005ABEA8 /* PoCApitest_TestUserLogin.m */,
+				5FCD18D21FC27CE8005ABEA8 /* PoCApitest_TestWeiXin.h */,
+				5FCD18E21FC27CEA005ABEA8 /* PoCApitest_TestWeiXin.m */,
+				5FCD18BA1FC27CE6005ABEA8 /* PoCDemo_GetResByThirdPartyId.h */,
+				5FCD18BB1FC27CE6005ABEA8 /* PoCDemo_GetResByThirdPartyId.m */,
+				5FCD18BF1FC27CE6005ABEA8 /* PoCDemo_SayHello.h */,
+				5FCD18C61FC27CE7005ABEA8 /* PoCDemo_SayHello.m */,
+				5FCD18DD1FC27CEA005ABEA8 /* PoCDemo_TestIgnoreParameterForSecurity.h */,
+				5FCD18F01FC27CEC005ABEA8 /* PoCDemo_TestIgnoreParameterForSecurity.m */,
+				5FCD18C41FC27CE7005ABEA8 /* PoCDemo_TestMock.h */,
+				5FCD18C51FC27CE7005ABEA8 /* PoCDemo_TestMock.m */,
+				5FCD18D71FC27CE9005ABEA8 /* PoCDemo_TestMockService.h */,
+				5FCD18C81FC27CE7005ABEA8 /* PoCDemo_TestMockService.m */,
+				5FCD18E41FC27CEB005ABEA8 /* PoCDemo_TestRedirect.h */,
+				5FCD18D11FC27CE8005ABEA8 /* PoCDemo_TestRedirect.m */,
+				5FCD18D31FC27CE9005ABEA8 /* PoCDemo_TestRegistedDevice.h */,
+				5FCD18EF1FC27CEC005ABEA8 /* PoCDemo_TestRegistedDevice.m */,
+				5FCD18F21FC27CEC005ABEA8 /* PoCDemo_TestShortCircuit.h */,
+				5FCD18E81FC27CEB005ABEA8 /* PoCDemo_TestShortCircuit.m */,
+				5FCD18EA1FC27CEC005ABEA8 /* PoCDemo_TestUserLogin.h */,
+				5FCD18D61FC27CE9005ABEA8 /* PoCDemo_TestUserLogin.m */,
+				5FCD18CB1FC27CE8005ABEA8 /* PoCDemo_TryError.h */,
+				5FCD18DE1FC27CEA005ABEA8 /* PoCDemo_TryError.m */,
 				35E795CC1D48917000B0B60F /* PoCApiCode.h */,
 				35E795CD1D48917000B0B60F /* PoCApiCode.m */,
 				35E795CE1D48917000B0B60F /* PoCApiRequestInclude.h */,
@@ -205,10 +376,20 @@
 		35E798811D48917300B0B60F /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				5FCD191A1FC27CFC005ABEA8 /* PoCApi_APITEST_BadResponse.h */,
+				5FCD191D1FC27CFC005ABEA8 /* PoCApi_APITEST_BadResponse.m */,
+				5FCD19211FC27CFC005ABEA8 /* PoCApi_APITEST_ComplexTestEntity_ArrayResp.h */,
+				5FCD191B1FC27CFC005ABEA8 /* PoCApi_APITEST_ComplexTestEntity_ArrayResp.m */,
+				5FCD19231FC27CFD005ABEA8 /* PoCApi_APITEST_ComplexTestEntity.h */,
+				5FCD191C1FC27CFC005ABEA8 /* PoCApi_APITEST_ComplexTestEntity.m */,
+				5FCD191E1FC27CFC005ABEA8 /* PoCApi_APITEST_SimpleTestEntity.h */,
+				5FCD19201FC27CFC005ABEA8 /* PoCApi_APITEST_SimpleTestEntity.m */,
+				5FCD191F1FC27CFC005ABEA8 /* PoCApi_DEMO_DemoEntity.h */,
+				5FCD19221FC27CFD005ABEA8 /* PoCApi_DEMO_DemoEntity.m */,
+				5FCD19241FC27CFD005ABEA8 /* PoCApi_DynamicEntity.h */,
+				5FCD19191FC27CFC005ABEA8 /* PoCApi_DynamicEntity.m */,
 				5FCF56411D4A56D200EFE8E1 /* PoCApi_MessageNotification.h */,
 				5FCF56421D4A56D200EFE8E1 /* PoCApi_MessageNotification.m */,
-				35E798B01D48917300B0B60F /* PoCApi_BoolArrayResp.h */,
-				35E798B11D48917300B0B60F /* PoCApi_BoolArrayResp.m */,
 				35E798B21D48917300B0B60F /* PoCApi_BoolResp.h */,
 				35E798B31D48917300B0B60F /* PoCApi_BoolResp.m */,
 				35E798C61D48917300B0B60F /* PoCApi_CallState.h */,
@@ -221,16 +402,10 @@
 				35E799751D48917400B0B60F /* PoCApi_KeyValueList.m */,
 				35E799761D48917400B0B60F /* PoCApi_KeyValuePair.h */,
 				35E799771D48917400B0B60F /* PoCApi_KeyValuePair.m */,
-				35E799781D48917400B0B60F /* PoCApi_KeyValuePair_ArrayResp.h */,
-				35E799791D48917400B0B60F /* PoCApi_KeyValuePair_ArrayResp.m */,
-				35E7997A1D48917400B0B60F /* PoCApi_LongResp.h */,
-				35E7997B1D48917400B0B60F /* PoCApi_LongResp.m */,
 				35E7998C1D48917400B0B60F /* PoCApi_NumberResp.h */,
 				35E7998D1D48917400B0B60F /* PoCApi_NumberResp.m */,
 				35E79A521D48917500B0B60F /* PoCApi_Response.h */,
 				35E79A531D48917500B0B60F /* PoCApi_Response.m */,
-				35E79AAA1D48917500B0B60F /* PoCApi_StringArrayResp.h */,
-				35E79AAB1D48917500B0B60F /* PoCApi_StringArrayResp.m */,
 				35E79AAC1D48917500B0B60F /* PoCApi_StringResp.h */,
 				35E79AAD1D48917500B0B60F /* PoCApi_StringResp.m */,
 				35E79B021D48917600B0B60F /* PoCApiResponseInclude.h */,
@@ -337,30 +512,65 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FCD18FE1FC27CED005ABEA8 /* PoCApitest_TestDesignedErrorCode.m in Sources */,
 				35E79C7F1D48917600B0B60F /* PoCApi_CallState.m in Sources */,
+				5FCD19001FC27CED005ABEA8 /* PoCApitest_TestThrowServiceException.m in Sources */,
 				3580D09A1D12B6220027180B /* PoCServerResponse.m in Sources */,
 				5FCF565A1D4A56D200EFE8E1 /* PoCApi_MessageNotification.m in Sources */,
-				35E79CD81D48917600B0B60F /* PoCApi_KeyValuePair_ArrayResp.m in Sources */,
-				35E79CD91D48917600B0B60F /* PoCApi_LongResp.m in Sources */,
+				5FCD19071FC27CED005ABEA8 /* PoCApitest_TestDemoSayHello.m in Sources */,
+				5FCD19291FC27CFD005ABEA8 /* PoCApi_APITEST_SimpleTestEntity.m in Sources */,
 				3580D0931D12B6220027180B /* PoCApiAccessor.m in Sources */,
+				5FCD190F1FC27CED005ABEA8 /* PoCApitest_TestWeiXin.m in Sources */,
+				5FCD190B1FC27CED005ABEA8 /* PoCDemo_TestUserLogin.m in Sources */,
 				35E79D451D48917600B0B60F /* PoCApi_Response.m in Sources */,
 				35E79CD71D48917600B0B60F /* PoCApi_KeyValuePair.m in Sources */,
+				5FCD190C1FC27CED005ABEA8 /* PoCDemo_TryError.m in Sources */,
 				3580D0991D12B6220027180B /* PoCResponse.m in Sources */,
+				5FCD19171FC27CED005ABEA8 /* PoCApitest_TestStructInput.m in Sources */,
 				3580D0981D12B6220027180B /* PoCLocalException.m in Sources */,
-				35E79D711D48917600B0B60F /* PoCApi_StringArrayResp.m in Sources */,
+				5FCD190D1FC27CED005ABEA8 /* PoCApitest_TestErrorCode.m in Sources */,
+				5FCD19081FC27CED005ABEA8 /* PoCApitest_TestMsg.m in Sources */,
+				5FCD19281FC27CFD005ABEA8 /* PoCApi_APITEST_BadResponse.m in Sources */,
+				5FCD19161FC27CED005ABEA8 /* PoCApitest_TestBadResponse.m in Sources */,
+				5FCD19041FC27CED005ABEA8 /* PoCDemo_TestMockService.m in Sources */,
 				35E79CD51D48917600B0B60F /* PoCApi_JSONString.m in Sources */,
-				35E79C741D48917600B0B60F /* PoCApi_BoolArrayResp.m in Sources */,
 				3580D0941D12B6220027180B /* PoCApiContext.m in Sources */,
+				5FCD192A1FC27CFD005ABEA8 /* PoCApi_DEMO_DemoEntity.m in Sources */,
+				5FCD19011FC27CED005ABEA8 /* PoCDemo_TestMock.m in Sources */,
+				5FCD19051FC27CED005ABEA8 /* PoCApitest_TestComplexTestEntityListReturn.m in Sources */,
+				5FCD19101FC27CED005ABEA8 /* PoCApitest_TestUserLogin.m in Sources */,
+				5FCD18F91FC27CED005ABEA8 /* PoCApitest_TestPostbody.m in Sources */,
+				5FCD19091FC27CED005ABEA8 /* PoCDemo_TestRedirect.m in Sources */,
+				5FCD18FC1FC27CED005ABEA8 /* PoCDemo_GetResByThirdPartyId.m in Sources */,
+				5FCD18FA1FC27CED005ABEA8 /* PoCApitest_TestAutowiredClientIP.m in Sources */,
 				3580D0951D12B6220027180B /* PoCBaseRequest.m in Sources */,
 				3580D09B1D12B6220027180B /* PoCSystemVersion.m in Sources */,
 				35E79CD61D48917600B0B60F /* PoCApi_KeyValueList.m in Sources */,
+				5FCD19261FC27CFD005ABEA8 /* PoCApi_APITEST_ComplexTestEntity_ArrayResp.m in Sources */,
+				5FCD19031FC27CED005ABEA8 /* PoCApitest_TestJSONString.m in Sources */,
+				5FCD19021FC27CED005ABEA8 /* PoCDemo_SayHello.m in Sources */,
 				35E79C751D48917600B0B60F /* PoCApi_BoolResp.m in Sources */,
+				5FCD19131FC27CED005ABEA8 /* PoCApitest_TestErrorCodeFromThirdParty.m in Sources */,
+				5FCD18FF1FC27CED005ABEA8 /* PoCApitest_TestApiParameterRsaEncrypted.m in Sources */,
 				35E79CA81D48917600B0B60F /* PoCApi_CreditNotification.m in Sources */,
+				5FCD18FB1FC27CED005ABEA8 /* PoCApitest_TestRegisteredDevice.m in Sources */,
 				35E79CE21D48917600B0B60F /* PoCApi_NumberResp.m in Sources */,
+				5FCD19271FC27CFD005ABEA8 /* PoCApi_APITEST_ComplexTestEntity.m in Sources */,
 				3580D0961D12B6220027180B /* PoCFileRequest.m in Sources */,
+				5FCD19251FC27CFD005ABEA8 /* PoCApi_DynamicEntity.m in Sources */,
+				5FCD19061FC27CED005ABEA8 /* PoCApitest_TestAppendServiceLog.m in Sources */,
+				5FCD18B51FBECDF7005ABEA8 /* PoCBaseEntity.m in Sources */,
+				5FCD19111FC27CED005ABEA8 /* PoCApitest_TestSimpleTestEntityReturn.m in Sources */,
 				35E79D721D48917600B0B60F /* PoCApi_StringResp.m in Sources */,
+				5FCD19181FC27CED005ABEA8 /* PoCApitest_TestRawString.m in Sources */,
+				5FCD190A1FC27CED005ABEA8 /* PoCApitest_TestCredits.m in Sources */,
+				5FCD18FD1FC27CED005ABEA8 /* PoCApitest_TestRsaEncrypt.m in Sources */,
 				35E79B031D48917600B0B60F /* PoCApiCode.m in Sources */,
+				5FCD19141FC27CED005ABEA8 /* PoCDemo_TestRegistedDevice.m in Sources */,
+				5FCD19151FC27CED005ABEA8 /* PoCDemo_TestIgnoreParameterForSecurity.m in Sources */,
 				3580D0971D12B6220027180B /* PoCFileResp.m in Sources */,
+				5FCD19121FC27CED005ABEA8 /* PoCDemo_TestShortCircuit.m in Sources */,
+				5FCD190E1FC27CED005ABEA8 /* PoCApitest_TestNone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +760,7 @@
 				5FE392D21F346D5B00437592 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

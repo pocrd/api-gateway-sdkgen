@@ -3,8 +3,9 @@
 
 @class PoCApi_KeyValuePair;
 
-@interface PoCApi_KeyValueList : NSObject
+#import "PoCBaseEntity.h"
 
+@interface PoCApi_KeyValueList : PoCBaseEntity
 /* 键值对列表 */
 @property(nonatomic, strong) NSMutableArray *keyValue;
     
