@@ -1,14 +1,11 @@
 // Auto Generated.  DO NOT EDIT!
 package net.pocrd.m.app.client.api.resp;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-import net.pocrd.m.app.client.util.JsonSerializable;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import com.google.gson.*;
+import net.pocrd.m.app.client.util.JsonSerializable;
 
 public class Api_KeyValueList implements JsonSerializable {
 
@@ -16,12 +13,11 @@ public class Api_KeyValueList implements JsonSerializable {
      * 键值对列表
      */
     public List<Api_KeyValuePair> keyValue;
-
     /**
      * 反序列化函数，用于从json字符串反序列化本类型实例
      */
     public static Api_KeyValueList deserialize(String json) {
-        if (json != null && !json.isEmpty()) {
+        if (json != null && json.length() != 0) {
             return deserialize(new JsonParser().parse(json).getAsJsonObject());
         }
         return null;
@@ -37,7 +33,7 @@ public class Api_KeyValueList implements JsonSerializable {
             
             /* 键值对列表 */
             element = json.get("keyValue");
-            if (element != null) {
+            if (element != null && !element.isJsonNull()) {
                 JsonArray keyValueArray = element.getAsJsonArray();
                 int len = keyValueArray.size();
                 result.keyValue = new ArrayList<Api_KeyValuePair>(len);
@@ -48,7 +44,7 @@ public class Api_KeyValueList implements JsonSerializable {
                     }
                 }
             }
-
+      
             return result;
         }
         return null;
@@ -70,7 +66,7 @@ public class Api_KeyValueList implements JsonSerializable {
             }
             json.add("keyValue", keyValueArray);
         }
-
+      
         return json;
     }
 }

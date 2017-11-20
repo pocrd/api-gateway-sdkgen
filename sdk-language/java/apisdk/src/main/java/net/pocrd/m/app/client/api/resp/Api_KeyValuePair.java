@@ -1,9 +1,7 @@
 // Auto Generated.  DO NOT EDIT!
 package net.pocrd.m.app.client.api.resp;
 
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
+import com.google.gson.*;
 import net.pocrd.m.app.client.util.JsonSerializable;
 
 public class Api_KeyValuePair implements JsonSerializable {
@@ -12,17 +10,17 @@ public class Api_KeyValuePair implements JsonSerializable {
      * 键
      */
     public String key;
-
+      
     /**
      * 值
      */
     public String value;
-
+      
     /**
      * 反序列化函数，用于从json字符串反序列化本类型实例
      */
     public static Api_KeyValuePair deserialize(String json) {
-        if (json != null && !json.isEmpty()) {
+        if (json != null && json.length() != 0) {
             return deserialize(new JsonParser().parse(json).getAsJsonObject());
         }
         return null;
@@ -41,13 +39,13 @@ public class Api_KeyValuePair implements JsonSerializable {
             if (element != null && !element.isJsonNull()) {
                 result.key = element.getAsString();
             }
-      
+              
             /* 值 */
             element = json.get("value");
             if (element != null && !element.isJsonNull()) {
                 result.value = element.getAsString();
             }
-
+              
             return result;
         }
         return null;
@@ -64,7 +62,7 @@ public class Api_KeyValuePair implements JsonSerializable {
           
         /* 值 */
         if (this.value != null) { json.addProperty("value", this.value); }
-
+          
         return json;
     }
 }

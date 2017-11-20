@@ -1,9 +1,7 @@
 // Auto Generated.  DO NOT EDIT!
 package net.pocrd.m.app.client.api.resp;
 
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
+import com.google.gson.*;
 import net.pocrd.m.app.client.util.JsonSerializable;
 
 public class Api_NumberResp implements JsonSerializable {
@@ -12,12 +10,12 @@ public class Api_NumberResp implements JsonSerializable {
      * 数值型返回值，包含byte, char, short, int
      */
     public int value;
-
+      
     /**
      * 反序列化函数，用于从json字符串反序列化本类型实例
      */
     public static Api_NumberResp deserialize(String json) {
-        if (json != null && !json.isEmpty()) {
+        if (json != null && json.length() != 0) {
             return deserialize(new JsonParser().parse(json).getAsJsonObject());
         }
         return null;
@@ -36,7 +34,7 @@ public class Api_NumberResp implements JsonSerializable {
             if (element != null && !element.isJsonNull()) {
                 result.value = element.getAsInt();
             }
-
+              
             return result;
         }
         return null;
@@ -50,7 +48,7 @@ public class Api_NumberResp implements JsonSerializable {
         
         /* 数值型返回值，包含byte, char, short, int */
         json.addProperty("value", this.value);
-
+          
         return json;
     }
 }

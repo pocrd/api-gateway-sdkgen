@@ -1,14 +1,11 @@
 // Auto Generated.  DO NOT EDIT!
 package net.pocrd.m.app.client.api.resp;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-import net.pocrd.m.app.client.util.JsonSerializable;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import com.google.gson.*;
+import net.pocrd.m.app.client.util.JsonSerializable;
 
 public class Api_Response implements JsonSerializable {
 
@@ -16,31 +13,30 @@ public class Api_Response implements JsonSerializable {
      * 当前服务端时间
      */
     public long systime;
-
+      
     /**
      * 调用返回值
      */
     public int code;
-
+      
     /**
      * 调用标识符
      */
     public String cid;
-
+      
     /**
      * API调用状态，code的信息请参考ApiCode定义文件
      */
-    public List<Api_CallState>    stateList;
+    public List<Api_CallState> stateList;
     /**
      * 服务端返回的通知事件集合
      */
     public List<Api_KeyValuePair> notificationList;
-
     /**
      * 反序列化函数，用于从json字符串反序列化本类型实例
      */
     public static Api_Response deserialize(String json) {
-        if (json != null && !json.isEmpty()) {
+        if (json != null && json.length() != 0) {
             return deserialize(new JsonParser().parse(json).getAsJsonObject());
         }
         return null;
@@ -59,22 +55,22 @@ public class Api_Response implements JsonSerializable {
             if (element != null && !element.isJsonNull()) {
                 result.systime = element.getAsLong();
             }
-      
+              
             /* 调用返回值 */
             element = json.get("code");
             if (element != null && !element.isJsonNull()) {
                 result.code = element.getAsInt();
             }
-      
+              
             /* 调用标识符 */
             element = json.get("cid");
             if (element != null && !element.isJsonNull()) {
                 result.cid = element.getAsString();
             }
-      
+              
             /* API调用状态，code的信息请参考ApiCode定义文件 */
             element = json.get("stateList");
-            if (element != null) {
+            if (element != null && !element.isJsonNull()) {
                 JsonArray stateListArray = element.getAsJsonArray();
                 int len = stateListArray.size();
                 result.stateList = new ArrayList<Api_CallState>(len);
@@ -88,7 +84,7 @@ public class Api_Response implements JsonSerializable {
       
             /* 服务端返回的通知事件集合 */
             element = json.get("notificationList");
-            if (element != null) {
+            if (element != null && !element.isJsonNull()) {
                 JsonArray notificationListArray = element.getAsJsonArray();
                 int len = notificationListArray.size();
                 result.notificationList = new ArrayList<Api_KeyValuePair>(len);
@@ -99,7 +95,7 @@ public class Api_Response implements JsonSerializable {
                     }
                 }
             }
-
+      
             return result;
         }
         return null;
@@ -141,7 +137,7 @@ public class Api_Response implements JsonSerializable {
             }
             json.add("notificationList", notificationListArray);
         }
-
+      
         return json;
     }
 }

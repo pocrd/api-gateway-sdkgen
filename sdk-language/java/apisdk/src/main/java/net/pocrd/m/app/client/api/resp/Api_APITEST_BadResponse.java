@@ -1,23 +1,21 @@
 // Auto Generated.  DO NOT EDIT!
 package net.pocrd.m.app.client.api.resp;
 
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
+import com.google.gson.*;
 import net.pocrd.m.app.client.util.JsonSerializable;
 
-public class Api_LongResp implements JsonSerializable {
+public class Api_APITEST_BadResponse implements JsonSerializable {
 
     /**
-     * 长整形返回值
+     * str
      */
-    public long value;
-
+    public String str;
+      
     /**
      * 反序列化函数，用于从json字符串反序列化本类型实例
      */
-    public static Api_LongResp deserialize(String json) {
-        if (json != null && !json.isEmpty()) {
+    public static Api_APITEST_BadResponse deserialize(String json) {
+        if (json != null && json.length() != 0) {
             return deserialize(new JsonParser().parse(json).getAsJsonObject());
         }
         return null;
@@ -26,17 +24,17 @@ public class Api_LongResp implements JsonSerializable {
     /**
      * 反序列化函数，用于从json节点对象反序列化本类型实例
      */
-    public static Api_LongResp deserialize(JsonObject json) {
+    public static Api_APITEST_BadResponse deserialize(JsonObject json) {
         if (json != null && !json.isJsonNull()) {
-            Api_LongResp result = new Api_LongResp();
+            Api_APITEST_BadResponse result = new Api_APITEST_BadResponse();
             JsonElement element = null;
             
-            /* 长整形返回值 */
-            element = json.get("value");
+            /* str */
+            element = json.get("str");
             if (element != null && !element.isJsonNull()) {
-                result.value = element.getAsLong();
+                result.str = element.getAsString();
             }
-
+              
             return result;
         }
         return null;
@@ -48,9 +46,9 @@ public class Api_LongResp implements JsonSerializable {
     public JsonObject serialize() {
         JsonObject json = new JsonObject();
         
-        /* 长整形返回值 */
-        json.addProperty("value", this.value);
-
+        /* str */
+        if (this.str != null) { json.addProperty("str", this.str); }
+          
         return json;
     }
 }

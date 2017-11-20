@@ -1,9 +1,7 @@
 // Auto Generated.  DO NOT EDIT!
 package net.pocrd.m.app.client.api.resp;
 
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
+import com.google.gson.*;
 import net.pocrd.m.app.client.util.JsonSerializable;
 
 public class Api_MessageNotification implements JsonSerializable {
@@ -12,37 +10,37 @@ public class Api_MessageNotification implements JsonSerializable {
      * 消息内容
      */
     public String content;
-
+      
     /**
      * 消息Id
      */
     public String msgId;
-
+      
     /**
      * 消息类型0: 系统消息,1:通知消息,2: 聊天消息,3:群消息,4:留言消息,5:普通聊天 控制消息
      */
     public int type;
-
+      
     /**
      * 消息内容类型
      */
     public int subType;
-
+      
     /**
      * 发送方Id
      */
     public long fromUserId;
-
+      
     /**
      * 接收方Id
      */
     public long toUserId;
-
+      
     /**
      * 反序列化函数，用于从json字符串反序列化本类型实例
      */
     public static Api_MessageNotification deserialize(String json) {
-        if (json != null && !json.isEmpty()) {
+        if (json != null && json.length() != 0) {
             return deserialize(new JsonParser().parse(json).getAsJsonObject());
         }
         return null;
@@ -61,37 +59,37 @@ public class Api_MessageNotification implements JsonSerializable {
             if (element != null && !element.isJsonNull()) {
                 result.content = element.getAsString();
             }
-      
+              
             /* 消息Id */
             element = json.get("msgId");
             if (element != null && !element.isJsonNull()) {
                 result.msgId = element.getAsString();
             }
-      
+              
             /* 消息类型0: 系统消息,1:通知消息,2: 聊天消息,3:群消息,4:留言消息,5:普通聊天 控制消息 */
             element = json.get("type");
             if (element != null && !element.isJsonNull()) {
                 result.type = element.getAsInt();
             }
-      
+              
             /* 消息内容类型 */
             element = json.get("subType");
             if (element != null && !element.isJsonNull()) {
                 result.subType = element.getAsInt();
             }
-      
+              
             /* 发送方Id */
             element = json.get("fromUserId");
             if (element != null && !element.isJsonNull()) {
                 result.fromUserId = element.getAsLong();
             }
-      
+              
             /* 接收方Id */
             element = json.get("toUserId");
             if (element != null && !element.isJsonNull()) {
                 result.toUserId = element.getAsLong();
             }
-
+              
             return result;
         }
         return null;
@@ -120,7 +118,7 @@ public class Api_MessageNotification implements JsonSerializable {
           
         /* 接收方Id */
         json.addProperty("toUserId", this.toUserId);
-
+          
         return json;
     }
 }

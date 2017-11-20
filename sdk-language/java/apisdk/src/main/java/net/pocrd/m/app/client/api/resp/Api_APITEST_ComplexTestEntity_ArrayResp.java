@@ -1,24 +1,23 @@
 // Auto Generated.  DO NOT EDIT!
 package net.pocrd.m.app.client.api.resp;
 
-import com.google.gson.*;
-import net.pocrd.m.app.client.util.JsonSerializable;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class Api_StringArrayResp implements JsonSerializable {
+import com.google.gson.*;
+import net.pocrd.m.app.client.util.JsonSerializable;
+
+public class Api_APITEST_ComplexTestEntity_ArrayResp implements JsonSerializable {
 
     /**
-     * 字符串数组返回值
+     * ComplexTestEntity
      */
-    public List<String> value;
-
+    public List<Api_APITEST_ComplexTestEntity> value;
     /**
      * 反序列化函数，用于从json字符串反序列化本类型实例
      */
-    public static Api_StringArrayResp deserialize(String json) {
-        if (json != null && !json.isEmpty()) {
+    public static Api_APITEST_ComplexTestEntity_ArrayResp deserialize(String json) {
+        if (json != null && json.length() != 0) {
             return deserialize(new JsonParser().parse(json).getAsJsonObject());
         }
         return null;
@@ -27,26 +26,25 @@ public class Api_StringArrayResp implements JsonSerializable {
     /**
      * 反序列化函数，用于从json节点对象反序列化本类型实例
      */
-    public static Api_StringArrayResp deserialize(JsonObject json) {
+    public static Api_APITEST_ComplexTestEntity_ArrayResp deserialize(JsonObject json) {
         if (json != null && !json.isJsonNull()) {
-            Api_StringArrayResp result = new Api_StringArrayResp();
+            Api_APITEST_ComplexTestEntity_ArrayResp result = new Api_APITEST_ComplexTestEntity_ArrayResp();
             JsonElement element = null;
             
-            /* 字符串数组返回值 */
+            /* ComplexTestEntity */
             element = json.get("value");
-            if (element != null) {
+            if (element != null && !element.isJsonNull()) {
                 JsonArray valueArray = element.getAsJsonArray();
                 int len = valueArray.size();
-                result.value = new ArrayList<String>(len);
+                result.value = new ArrayList<Api_APITEST_ComplexTestEntity>(len);
                 for (int i = 0; i < len; i++) {
-                    if (valueArray.get(i) != null) {
-                        result.value.add(valueArray.get(i).getAsString());
-                    } else {
-                        result.value.add(i, null);
+                    JsonObject jo = valueArray.get(i).getAsJsonObject();
+                    if (jo != null && !jo.isJsonNull()) {
+                        result.value.add(Api_APITEST_ComplexTestEntity.deserialize(jo));
                     }
                 }
             }
-
+      
             return result;
         }
         return null;
@@ -58,15 +56,17 @@ public class Api_StringArrayResp implements JsonSerializable {
     public JsonObject serialize() {
         JsonObject json = new JsonObject();
         
-        /* 字符串数组返回值 */
+        /* ComplexTestEntity */
         if (this.value != null) {
             JsonArray valueArray = new JsonArray();
-            for (String value : this.value) {
-                valueArray.add(new JsonPrimitive(value));
+            for (Api_APITEST_ComplexTestEntity value : this.value) {
+                if (value != null) {
+                    valueArray.add(value.serialize());
+                }
             }
             json.add("value", valueArray);
         }
-
+      
         return json;
     }
 }
