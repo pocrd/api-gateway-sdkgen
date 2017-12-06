@@ -19,9 +19,9 @@ import java.util.List;
 public class ServerResponse {
     private static final Logger logger = LoggerFactory.getLogger(ServerResponse.class);
 
-    //通知中的积分关键字,与api-util.ConstField保持一致
+    //通知中的积分关键字
     private static final String CREDIT_KEY = "net.pocrd.CREDIT";
-    //通知中的消息关键字,与api-util.ConstField保持一致
+    //通知中的消息关键字
     private static final String MSG_KEY    = "net.pocrd.MSG";
 
     //消息下发通知
@@ -36,10 +36,6 @@ public class ServerResponse {
     private int    returnCode = 0;
     //http返回的raw data
     private String data;
-
-    public static boolean isNullOrEmpty(String value) {
-        return value != null & !value.isEmpty();
-    }
 
     protected void setNotifications(List<Api_KeyValuePair> notifications) {
         if (notifications != null && notifications.size() > 0) {

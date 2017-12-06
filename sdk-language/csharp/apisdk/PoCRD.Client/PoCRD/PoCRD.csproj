@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4B1991E1-CD63-4BF6-BED7-E4FF2007551A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PoCRD.Client</RootNamespace>
+    <AssemblyName>PoCRD.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="slf4net">
+      <HintPath>..\packages\slf4net.0.1.32.1\lib\net35\slf4net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Client\ApiAccessor.cs" />
+    <Compile Include="Client\ApiContext.cs" />
+    <Compile Include="Client\BaseRequest.cs" />
+    <Compile Include="Client\CommonParameter.cs" />
+    <Compile Include="Client\LocalException.cs" />
+    <Compile Include="Client\ParameterList.cs" />
+    <Compile Include="Client\Response.cs" />
+    <Compile Include="Client\SDKConfig.cs" />
+    <Compile Include="Client\SecurityType.cs" />
+    <Compile Include="Client\ServerResponse.cs" />
+    <Compile Include="Client\API\Request\ApiCode.cs" />
+    <Compile Include="Client\API\Response\Api_BoolResp.cs" />
+    <Compile Include="Client\API\Response\Api_CallState.cs" />
+    <Compile Include="Client\API\Response\Api_CreditNotification.cs" />
+    <Compile Include="Client\API\Response\Api_DynamicEntity.cs" />
+    <Compile Include="Client\API\Response\Api_KeyValuePair.cs" />
+    <Compile Include="Client\API\Response\Api_MessageNotification.cs" />
+    <Compile Include="Client\API\Response\Api_Response.cs" />
+    <Compile Include="Client\Util\JsonSerializable.cs" />
+    <Compile Include="Client\Util\RsaHelper.cs" />
+    <Compile Include="Client\API\Request\Apitest_TestApiParameterRsaEncrypted.cs" />
+    <Compile Include="Client\API\Request\Apitest_TestAppendServiceLog.cs" />
+    <Compile Include="Client\API\Request\Apitest_TestAutowiredClientIP.cs" />
+    <Compile Include="Client\API\Request\Apitest_TestBadResponse.cs" />
+    <Compile Include="Client\API\Request\Apitest_TestComplexTestEntityListReturn.cs" />
+    <Compile Include="Client\API\Request\Apitest_TestCredits.cs" />
+    <Compile Include="Client\API\Request\Apitest_TestDemoSayHello.cs" />
+    <Compile Include="Client\API\Request\Apitest_TestDesignedErrorCode.cs" />
+    <Compile Include="Client\API\Request\Apitest_TestErrorCode.cs" />
+    <Compile Include="Client\API\Request\Apitest_TestErrorCodeFromThirdParty.cs" />
+    <Compile Include="Client\API\Request\Apitest_TestJSONString.cs" />
+    <Compile Include="Client\API\Request\Apitest_TestMsg.cs" />
+    <Compile Include="Client\API\Request\Apitest_TestNone.cs" />
+    <Compile Include="Client\API\Request\Apitest_TestPostbody.cs" />
+    <Compile Include="Client\API\Request\Apitest_TestRawString.cs" />
+    <Compile Include="Client\API\Request\Apitest_TestRegisteredDevice.cs" />
+    <Compile Include="Client\API\Request\Apitest_TestRsaEncrypt.cs" />
+    <Compile Include="Client\API\Request\Apitest_TestSimpleTestEntityReturn.cs" />
+    <Compile Include="Client\API\Request\Apitest_TestStructInput.cs" />
+    <Compile Include="Client\API\Request\Apitest_TestThrowServiceException.cs" />
+    <Compile Include="Client\API\Request\Apitest_TestUserLogin.cs" />
+    <Compile Include="Client\API\Request\Apitest_TestWeiXin.cs" />
+    <Compile Include="Client\API\Request\Demo_GetResByThirdPartyId.cs" />
+    <Compile Include="Client\API\Request\Demo_SayHello.cs" />
+    <Compile Include="Client\API\Request\Demo_TestIgnoreParameterForSecurity.cs" />
+    <Compile Include="Client\API\Request\Demo_TestMock.cs" />
+    <Compile Include="Client\API\Request\Demo_TestMockService.cs" />
+    <Compile Include="Client\API\Request\Demo_TestRedirect.cs" />
+    <Compile Include="Client\API\Request\Demo_TestRegistedDevice.cs" />
+    <Compile Include="Client\API\Request\Demo_TestShortCircuit.cs" />
+    <Compile Include="Client\API\Request\Demo_TestUserLogin.cs" />
+    <Compile Include="Client\API\Request\Demo_TryError.cs" />
+    <Compile Include="Client\API\Response\Api_APITEST_BadResponse.cs" />
+    <Compile Include="Client\API\Response\Api_APITEST_ComplexTestEntity_ArrayResp.cs" />
+    <Compile Include="Client\API\Response\Api_APITEST_ComplexTestEntity.cs" />
+    <Compile Include="Client\API\Response\Api_APITEST_SimpleTestEntity.cs" />
+    <Compile Include="Client\API\Response\Api_DEMO_DemoEntity.cs" />
+    <Compile Include="Client\API\Response\Api_JSONString.cs" />
+    <Compile Include="Client\API\Response\Api_KeyValueList.cs" />
+    <Compile Include="Client\API\Response\Api_NumberResp.cs" />
+    <Compile Include="Client\API\Response\Api_StringResp.cs" />
+    <Compile Include="Client\Util\RawString.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Client\" />
+    <Folder Include="Client\API\" />
+    <Folder Include="Client\API\Request\" />
+    <Folder Include="Client\API\Response\" />
+    <Folder Include="Client\Util\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

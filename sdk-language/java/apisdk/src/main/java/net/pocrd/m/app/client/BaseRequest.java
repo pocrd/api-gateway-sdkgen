@@ -4,7 +4,7 @@ import com.google.gson.JsonObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.HashMap;
+import java.util.*;
 
 public abstract class BaseRequest<T> {
     protected static final Logger                  logger           = LoggerFactory.getLogger(BaseRequest.class);
@@ -117,5 +117,72 @@ public abstract class BaseRequest<T> {
 
     public final T getResponse() {
         return response.result;
+    }
+
+    /******************************************** 以下功能处理接口依赖 既A接口的输出作为B接口的输入 ********************************************/
+    protected String[] getImportParams() {
+        return null;
+    }
+
+    protected Set<String> getExportParams() {
+        return null;
+    }
+
+    protected BaseRequest[] getDependencies() {
+        return null;
+    }
+
+    public abstract static class AbstractDependencyBuilder {
+        protected List<BaseRequest> dependencies;
+
+        /**
+         * 添加依赖的同时确保被添加的依赖请求中至少声明一个本请求所需引入的参数
+         */
+        public void addDependency(String[] expectedParams, BaseRequest req) {
+            if (dependencies == null) {
+                dependencies = new ArrayList<BaseRequest>(3);
+            }
+            Set<String> pset = req == null ? null : req.getExportParams();
+            boolean found = false;
+            if (expectedParams != null && pset != null) {
+                for (String p : expectedParams) {
+                    if (pset.contains(p)) {
+                        found = true;
+                        break;
+                    }
+                }
+            }
+            if (!found) {
+                throw new RuntimeException("Cannot found any expected params in " + req.methodName);
+            }
+            dependencies.add(req);
+        }
+
+        /**
+         * 检测是否所有本请求需要引入的参数都已被提供
+         */
+        public void checkDependency(BaseRequest req) {
+            String[] expectedParams = req == null ? null : req.getImportParams();
+            BaseRequest[] reqDependencies = req == null ? null : req.getDependencies();
+            if (expectedParams == null || expectedParams.length == 0 || reqDependencies == null || reqDependencies.length == 0) {
+                throw new RuntimeException("Dependency check failed for " + req.methodName);
+            }
+            Map<String, BaseRequest> expectedRequests = new HashMap(expectedParams.length);
+            for (int i = 0; i < expectedParams.length; i++) {
+                for (BaseRequest br : reqDependencies) {
+                    for (Object export : br.getExportParams()) {
+                        if (expectedParams[i].equals(export)) {
+                            expectedRequests.put(expectedParams[i], br);
+                        }
+                    }
+                }
+            }
+            // 当前 req.params 里面存放的都是必填参数, 检测值为空的参数是否已有依赖请求提供注入
+            for (String key : req.params.keySet()) {
+                if (req.params.get(key) == null && expectedRequests.get(key) == null) {
+                    throw new RuntimeException("Required parameter no provided \"" + key + "\"");
+                }
+            }
+        }
     }
 }

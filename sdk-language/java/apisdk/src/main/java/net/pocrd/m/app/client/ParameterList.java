@@ -15,7 +15,8 @@ public class ParameterList {
     }
 
     public final void put(String name, String value) {
-        if (name == null || name.length() == 0 || value == null) return;
+        if (name == null || name.length() == 0 || value == null)
+            return;
         params.put(name, value);
     }
 
@@ -29,6 +30,10 @@ public class ParameterList {
 
     public final boolean containsKey(String key) {
         return params.containsKey(key);
+    }
+
+    public final String remove(String key) {
+        return params.remove(key);
     }
 
     public final int size() {

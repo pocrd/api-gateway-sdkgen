@@ -1,0 +1,54 @@
+﻿<Properties StartupConfiguration="{EBC32B73-D228-45DC-8440-68B561542228}|Unit Tests">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PoCRD/Client/API/Request/Demo_TryError.cs">
+    <Files>
+      <File FileName="PoCRD/Client/Util/JsonSerializable.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/Util/RawString.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/Util/RsaHelper.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Demo_TestRedirect.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Demo_TestRegistedDevice.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Response/Api_JSONString.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Response/Api_DynamicEntity.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/ApiAccessor.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/ApiContext.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/ServerResponse.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/ApiCode.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Apitest_TestApiParameterRsaEncrypted.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Apitest_TestAutowiredClientIP.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Apitest_TestDemoSayHello.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Apitest_TestErrorCode.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Apitest_TestRsaEncrypt.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Apitest_TestErrorCodeFromThirdParty.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Apitest_TestJSONString.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Apitest_TestMsg.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Apitest_TestNone.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Apitest_TestPostbody.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Apitest_TestRegisteredDevice.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Apitest_TestRawString.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Apitest_TestDesignedErrorCode.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Apitest_TestCredits.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Apitest_TestComplexTestEntityListReturn.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Apitest_TestBadResponse.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Apitest_TestAppendServiceLog.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Apitest_TestSimpleTestEntityReturn.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Apitest_TestStructInput.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Apitest_TestThrowServiceException.cs" Line="66" Column="3" />
+      <File FileName="PoCRD/Client/API/Request/Apitest_TestUserLogin.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Apitest_TestWeiXin.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Demo_GetResByThirdPartyId.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Demo_SayHello.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Demo_TestIgnoreParameterForSecurity.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Demo_TestMock.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Demo_TestMockService.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Demo_TestShortCircuit.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Demo_TestUserLogin.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Demo_TryError.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.PoCRD.Client.Tests PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
