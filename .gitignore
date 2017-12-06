@@ -26,6 +26,7 @@
 *.swp
 *.zip
 *.vi
+*.userprefs
 *~
 *.sass-cache
 *.ruby-version

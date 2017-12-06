@@ -41,7 +41,7 @@
       <File FileName="PoCRD/Client/API/Request/Demo_TestMockService.cs" Line="1" Column="1" />
       <File FileName="PoCRD/Client/API/Request/Demo_TestShortCircuit.cs" Line="1" Column="1" />
       <File FileName="PoCRD/Client/API/Request/Demo_TestUserLogin.cs" Line="1" Column="1" />
-      <File FileName="PoCRD/Client/API/Request/Demo_TryError.cs" Line="1" Column="1" />
+      <File FileName="PoCRD/Client/API/Request/Demo_TryError.cs" Line="34" Column="40" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
