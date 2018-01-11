@@ -7,7 +7,7 @@ import java.util.List;
 import com.google.gson.*;
 import net.pocrd.m.app.client.util.JsonSerializable;
 
-public class Api_APITEST_SimpleTestEntity implements JsonSerializable {
+public class Api_DEMO_SimpleTestEntity implements JsonSerializable {
 
     /**
      * string value
@@ -22,7 +22,7 @@ public class Api_APITEST_SimpleTestEntity implements JsonSerializable {
     /**
      * 反序列化函数，用于从json字符串反序列化本类型实例
      */
-    public static Api_APITEST_SimpleTestEntity deserialize(String json) {
+    public static Api_DEMO_SimpleTestEntity deserialize(String json) {
         if (json != null && json.length() != 0) {
             return deserialize(new JsonParser().parse(json).getAsJsonObject());
         }
@@ -32,9 +32,9 @@ public class Api_APITEST_SimpleTestEntity implements JsonSerializable {
     /**
      * 反序列化函数，用于从json节点对象反序列化本类型实例
      */
-    public static Api_APITEST_SimpleTestEntity deserialize(JsonObject json) {
+    public static Api_DEMO_SimpleTestEntity deserialize(JsonObject json) {
         if (json != null && !json.isJsonNull()) {
-            Api_APITEST_SimpleTestEntity result = new Api_APITEST_SimpleTestEntity();
+            Api_DEMO_SimpleTestEntity result = new Api_DEMO_SimpleTestEntity();
             JsonElement element = null;
             
             /* string value */

@@ -7,7 +7,7 @@ import java.util.List;
 import com.google.gson.*;
 import net.pocrd.m.app.client.util.JsonSerializable;
 
-public class Api_APITEST_ComplexTestEntity implements JsonSerializable {
+public class Api_DEMO_ComplexTestEntity implements JsonSerializable {
 
     /**
      * strValue
@@ -57,26 +57,26 @@ public class Api_APITEST_ComplexTestEntity implements JsonSerializable {
     /**
      * SimpleTestEntity List
      */
-    public List<Api_APITEST_SimpleTestEntity> simpleTestEntityList;
+    public List<Api_DEMO_SimpleTestEntity> simpleTestEntityList;
     /**
      * simpleTestEntity
      */
-    public Api_APITEST_SimpleTestEntity simpleTestEntity;
+    public Api_DEMO_SimpleTestEntity simpleTestEntity;
       
     /**
-     * dynamic entity 本字段为动态数据类型, 可能类型为以下种类:SimpleTestEntity, BadResponse, 
+     * dynamic entity 本字段为动态数据类型, 可能类型为以下种类:SimpleTestEntity, DemoEntity, 
      */
     public Api_DynamicEntity dynamicEntity;
       
     /**
-     * dynamic entity list 本字段为动态数据类型, 可能类型为以下种类:SimpleTestEntity, BadResponse, KeyValueList, 
+     * dynamic entity list 本字段为动态数据类型, 可能类型为以下种类:SimpleTestEntity, KeyValueList, 
      */
     public List<Api_DynamicEntity> dynamicEntityList;
 
     /**
      * 反序列化函数，用于从json字符串反序列化本类型实例
      */
-    public static Api_APITEST_ComplexTestEntity deserialize(String json) {
+    public static Api_DEMO_ComplexTestEntity deserialize(String json) {
         if (json != null && json.length() != 0) {
             return deserialize(new JsonParser().parse(json).getAsJsonObject());
         }
@@ -86,9 +86,9 @@ public class Api_APITEST_ComplexTestEntity implements JsonSerializable {
     /**
      * 反序列化函数，用于从json节点对象反序列化本类型实例
      */
-    public static Api_APITEST_ComplexTestEntity deserialize(JsonObject json) {
+    public static Api_DEMO_ComplexTestEntity deserialize(JsonObject json) {
         if (json != null && !json.isJsonNull()) {
-            Api_APITEST_ComplexTestEntity result = new Api_APITEST_ComplexTestEntity();
+            Api_DEMO_ComplexTestEntity result = new Api_DEMO_ComplexTestEntity();
             JsonElement element = null;
             
             /* strValue */
@@ -150,11 +150,11 @@ public class Api_APITEST_ComplexTestEntity implements JsonSerializable {
             if (element != null && !element.isJsonNull()) {
                 JsonArray simpleTestEntityListArray = element.getAsJsonArray();
                 int len = simpleTestEntityListArray.size();
-                result.simpleTestEntityList = new ArrayList<Api_APITEST_SimpleTestEntity>(len);
+                result.simpleTestEntityList = new ArrayList<Api_DEMO_SimpleTestEntity>(len);
                 for (int i = 0; i < len; i++) {
                     JsonObject jo = simpleTestEntityListArray.get(i).getAsJsonObject();
                     if (jo != null && !jo.isJsonNull()) {
-                        result.simpleTestEntityList.add(Api_APITEST_SimpleTestEntity.deserialize(jo));
+                        result.simpleTestEntityList.add(Api_DEMO_SimpleTestEntity.deserialize(jo));
                     }
                 }
             }
@@ -162,24 +162,24 @@ public class Api_APITEST_ComplexTestEntity implements JsonSerializable {
             /* simpleTestEntity */
             element = json.get("simpleTestEntity");
             if (element != null && !element.isJsonNull()) {
-                result.simpleTestEntity = Api_APITEST_SimpleTestEntity.deserialize(element.getAsJsonObject());
+                result.simpleTestEntity = Api_DEMO_SimpleTestEntity.deserialize(element.getAsJsonObject());
             }
               
-            /* dynamic entity 本字段为动态数据类型, 可能类型为以下种类:SimpleTestEntity, BadResponse,  */
+            /* dynamic entity 本字段为动态数据类型, 可能类型为以下种类:SimpleTestEntity, DemoEntity,  */
             element = json.get("dynamicEntity");
             if (element != null && !element.isJsonNull()) {
                 result.dynamicEntity = Api_DynamicEntity.deserialize(element.getAsJsonObject());
                 JsonElement e = element.getAsJsonObject().get("entity");
                 if (e != null && !e.isJsonNull()) {
                     if ("SimpleTestEntity".equals(result.dynamicEntity.typeName)) {
-                        result.dynamicEntity.entity = Api_APITEST_SimpleTestEntity.deserialize(e.getAsJsonObject());
-                    } else if ("BadResponse".equals(result.dynamicEntity.typeName)) {
-                        result.dynamicEntity.entity = Api_APITEST_BadResponse.deserialize(e.getAsJsonObject());
+                        result.dynamicEntity.entity = Api_DEMO_SimpleTestEntity.deserialize(e.getAsJsonObject());
+                    } else if ("DemoEntity".equals(result.dynamicEntity.typeName)) {
+                        result.dynamicEntity.entity = Api_DEMO_DemoEntity.deserialize(e.getAsJsonObject());
                     }
                 }
             }
               
-            /* dynamic entity list 本字段为动态数据类型, 可能类型为以下种类:SimpleTestEntity, BadResponse, KeyValueList,  */
+            /* dynamic entity list 本字段为动态数据类型, 可能类型为以下种类:SimpleTestEntity, KeyValueList,  */
             element = json.get("dynamicEntityList");
             if (element != null && !element.isJsonNull()) {
                 JsonArray dynamicEntityListArray = element.getAsJsonArray();
@@ -192,9 +192,7 @@ public class Api_APITEST_ComplexTestEntity implements JsonSerializable {
                         JsonElement e = jo.getAsJsonObject().get("entity");
                         if (e != null && !e.isJsonNull()) {
                             if ("SimpleTestEntity".equals(de.typeName)) {
-                                de.entity = Api_APITEST_SimpleTestEntity.deserialize(e.getAsJsonObject());
-                            } else if ("BadResponse".equals(de.typeName)) {
-                                de.entity = Api_APITEST_BadResponse.deserialize(e.getAsJsonObject());
+                                de.entity = Api_DEMO_SimpleTestEntity.deserialize(e.getAsJsonObject());
                             } else if ("KeyValueList".equals(de.typeName)) {
                                 de.entity = Api_KeyValueList.deserialize(e.getAsJsonObject());
                             }
@@ -245,7 +243,7 @@ public class Api_APITEST_ComplexTestEntity implements JsonSerializable {
         /* SimpleTestEntity List */
         if (this.simpleTestEntityList != null) {
             JsonArray simpleTestEntityListArray = new JsonArray();
-            for (Api_APITEST_SimpleTestEntity value : this.simpleTestEntityList) {
+            for (Api_DEMO_SimpleTestEntity value : this.simpleTestEntityList) {
                 if (value != null) {
                     simpleTestEntityListArray.add(value.serialize());
                 }
@@ -256,10 +254,10 @@ public class Api_APITEST_ComplexTestEntity implements JsonSerializable {
         /* simpleTestEntity */
         if (this.simpleTestEntity != null) { json.add("simpleTestEntity", this.simpleTestEntity.serialize()); }
           
-        /* dynamic entity 本字段为动态数据类型, 可能类型为以下种类:SimpleTestEntity, BadResponse,  */
+        /* dynamic entity 本字段为动态数据类型, 可能类型为以下种类:SimpleTestEntity, DemoEntity,  */
         if (this.dynamicEntity != null) { json.add("dynamicEntity", this.dynamicEntity.serialize()); }
           
-        /* dynamic entity list 本字段为动态数据类型, 可能类型为以下种类:SimpleTestEntity, BadResponse, KeyValueList,  */
+        /* dynamic entity list 本字段为动态数据类型, 可能类型为以下种类:SimpleTestEntity, KeyValueList,  */
         if (this.dynamicEntityList != null) {
             JsonArray dynamicEntityListArray = new JsonArray();
             for (Api_DynamicEntity value : this.dynamicEntityList) {

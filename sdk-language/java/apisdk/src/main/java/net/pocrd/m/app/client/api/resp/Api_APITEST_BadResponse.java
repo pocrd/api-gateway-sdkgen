@@ -11,6 +11,7 @@ public class Api_APITEST_BadResponse implements JsonSerializable {
      */
     public String str;
       
+
     /**
      * 反序列化函数，用于从json字符串反序列化本类型实例
      */

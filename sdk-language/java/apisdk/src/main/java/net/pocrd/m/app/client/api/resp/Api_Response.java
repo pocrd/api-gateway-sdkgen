@@ -32,6 +32,7 @@ public class Api_Response implements JsonSerializable {
      * 服务端返回的通知事件集合
      */
     public List<Api_KeyValuePair> notificationList;
+
     /**
      * 反序列化函数，用于从json字符串反序列化本类型实例
      */

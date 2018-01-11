@@ -25,19 +25,6 @@ public class Apitest_TestWeiXin extends BaseRequest<String> {
     }
     
     /**
-     * 当前请求的非必填参数
-     * @param msg test
-     */
-    public void setMsg(String msg) {
-        try {
-        
-            params.put("msg", msg);
-        } catch(Exception e) {
-            throw new LocalException("SERIALIZE_ERROR", LocalException.SERIALIZE_ERROR, e);
-        }
-    }
-    
-    /**
      * 当前请求有可能的异常返回值
      */
     public int handleError() {

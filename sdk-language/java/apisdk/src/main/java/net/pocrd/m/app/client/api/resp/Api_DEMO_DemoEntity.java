@@ -20,6 +20,7 @@ ja-jp:多言語テスト
      */
     public String name;
       
+
     /**
      * 反序列化函数，用于从json字符串反序列化本类型实例
      */

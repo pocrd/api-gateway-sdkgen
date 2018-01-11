@@ -16,6 +16,7 @@ public class Api_DynamicEntity implements JsonSerializable {
      */
     public String typeName;
       
+
     /**
      * 反序列化函数，用于从json字符串反序列化本类型实例
      */

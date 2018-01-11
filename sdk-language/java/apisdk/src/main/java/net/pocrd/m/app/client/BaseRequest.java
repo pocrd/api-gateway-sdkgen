@@ -4,7 +4,9 @@ import com.google.gson.JsonObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public abstract class BaseRequest<T> {
     protected static final Logger                  logger           = LoggerFactory.getLogger(BaseRequest.class);
@@ -124,7 +126,7 @@ public abstract class BaseRequest<T> {
         return null;
     }
 
-    protected Set<String> getExportParams() {
+    protected String[] getExportParams() {
         return null;
     }
 
@@ -138,17 +140,20 @@ public abstract class BaseRequest<T> {
         /**
          * 添加依赖的同时确保被添加的依赖请求中至少声明一个本请求所需引入的参数
          */
-        public void addDependency(String[] expectedParams, BaseRequest req) {
+        protected void addDependency(String[] expectedParams, BaseRequest req) {
             if (dependencies == null) {
                 dependencies = new ArrayList<BaseRequest>(3);
             }
-            Set<String> pset = req == null ? null : req.getExportParams();
             boolean found = false;
-            if (expectedParams != null && pset != null) {
+            String[] export = req.getExportParams();
+            if (expectedParams != null && export != null) {
+                label1:
                 for (String p : expectedParams) {
-                    if (pset.contains(p)) {
-                        found = true;
-                        break;
+                    for (String e : export) {
+                        if (p.equals(e)) {
+                            found = true;
+                            break label1;
+                        }
                     }
                 }
             }
@@ -161,26 +166,24 @@ public abstract class BaseRequest<T> {
         /**
          * 检测是否所有本请求需要引入的参数都已被提供
          */
-        public void checkDependency(BaseRequest req) {
-            String[] expectedParams = req == null ? null : req.getImportParams();
-            BaseRequest[] reqDependencies = req == null ? null : req.getDependencies();
-            if (expectedParams == null || expectedParams.length == 0 || reqDependencies == null || reqDependencies.length == 0) {
-                throw new RuntimeException("Dependency check failed for " + req.methodName);
-            }
-            Map<String, BaseRequest> expectedRequests = new HashMap(expectedParams.length);
-            for (int i = 0; i < expectedParams.length; i++) {
-                for (BaseRequest br : reqDependencies) {
-                    for (Object export : br.getExportParams()) {
-                        if (expectedParams[i].equals(export)) {
-                            expectedRequests.put(expectedParams[i], br);
+        protected static void checkDependency(String[] requiredInjectionParams, BaseRequest req) {
+            String[] expect = req.getImportParams();
+            if (requiredInjectionParams != null) {
+                for (String p : requiredInjectionParams) {
+                    label1:
+                    {
+                        if (req.getDependencies() != null) {
+                            for (BaseRequest r : req.getDependencies()) {
+                                if (r.getExportParams() != null) {
+                                    for (String ep : r.getExportParams()) {
+                                        if (p.equals(ep))
+                                            break label1;
+                                    }
+                                }
+                            }
                         }
+                        throw new RuntimeException("cannot find required injection parameter. request:" + req.methodName + " param:" + p);
                     }
-                }
-            }
-            // 当前 req.params 里面存放的都是必填参数, 检测值为空的参数是否已有依赖请求提供注入
-            for (String key : req.params.keySet()) {
-                if (req.params.get(key) == null && expectedRequests.get(key) == null) {
-                    throw new RuntimeException("Required parameter no provided \"" + key + "\"");
                 }
             }
         }

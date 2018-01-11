@@ -21,6 +21,7 @@ public class Api_CallState implements JsonSerializable {
      */
     public String msg;
       
+
     /**
      * 反序列化函数，用于从json字符串反序列化本类型实例
      */

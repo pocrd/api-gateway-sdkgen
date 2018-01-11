@@ -13,6 +13,7 @@ public class Api_KeyValueList implements JsonSerializable {
      * 键值对列表
      */
     public List<Api_KeyValuePair> keyValue;
+
     /**
      * 反序列化函数，用于从json字符串反序列化本类型实例
      */

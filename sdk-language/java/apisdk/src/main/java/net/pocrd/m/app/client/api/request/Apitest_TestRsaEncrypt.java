@@ -21,7 +21,7 @@ import net.pocrd.m.app.client.api.resp.*;
  */
 public class Apitest_TestRsaEncrypt extends BaseRequest<Api_StringResp> {
     
-      private RsaHelper rsaHelper = null;
+    private RsaHelper rsaHelper = null;
       
     /**
      * 当前请求的构造函数，以下参数为该请求的必填参数
@@ -61,77 +61,6 @@ public class Apitest_TestRsaEncrypt extends BaseRequest<Api_StringResp> {
      */
     private Apitest_TestRsaEncrypt() {
         super("apitest.testRsaEncrypt", SecurityType.None);
-    }
-    
-    /**
-     * 当前请求的非必填参数
-     * @param param2 param2
-     */
-    public void setParam2(String param2) {
-        try {
-        
-            if (rsaHelper == null) {
-                rsaHelper = new RsaHelper(ApiContext.getContentRsaPubKey());
-            }
-            params.put("param2", Base64Util.encodeToString(rsaHelper.encrypt(param2.getBytes("UTF-8"))));
-        
-        } catch(Exception e) {
-            throw new LocalException("SERIALIZE_ERROR", LocalException.SERIALIZE_ERROR, e);
-        }
-    }
-    
-    /**
-     * 当前请求的非必填参数
-     * @param param4 param4
-     */
-    public void setParam4(Api_APITEST_SimpleTestEntity param4) {
-        try {
-        
-            if (rsaHelper == null) {
-                rsaHelper = new RsaHelper(ApiContext.getContentRsaPubKey());
-            }
-            params.put("param4", Base64Util.encodeToString(rsaHelper.encrypt(param4.serialize().toString().getBytes("UTF-8"))));
-        
-        } catch(Exception e) {
-            throw new LocalException("SERIALIZE_ERROR", LocalException.SERIALIZE_ERROR, e);
-        }
-    }
-    
-    /**
-     * 当前请求的非必填参数
-     * @param param6 param6
-     */
-    public void setParam6(String param6) {
-        try {
-        
-            params.put("param6", param6);
-        } catch(Exception e) {
-            throw new LocalException("SERIALIZE_ERROR", LocalException.SERIALIZE_ERROR, e);
-        }
-    }
-    
-    /**
-     * 当前请求的非必填参数
-     * @param param8 param8
-     */
-    public void setParam8(int[]  param8) {
-        try {
-        
-            JsonArray param8Array = new JsonArray();
-            if (param8 != null) {
-                for (int value : param8) {
-                    param8Array.add(new JsonPrimitive(value));
-                }
-            }
-    
-                    if (rsaHelper == null) {
-                        rsaHelper = new RsaHelper(ApiContext.getContentRsaPubKey());
-                    }
-                    params.put("param8", Base64Util.encodeToString(rsaHelper.encrypt(param8Array.toString().getBytes("UTF-8"))));
-                
-        } catch(Exception e) {
-            throw new LocalException("SERIALIZE_ERROR", LocalException.SERIALIZE_ERROR, e);
-        }
     }
     
     /**

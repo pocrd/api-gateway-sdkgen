@@ -4,39 +4,28 @@ package net.pocrd.m.app.client.api.request;
 
 import com.google.gson.*;
 
-import net.pocrd.m.app.client.ApiContext;
-import net.pocrd.m.app.client.util.Base64Util;
-import net.pocrd.m.app.client.util.RsaHelper;
 import net.pocrd.m.app.client.LocalException;
 import net.pocrd.m.app.client.BaseRequest;
 import net.pocrd.m.app.client.SecurityType;
 import net.pocrd.m.app.client.api.resp.*;
 
 /**
- * Api文档RsaEncrypted字段展示测试
+ * 测试test testDoc
  * 
- * @author sunji180
+ * @author rendong
  *
  */
-public class Apitest_TestApiParameterRsaEncrypted extends BaseRequest<Api_StringResp> {
+public class Apitest_TestDoc extends BaseRequest<Api_StringResp> {
     
-    private RsaHelper rsaHelper = null;
-      
     /**
      * 当前请求的构造函数，以下参数为该请求的必填参数
-     * @param rsaEncrypted 参数需用rsa方式加密
-     * @param noRsaEncrypt 无加密
+     * @param param param
      */
-    public Apitest_TestApiParameterRsaEncrypted(String rsaEncrypted, String noRsaEncrypt) {
-        super("apitest.testApiParameterRsaEncrypted", SecurityType.None);
+    public Apitest_TestDoc(String param) {
+        super("apitest.testDoc", SecurityType.Document);
 
         try {
-            if (rsaHelper == null) {
-                rsaHelper = new RsaHelper(ApiContext.getContentRsaPubKey());
-            }
-            params.put("rsaEncrypted", Base64Util.encodeToString(rsaHelper.encrypt(rsaEncrypted.getBytes("UTF-8"))));
-        
-            params.put("noRsaEncrypt", noRsaEncrypt);
+            params.put("param", param);
         } catch(Exception e) {
             throw new LocalException("SERIALIZE_ERROR", LocalException.SERIALIZE_ERROR, e);
         }
@@ -45,8 +34,8 @@ public class Apitest_TestApiParameterRsaEncrypted extends BaseRequest<Api_String
     /**
      * 私有的默认构造函数，请勿使用
      */
-    private Apitest_TestApiParameterRsaEncrypted() {
-        super("apitest.testApiParameterRsaEncrypted", SecurityType.None);
+    private Apitest_TestDoc() {
+        super("apitest.testDoc", SecurityType.Document);
     }
     
     /**
@@ -54,10 +43,6 @@ public class Apitest_TestApiParameterRsaEncrypted extends BaseRequest<Api_String
      */
     public int handleError() {
         switch (response.code) {
-            /* 测试类未知错误 */
-            case ApiCode.TEST_UNKNOW_ERROR_1: {
-                break;
-            }
         }
         return response.code;
     }
