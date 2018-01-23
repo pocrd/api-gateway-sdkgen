@@ -13,9 +13,7 @@ import org.slf4j.LoggerFactory;
 
 import java.net.URLEncoder;
 import java.security.MessageDigest;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 /**
  * 存储访问接口所需的上下文信息
@@ -138,6 +136,53 @@ public class ApiContext {
     String getParameterString(BaseRequest<?>[] requests, String businessId) {
         int securityType = 0;
         final int len = requests.length;
+
+        BaseRequest[] tempReqs = Arrays.copyOf(requests, len);
+        Arrays.sort(tempReqs, new Comparator<BaseRequest>() {
+            @Override
+            public int compare(BaseRequest o1, BaseRequest o2) {
+                return o1.getMethodName().compareTo(o2.getMethodName());
+            }
+        });
+
+        int sequence = 0;
+        BaseRequest last = null;
+        BaseRequest cur = tempReqs[0];
+        for (int i = 1; i < len; i++) {
+            last = cur;
+            cur = tempReqs[i];
+            if (last.getMethodName().equals(cur.getMethodName())) {
+                last.params.put(CommonParameter.method, last.getMethodName() + "@" + sequence++);
+            } else {
+                if (sequence > 0) {
+                    last.params.put(CommonParameter.method, last.getMethodName() + "@" + sequence);
+                    sequence = 0;
+                }
+            }
+        }
+        if (sequence > 0) {
+            cur.params.put(CommonParameter.method, cur.getMethodName() + "@" + sequence);
+        }
+
+        StringBuilder sb = new StringBuilder();
+        for (BaseRequest req : requests) {
+            BaseRequest[] dependencies = req.getDependencies();
+            if (dependencies != null) {
+                sb.append(req.getMethodName());
+                int length = dependencies.length;
+                for (int i = 0; i < length; i++) {
+                    if (i == 0) {
+                        sb.append(":");
+                    } else {
+                        sb.append("/");
+                    }
+                    sb.append(dependencies[i].getMethodName());
+                }
+                req.params.put(CommonParameter.method, sb.toString());
+                sb.setLength(0);
+            }
+        }
+
         ParameterList params = new ParameterList(len * 2);
         StringBuilder methodNames = new StringBuilder();
 
