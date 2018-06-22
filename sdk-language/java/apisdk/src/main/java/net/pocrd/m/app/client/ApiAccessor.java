@@ -67,6 +67,7 @@ public class ApiAccessor {
             if (SDKConfig.isDebug) {
                 String link = url.toString() + "?" + params;
                 logger.info("request to :" + link);
+                System.out.println(link);
 
                 String dubboVersion = System.getProperty("debug.dubbo.version");
                 if (dubboVersion != null && dubboVersion.length() > 0) {
