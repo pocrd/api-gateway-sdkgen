@@ -392,8 +392,8 @@ public class ApiContext {
                 // donothing.
             } else if (securityType > 0) {
                 if (deviceToken != null) {
-                    if (!params.containsKey(CommonParameter.deviceToken)) {
-                        params.put(CommonParameter.deviceToken, deviceToken);
+                    if (!params.containsKey(CommonParameter.token)) {
+                        params.put(CommonParameter.token, deviceToken);
                     }
                 } else {
                     throw new LocalException(LocalException.TOKEN_MISSING);

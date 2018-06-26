@@ -17,11 +17,6 @@ public final class CommonParameter {
     public static final String token = "_tk";
 
     /**
-     * device token 代表访问设备的身份
-     */
-    public static final String deviceToken = "_dtk";
-
-    /**
      * method 请求的资源名
      */
     public static final String method = "_mt";
